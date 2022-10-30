@@ -11,19 +11,18 @@ return new class extends Migration
      *
      * @return void
      */
-
     public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('investment_plans', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('investment_type_id')->constrained();
             $table->string('name');
-            $table->string('email')->unique();
-            $table->string('password');
-            $table->integer('referral_id')->nullable();
-            $table->string('referral_code')->nullable();
-            $table->integer('role_id')->default(2);
-            $table->timestamp('email_verified_at')->nullable();
-            $table->rememberToken();
+            $table->string('slug');
+            $table->string('description');
+            $table->string('amount');
+            $table->string('duration');
+            $table->string('interest');
+
             $table->timestamps();
         });
     }
@@ -35,6 +34,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('investment_plans');
     }
 };
