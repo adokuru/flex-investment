@@ -17,12 +17,12 @@ return new class extends Migration
             $table->id();
             $table->foreignId('investment_type_id')->constrained();
             $table->string('name');
-            $table->string('slug');
             $table->string('description');
-            $table->string('amount');
-            $table->string('duration');
-            $table->string('interest');
-
+            $table->string('contract_duration');
+            $table->string('minimum_price');
+            $table->string('maximum_price');
+            $table->string('fixed_return_rate');
+            $table->string('flexible_return_rate');
             $table->timestamps();
         });
     }

@@ -15,12 +15,15 @@ return new class extends Migration
     {
         Schema::create('transactions', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('user_id')->constrained('users')->onDelete('cascade');
+            $table->unsignedBigInteger('wallet_id')->nullable();
+            $table->unsignedBigInteger('investment_plan_id')->nullable();
+            $table->unsignedBigInteger('deposit_id')->nullable();
+            $table->unsignedBigInteger('withdrawal_id')->nullable();
             $table->foreignId('transaction_type_id')->constrained();
-            $table->foreignId('user_id')->constrained();
-            $table->string('amount');
-            $table->string('status');
-            $table->string('reference');
-            $table->string('description');
+            $table->string('currency');
+            $table->decimal('amount', 18, 8);
+            $table->string('status')->default(0);
             $table->timestamps();
         });
     }

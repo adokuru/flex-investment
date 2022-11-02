@@ -2,10 +2,11 @@
 
 namespace Database\Seeders;
 
+use App\Models\WalletType;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class WalletType extends Seeder
+class WalletTypeSeeder extends Seeder
 {
     /**
      * Run the database seeds.
