@@ -141,8 +141,8 @@
                             </li>
                         </ul>
                         <div class="uk-navbar-item uk-visible@m in-optional-nav">
-                            <a href="signin" class="uk-button uk-button-text"><i class="fas fa-user-circle uk-margin-small-right"></i>Log in</a>
-                            <a href="#" class="uk-button uk-button-primary uk-button-small uk-border-pill">Sign up</a>
+                            <a href="/login" class="uk-button uk-button-text"><i class="fas fa-user-circle uk-margin-small-right"></i>Log in</a>
+                            <a href="/register" class="uk-button uk-button-primary uk-button-small uk-border-pill">Sign up</a>
                         </div>
                     </div>
                 </div>

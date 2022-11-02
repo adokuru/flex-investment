@@ -38,6 +38,7 @@
     <!-- CSS Assets -->
     <link rel="stylesheet" href="/UserDashboard/css/app.css" />
 
+    {{-- <link rel="stylesheet" href="{{ asset('css/app.css') }}"> --}}
     <!-- Javascript Assets -->
     <script src="/UserDashboard/js/app.js" defer></script>
 
@@ -63,7 +64,7 @@
                     <!-- Application Logo -->
                     <div class="flex pt-4">
                         <a href="index.html">
-                            <img class="h-11 w-11 transition-transform duration-500 ease-in-out hover:rotate-[360deg]" src="images/app-logo.svg" alt="logo" />
+                            <img class="h-11 w-11 transition-transform duration-500 ease-in-out hover:rotate-[360deg]" src="https://assets.cmcmarkets.com/images/android-chrome-192x192.png" alt="logo" />
                         </a>
                     </div>
 
@@ -146,7 +147,7 @@
                         <!-- Profile -->
                         <div x-data="usePopper({ placement: 'right-end', offset: 12 })" @click.outside="if(isShowPopper) isShowPopper = false" class="flex">
                             <button @click="isShowPopper = !isShowPopper" x-ref="popperRef" class="avatar h-12 w-12">
-                                <img class="rounded-full" src="images/avatar/avatar-12.jpg" alt="avatar" />
+                                <img class="rounded-full" src="/UserDashboard/images/avatar/avatar-12.jpg" alt="avatar" />
                                 <span class="absolute right-0 h-3.5 w-3.5 rounded-full border-2 border-white bg-success dark:border-navy-700"></span>
                             </button>
 
@@ -154,7 +155,7 @@
                                 <div class="popper-box w-64 rounded-lg border border-slate-150 bg-white shadow-soft dark:border-navy-600 dark:bg-navy-700">
                                     <div class="flex items-center space-x-4 rounded-t-lg bg-slate-100 py-5 px-4 dark:bg-navy-800">
                                         <div class="avatar h-14 w-14">
-                                            <img class="rounded-full" src="images/avatar/avatar-12.jpg" alt="avatar" />
+                                            <img class="rounded-full" src="/UserDashboard/images/avatar/avatar-12.jpg" alt="avatar" />
                                         </div>
                                         <div>
                                             <a href="#" class="text-base font-medium text-slate-700 hover:text-primary focus:text-primary dark:text-navy-100 dark:hover:text-accent-light dark:focus:text-accent-light">
@@ -686,12 +687,12 @@
                             </svg>
                         </button>
                         <!-- Monochrome Mode Toggle -->
-                        <button @click="$store.global.isMonochromeModeEnabled = !$store.global.isMonochromeModeEnabled" class="btn h-8 w-8 rounded-full p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25">
+                        {{-- <button @click="$store.global.isMonochromeModeEnabled = !$store.global.isMonochromeModeEnabled" class="btn h-8 w-8 rounded-full p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25">
                             <i class="fa-solid fa-palette bg-gradient-to-r from-sky-400 to-blue-600 bg-clip-text text-lg font-semibold text-transparent"></i>
-                        </button>
+                        </button> --}}
 
                         <!-- Notification-->
-                        <div x-effect="if($store.global.isSearchbarActive) isShowPopper = false" x-data="usePopper({ placement: 'bottom-end', offset: 12 })" @click.outside="if(isShowPopper) isShowPopper = false" class="flex">
+                        {{-- <div x-effect="if($store.global.isSearchbarActive) isShowPopper = false" x-data="usePopper({ placement: 'bottom-end', offset: 12 })" @click.outside="if(isShowPopper) isShowPopper = false" class="flex">
                             <button @click="isShowPopper = !isShowPopper" x-ref="popperRef" class="btn relative h-8 w-8 rounded-full p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-500 dark:text-navy-100" stroke="currentColor" fill="none" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
@@ -1026,7 +1027,7 @@
                                         </div>
                                         <div x-show="activeTab === 'tabLogs'" x-transition:enter="transition-all duration-300 easy-in-out" x-transition:enter-start="opacity-0 [transform:translate3d(1rem,0,0)]" x-transition:enter-end="opacity-100 [transform:translate3d(0,0,0)]" class="is-scrollbar-hidden overflow-y-auto px-4">
                                             <div class="mt-8 pb-8 text-center">
-                                                <img class="mx-auto w-36" src="images/illustrations/empty-girl-box.svg" alt="image" />
+                                                <img class="mx-auto w-36" src="/UserDashboard/images/illustrations/empty-girl-box.svg" alt="image" />
                                                 <div class="mt-5">
                                                     <p class="text-base font-semibold text-slate-700 dark:text-navy-100">
                                                         No any logs
@@ -1040,14 +1041,14 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
 
                         <!-- Right Sidebar Toggle -->
-                        <button @click="$store.global.isRightSidebarExpanded = true" class="btn h-8 w-8 rounded-full p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25">
+                        {{-- <button @click="$store.global.isRightSidebarExpanded = true" class="btn h-8 w-8 rounded-full p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5.5 w-5.5 text-slate-500 dark:text-navy-100" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
                             </svg>
-                        </button>
+                        </button> --}}
                     </div>
                 </div>
             </div>
@@ -1310,7 +1311,7 @@
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide relative flex h-28 w-48 flex-col overflow-hidden rounded-xl bg-gradient-to-br from-purple-500 to-indigo-600 p-3">
                                         <div class="grow">
-                                            <img class="h-3" src="images/payments/cc-visa-white.svg" alt="image" />
+                                            <img class="h-3" src="/UserDashboard/images/payments/cc-visa-white.svg" alt="image" />
                                         </div>
                                         <div class="text-white">
                                             <p class="text-lg font-semibold tracking-wide">
@@ -1324,7 +1325,7 @@
                                     </div>
                                     <div class="swiper-slide relative flex h-28 w-48 flex-col overflow-hidden rounded-xl bg-gradient-to-br from-pink-500 to-rose-500 p-3">
                                         <div class="grow">
-                                            <img class="h-3" src="images/payments/cc-visa-white.svg" alt="image" />
+                                            <img class="h-3" src="/UserDashboard/images/payments/cc-visa-white.svg" alt="image" />
                                         </div>
                                         <div class="text-white">
                                             <p class="text-lg font-semibold tracking-wide">
@@ -1338,7 +1339,7 @@
                                     </div>
                                     <div class="swiper-slide relative flex h-28 w-48 flex-col overflow-hidden rounded-xl bg-gradient-to-br from-info to-info-focus p-3">
                                         <div class="grow">
-                                            <img class="h-3" src="images/payments/cc-visa-white.svg" alt="image" />
+                                            <img class="h-3" src="/UserDashboard/images/payments/cc-visa-white.svg" alt="image" />
                                         </div>
                                         <div class="text-white">
                                             <p class="text-lg font-semibold tracking-wide">
@@ -1492,7 +1493,7 @@
                             <div class="mt-3 grid grid-cols-2 gap-3 px-3">
                                 <div class="rounded-lg bg-slate-100 p-2.5 dark:bg-navy-600">
                                     <div class="flex items-center space-x-2">
-                                        <img class="h-10 w-10" src="images/logos/bitcoin.svg" alt="image" />
+                                        <img class="h-10 w-10" src="/UserDashboard/images/logos/bitcoin.svg" alt="image" />
                                         <div>
                                             <h2 class="font-medium tracking-wide text-slate-700 dark:text-navy-100">
                                                 BTC
@@ -1520,7 +1521,7 @@
 
                                 <div class="rounded-lg bg-slate-100 p-2.5 dark:bg-navy-600">
                                     <div class="flex items-center space-x-2">
-                                        <img class="h-10 w-10" src="images/logos/solana.svg" alt="image" />
+                                        <img class="h-10 w-10" src="/UserDashboard/images/logos/solana.svg" alt="image" />
                                         <div>
                                             <h2 class="font-medium tracking-wide text-slate-700 dark:text-navy-100">
                                                 SOL
@@ -1561,7 +1562,7 @@
                                         <div class="flex items-center justify-between">
                                             <div class="flex items-center space-x-2">
                                                 <div class="avatar h-7 w-7">
-                                                    <img class="rounded-full" src="images/avatar/avatar-20.jpg" alt="avatar" />
+                                                    <img class="rounded-full" src="/UserDashboard/images/avatar/avatar-20.jpg" alt="avatar" />
                                                 </div>
                                                 <div>
                                                     <p class="text-xs font-medium line-clamp-1">
@@ -1586,7 +1587,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <img src="images/object/object-18.jpg" class="h-20 w-20 rounded-lg object-cover object-center" alt="image" />
+                                    <img src="/UserDashboard/images/object/object-18.jpg" class="h-20 w-20 rounded-lg object-cover object-center" alt="image" />
                                 </div>
 
                                 <div class="flex justify-between space-x-2 rounded-lg bg-slate-100 p-2.5 dark:bg-navy-700">
@@ -1597,7 +1598,7 @@
                                         <div class="flex items-center justify-between">
                                             <div class="flex items-center space-x-2">
                                                 <div class="avatar h-7 w-7">
-                                                    <img class="rounded-full" src="images/avatar/avatar-19.jpg" alt="avatar" />
+                                                    <img class="rounded-full" src="/UserDashboard/images/avatar/avatar-19.jpg" alt="avatar" />
                                                 </div>
                                                 <div>
                                                     <p class="text-xs font-medium line-clamp-1">
@@ -1622,7 +1623,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <img src="images/object/object-2.jpg" class="h-20 w-20 rounded-lg object-cover object-center" alt="image" />
+                                    <img src="/UserDashboard/images/object/object-2.jpg" class="h-20 w-20 rounded-lg object-cover object-center" alt="image" />
                                 </div>
 
                                 <div class="flex justify-between space-x-2 rounded-lg bg-slate-100 p-2.5 dark:bg-navy-700">
@@ -1633,7 +1634,7 @@
                                         <div class="flex items-center justify-between">
                                             <div class="flex items-center space-x-2">
                                                 <div class="avatar h-7 w-7">
-                                                    <img class="rounded-full" src="images/avatar/avatar-18.jpg" alt="avatar" />
+                                                    <img class="rounded-full" src="/UserDashboard/images/avatar/avatar-18.jpg" alt="avatar" />
                                                 </div>
                                                 <div>
                                                     <p class="text-xs font-medium line-clamp-1">
@@ -1658,7 +1659,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <img src="images/object/object-1.jpg" class="h-20 w-20 rounded-lg object-cover object-center" alt="image" />
+                                    <img src="/UserDashboard/images/object/object-1.jpg" class="h-20 w-20 rounded-lg object-cover object-center" alt="image" />
                                 </div>
                             </div>
                         </div>
@@ -1746,7 +1747,7 @@
 
                         <div class="mt-4 rounded-lg border border-slate-150 p-3 dark:border-navy-600">
                             <div class="flex items-center space-x-3">
-                                <img class="h-10 w-10 rounded-lg object-cover object-center" src="images/illustrations/lms-ui.svg" alt="image" />
+                                <img class="h-10 w-10 rounded-lg object-cover object-center" src="/UserDashboard/images/illustrations/lms-ui.svg" alt="image" />
                                 <div>
                                     <p class="font-medium leading-snug text-slate-700 dark:text-navy-100">
                                         LMS App Design
@@ -1769,7 +1770,7 @@
                             <div class="mt-3 flex items-center justify-between space-x-2">
                                 <div class="flex -space-x-3">
                                     <div class="avatar h-7 w-7 hover:z-10">
-                                        <img class="rounded-full ring ring-white dark:ring-navy-700" src="images/avatar/avatar-16.jpg" alt="avatar" />
+                                        <img class="rounded-full ring ring-white dark:ring-navy-700" src="/UserDashboard/images/avatar/avatar-16.jpg" alt="avatar" />
                                     </div>
                                     <div class="avatar h-7 w-7 hover:z-10">
                                         <div class="is-initial rounded-full bg-info text-xs+ uppercase text-white ring ring-white dark:ring-navy-700">
@@ -1777,7 +1778,7 @@
                                         </div>
                                     </div>
                                     <div class="avatar h-7 w-7 hover:z-10">
-                                        <img class="rounded-full ring ring-white dark:ring-navy-700" src="images/avatar/avatar-20.jpg" alt="avatar" />
+                                        <img class="rounded-full ring ring-white dark:ring-navy-700" src="/UserDashboard/images/avatar/avatar-20.jpg" alt="avatar" />
                                     </div>
                                 </div>
                                 <button class="btn h-7 w-7 rounded-full bg-slate-150 p-0 font-medium text-slate-800 hover:bg-slate-200 focus:bg-slate-200 active:bg-slate-200/80 dark:bg-navy-500 dark:text-navy-50 dark:hover:bg-navy-450 dark:focus:bg-navy-450 dark:active:bg-navy-450/90">
@@ -1790,7 +1791,7 @@
 
                         <div class="mt-4 rounded-lg border border-slate-150 p-3 dark:border-navy-600">
                             <div class="flex items-center space-x-3">
-                                <img class="h-10 w-10 rounded-lg object-cover object-center" src="images/illustrations/store-ui.svg" alt="image" />
+                                <img class="h-10 w-10 rounded-lg object-cover object-center" src="/UserDashboard/images/illustrations/store-ui.svg" alt="image" />
                                 <div>
                                     <p class="font-medium leading-snug text-slate-700 dark:text-navy-100">
                                         Store Dashboard
@@ -1813,7 +1814,7 @@
                             <div class="mt-3 flex items-center justify-between space-x-2">
                                 <div class="flex -space-x-3">
                                     <div class="avatar h-7 w-7 hover:z-10">
-                                        <img class="rounded-full ring ring-white dark:ring-navy-700" src="images/avatar/avatar-17.jpg" alt="avatar" />
+                                        <img class="rounded-full ring ring-white dark:ring-navy-700" src="/UserDashboard/images/avatar/avatar-17.jpg" alt="avatar" />
                                     </div>
                                     <div class="avatar h-7 w-7 hover:z-10">
                                         <div class="is-initial rounded-full bg-warning text-xs+ uppercase text-white ring ring-white dark:ring-navy-700">
@@ -1821,7 +1822,7 @@
                                         </div>
                                     </div>
                                     <div class="avatar h-7 w-7 hover:z-10">
-                                        <img class="rounded-full ring ring-white dark:ring-navy-700" src="images/avatar/avatar-19.jpg" alt="avatar" />
+                                        <img class="rounded-full ring ring-white dark:ring-navy-700" src="/UserDashboard/images/avatar/avatar-19.jpg" alt="avatar" />
                                     </div>
                                 </div>
                                 <button class="btn h-7 w-7 rounded-full bg-slate-150 p-0 font-medium text-slate-800 hover:bg-slate-200 focus:bg-slate-200 active:bg-slate-200/80 dark:bg-navy-500 dark:text-navy-50 dark:hover:bg-navy-450 dark:focus:bg-navy-450 dark:active:bg-navy-450/90">
@@ -1834,7 +1835,7 @@
 
                         <div class="mt-4 rounded-lg border border-slate-150 p-3 dark:border-navy-600">
                             <div class="flex items-center space-x-3">
-                                <img class="h-10 w-10 rounded-lg object-cover object-center" src="images/illustrations/chat-ui.svg" alt="image" />
+                                <img class="h-10 w-10 rounded-lg object-cover object-center" src="/UserDashboard/images/illustrations/chat-ui.svg" alt="image" />
                                 <div>
                                     <p class="font-medium leading-snug text-slate-700 dark:text-navy-100">
                                         Chat Mobile App
@@ -1857,7 +1858,7 @@
                             <div class="mt-3 flex items-center justify-between space-x-2">
                                 <div class="flex -space-x-3">
                                     <div class="avatar h-7 w-7 hover:z-10">
-                                        <img class="rounded-full ring ring-white dark:ring-navy-700" src="images/avatar/avatar-5.jpg" alt="avatar" />
+                                        <img class="rounded-full ring ring-white dark:ring-navy-700" src="/UserDashboard/images/avatar/avatar-5.jpg" alt="avatar" />
                                     </div>
                                     <div class="avatar h-7 w-7 hover:z-10">
                                         <div class="is-initial rounded-full bg-error text-xs+ uppercase text-white ring ring-white dark:ring-navy-700">
@@ -1865,7 +1866,7 @@
                                         </div>
                                     </div>
                                     <div class="avatar h-7 w-7 hover:z-10">
-                                        <img class="rounded-full ring ring-white dark:ring-navy-700" src="images/avatar/avatar-11.jpg" alt="avatar" />
+                                        <img class="rounded-full ring ring-white dark:ring-navy-700" src="/UserDashboard/images/avatar/avatar-11.jpg" alt="avatar" />
                                     </div>
                                 </div>
                                 <button class="btn h-7 w-7 rounded-full bg-slate-150 p-0 font-medium text-slate-800 hover:bg-slate-200 focus:bg-slate-200 active:bg-slate-200/80 dark:bg-navy-500 dark:text-navy-50 dark:hover:bg-navy-450 dark:focus:bg-navy-450 dark:active:bg-navy-450/90">
@@ -1878,7 +1879,7 @@
 
                         <div class="mt-4 rounded-lg border border-slate-150 p-3 dark:border-navy-600">
                             <div class="flex items-center space-x-3">
-                                <img class="h-10 w-10 rounded-lg object-cover object-center" src="images/illustrations/nft.svg" alt="image" />
+                                <img class="h-10 w-10 rounded-lg object-cover object-center" src="/UserDashboard/images/illustrations/nft.svg" alt="image" />
                                 <div>
                                     <p class="font-medium leading-snug text-slate-700 dark:text-navy-100">
                                         NFT Marketplace App
@@ -1901,7 +1902,7 @@
                             <div class="mt-3 flex items-center justify-between space-x-2">
                                 <div class="flex -space-x-3">
                                     <div class="avatar h-7 w-7 hover:z-10">
-                                        <img class="rounded-full ring ring-white dark:ring-navy-700" src="images/avatar/avatar-8.jpg" alt="avatar" />
+                                        <img class="rounded-full ring ring-white dark:ring-navy-700" src="/UserDashboard/images/avatar/avatar-8.jpg" alt="avatar" />
                                     </div>
                                     <div class="avatar h-7 w-7 hover:z-10">
                                         <div class="is-initial rounded-full bg-success text-xs+ uppercase text-white ring ring-white dark:ring-navy-700">
@@ -1909,7 +1910,7 @@
                                         </div>
                                     </div>
                                     <div class="avatar h-7 w-7 hover:z-10">
-                                        <img class="rounded-full ring ring-white dark:ring-navy-700" src="images/avatar/avatar-12.jpg" alt="avatar" />
+                                        <img class="rounded-full ring ring-white dark:ring-navy-700" src="/UserDashboard/images/avatar/avatar-12.jpg" alt="avatar" />
                                     </div>
                                 </div>
                                 <button class="btn h-7 w-7 rounded-full bg-slate-150 p-0 font-medium text-slate-800 hover:bg-slate-200 focus:bg-slate-200 active:bg-slate-200/80 dark:bg-navy-500 dark:text-navy-50 dark:hover:bg-navy-450 dark:focus:bg-navy-450 dark:active:bg-navy-450/90">
@@ -1961,7 +1962,7 @@
                                     </div>
                                     <p class="py-1">John Doe changed his avatar photo</p>
                                     <div class="avatar mt-2 h-20 w-20">
-                                        <img class="mask is-squircle" src="images/avatar/avatar-19.jpg" alt="avatar" />
+                                        <img class="mask is-squircle" src="/UserDashboard/images/avatar/avatar-19.jpg" alt="avatar" />
                                     </div>
                                 </div>
                             </li>
@@ -1978,12 +1979,12 @@
                                     </div>
                                     <p class="py-1">Mores Clarke added new image gallery</p>
                                     <div class="mt-4 grid grid-cols-3 gap-3">
-                                        <img class="rounded-lg" src="images/object/object-1.jpg" alt="image" />
-                                        <img class="rounded-lg" src="images/object/object-2.jpg" alt="image" />
-                                        <img class="rounded-lg" src="images/object/object-3.jpg" alt="image" />
-                                        <img class="rounded-lg" src="images/object/object-4.jpg" alt="image" />
-                                        <img class="rounded-lg" src="images/object/object-5.jpg" alt="image" />
-                                        <img class="rounded-lg" src="images/object/object-6.jpg" alt="image" />
+                                        <img class="rounded-lg" src="/UserDashboard/images/object/object-1.jpg" alt="image" />
+                                        <img class="rounded-lg" src="/UserDashboard/images/object/object-2.jpg" alt="image" />
+                                        <img class="rounded-lg" src="/UserDashboard/images/object/object-3.jpg" alt="image" />
+                                        <img class="rounded-lg" src="/UserDashboard/images/object/object-4.jpg" alt="image" />
+                                        <img class="rounded-lg" src="/UserDashboard/images/object/object-5.jpg" alt="image" />
+                                        <img class="rounded-lg" src="/UserDashboard/images/object/object-6.jpg" alt="image" />
                                     </div>
                                     <div class="mt-4">
                                         <span class="font-medium text-slate-600 dark:text-navy-100">
@@ -2054,7 +2055,7 @@
                                         <div class="mt-2 flex justify-between">
                                             <div class="flex flex-wrap -space-x-2">
                                                 <div class="avatar h-7 w-7 hover:z-10">
-                                                    <img class="rounded-full ring ring-white dark:ring-navy-700" src="images/avatar/avatar-16.jpg" alt="avatar" />
+                                                    <img class="rounded-full ring ring-white dark:ring-navy-700" src="/UserDashboard/images/avatar/avatar-16.jpg" alt="avatar" />
                                                 </div>
 
                                                 <div class="avatar h-7 w-7 hover:z-10">
@@ -2064,15 +2065,15 @@
                                                 </div>
 
                                                 <div class="avatar h-7 w-7 hover:z-10">
-                                                    <img class="rounded-full ring ring-white dark:ring-navy-700" src="images/avatar/avatar-20.jpg" alt="avatar" />
+                                                    <img class="rounded-full ring ring-white dark:ring-navy-700" src="/UserDashboard/images/avatar/avatar-20.jpg" alt="avatar" />
                                                 </div>
 
                                                 <div class="avatar h-7 w-7 hover:z-10">
-                                                    <img class="rounded-full ring ring-white dark:ring-navy-700" src="images/avatar/avatar-8.jpg" alt="avatar" />
+                                                    <img class="rounded-full ring ring-white dark:ring-navy-700" src="/UserDashboard/images/avatar/avatar-8.jpg" alt="avatar" />
                                                 </div>
 
                                                 <div class="avatar h-7 w-7 hover:z-10">
-                                                    <img class="rounded-full ring ring-white dark:ring-navy-700" src="images/avatar/avatar-5.jpg" alt="avatar" />
+                                                    <img class="rounded-full ring ring-white dark:ring-navy-700" src="/UserDashboard/images/avatar/avatar-5.jpg" alt="avatar" />
                                                 </div>
                                             </div>
                                             <button class="btn h-7 w-7 rounded-full bg-slate-150 p-0 font-medium text-slate-800 hover:bg-slate-200 focus:bg-slate-200 active:bg-slate-200/80 dark:bg-navy-500 dark:text-navy-50 dark:hover:bg-navy-450 dark:focus:bg-navy-450 dark:active:bg-navy-450/90">

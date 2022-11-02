@@ -14,6 +14,5 @@ class TransactionSeeder extends Seeder
      */
     public function run()
     {
-        //
     }
 }
