@@ -21,14 +21,11 @@ Route::get('/markets', function () {
     return view('market');
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
-
 require __DIR__ . '/auth.php';
 
 Route::middleware('auth')->group(function () {
     Route::get('dashboard', [\App\Http\Controllers\UserController::class, 'index'])->name('users.index');
+    Route::get('investments', [\App\Http\Controllers\UserController::class, 'investments'])->name('users.investments');
     Route::view('about', 'about')->name('about');
     Route::get('users', [\App\Http\Controllers\UserController::class, 'index'])->name('users.index');
     Route::get('profile', [\App\Http\Controllers\ProfileController::class, 'show'])->name('profile.show');

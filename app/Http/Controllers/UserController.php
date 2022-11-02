@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\InvestmentPlan;
 use App\Models\User;
 
 class UserController extends Controller
@@ -11,5 +12,12 @@ class UserController extends Controller
         $users = User::paginate();
 
         return view('users.home', compact('users'));
+    }
+
+    public function investments()
+    {
+        $investments = InvestmentPlan::all();
+
+        return view('users.investments', compact('investments'));
     }
 }
