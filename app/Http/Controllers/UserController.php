@@ -18,7 +18,7 @@ class UserController extends Controller
 
         $transactions = Transaction::where('user_id', $user->id)->get();
 
-        return view('users.home', compact('user', 'transactions', 'bitconwallet', 'ethwallet', 'btcashwallet', 'usdtwallet'));
+        return view('users.dashboard', compact('user', 'transactions', 'bitconwallet', 'ethwallet', 'btcashwallet', 'usdtwallet'));
     }
 
     public function investments()
