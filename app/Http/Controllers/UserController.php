@@ -23,9 +23,9 @@ class UserController extends Controller
 
     public function investments()
     {
-        $fixedInvestment = InvestmentPlan::where('investment_type_id', 1)->get();
-        $flexibleInvestment = InvestmentPlan::where('investment_type_id', 2)->get();
-        $trialInvestment = InvestmentPlan::where('investment_type_id', 3)->get();
+        $fixedInvestment = InvestmentPlan::where('investment_type_id', 1)->latest()->get();
+        $flexibleInvestment = InvestmentPlan::where('investment_type_id', 2)->latest()->get();
+        $trialInvestment = InvestmentPlan::where('investment_type_id', 3)->latest()->get();
         $user = auth()->user();
 
         return view('users.investments', compact('trialInvestment', 'flexibleInvestment', 'fixedInvestment'));
