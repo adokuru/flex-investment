@@ -41,7 +41,7 @@ class InvestmentPlanSeeder extends Seeder
         ]);
         InvestmentPlan::create([
             'investment_type_id' => 1,
-            'name' => 'Insurance Plan',
+            'name' => 'Silver Plan',
             'description' => 'Medium Investment Plan',
             'contract_duration' => 6,
             'minimum_price' => 50000,
@@ -51,7 +51,7 @@ class InvestmentPlanSeeder extends Seeder
         ]);
         InvestmentPlan::create([
             'investment_type_id' => 1,
-            'name' => 'High Yield Plan',
+            'name' => 'Gold Plan',
             'description' => 'High Investment Plan',
             'contract_duration' => 6,
             'minimum_price' => 100000,
@@ -61,7 +61,7 @@ class InvestmentPlanSeeder extends Seeder
         ]);
         InvestmentPlan::create([
             'investment_type_id' => 1,
-            'name' => 'Crowd-Funding Plan',
+            'name' => 'Platinum Plan',
             'description' => 'High Investment Plan',
             'contract_duration' => 6,
             'minimum_price' => 500000,
@@ -78,7 +78,7 @@ class InvestmentPlanSeeder extends Seeder
             'minimum_price' => 500,
             'maximum_price' => 30000000,
             'fixed_return_rate' => 10.0,
-            'flexible_return_rate' => 7.5,
+            'flexible_return_rate' => 4.5,
         ]);
 
 
@@ -94,7 +94,7 @@ class InvestmentPlanSeeder extends Seeder
         ]);
         InvestmentPlan::create([
             'investment_type_id' => 2,
-            'name' => 'Insurance Plan',
+            'name' => 'Silver Plan',
             'description' => 'Medium Investment Plan',
             'contract_duration' => 6,
             'minimum_price' => 50000,
@@ -104,7 +104,7 @@ class InvestmentPlanSeeder extends Seeder
         ]);
         InvestmentPlan::create([
             'investment_type_id' => 2,
-            'name' => 'High Yield Plan',
+            'name' => 'Gold Plan',
             'description' => 'High Investment Plan',
             'contract_duration' => 6,
             'minimum_price' => 100000,
@@ -114,7 +114,7 @@ class InvestmentPlanSeeder extends Seeder
         ]);
         InvestmentPlan::create([
             'investment_type_id' => 2,
-            'name' => 'Crowd-Funding Plan',
+            'name' => 'Platinum Plan',
             'description' => 'High Investment Plan',
             'contract_duration' => 6,
             'minimum_price' => 500000,

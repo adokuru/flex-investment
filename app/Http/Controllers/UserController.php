@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\InvestmentPlan;
+use App\Models\Transaction;
 use App\Models\User;
 
 class UserController extends Controller
@@ -15,14 +16,18 @@ class UserController extends Controller
         $btcashwallet = $user->wallet->where('wallet_type_id', 4)->where('status', 1)->first();
         $usdtwallet = $user->wallet->where('wallet_type_id', 3)->where('status', 1)->first();
 
-        return view('users.home', compact('users'));
+        $transactions = Transaction::where('user_id', $user->id)->get();
+
+        return view('users.home', compact('user', 'transactions', 'bitconwallet', 'ethwallet', 'btcashwallet', 'usdtwallet'));
     }
 
     public function investments()
     {
-        $investments = InvestmentPlan::all();
+        $fixedInvestment = InvestmentPlan::where('investment_type_id', 1)->get();
+        $flexibleInvestment = InvestmentPlan::where('investment_type_id', 2)->get();
+        $trialInvestment = InvestmentPlan::where('investment_type_id', 3)->get();
         $user = auth()->user();
 
-        return view('users.investments', compact('investments'));
+        return view('users.investments', compact('trialInvestment', 'flexibleInvestment', 'fixedInvestment'));
     }
 }
