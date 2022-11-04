@@ -57,18 +57,58 @@ class User extends Authenticatable
         return $this->hasMany(Transaction::class);
     }
 
+    public function wallet()
+    {
+        return $this->hasMany(Wallet::class)->with('walletType');
+    }
+
+    public function getBalanceAttribute()
+    {
+        $balance = $this->earnings;
+        return $balance;
+    }
+
+    public function bitconwallet()
+    {
+        return $this->wallet()->where('wallet_type_id', 1)->first();
+    }
+
+    public function ethwallet()
+    {
+        return $this->wallet()->where('wallet_type_id', 2)->first();
+    }
+
+    public function btccashwallet()
+    {
+        return $this->wallet()->where('wallet_type_id', 3)->first();
+    }
+
+    public function usdtwallet()
+    {
+        return $this->wallet()->where('wallet_type_id', 4)->first();
+    }
+
+    /**
+     * A user has a referrer.
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
+    public function referrer()
+    {
+        return $this->belongsTo(User::class, 'referrer_id', 'id');
+    }
+    /**
+     * A user has many referrals.
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
     public function referrals()
     {
-        return $this->hasMany(Referral::class);
+        return $this->hasMany(User::class, 'referrer_id', 'id');
     }
 
-    public function referralsCount()
+    public function getReferralLinkAttribute()
     {
-        return $this->referrals()->count();
-    }
-
-    public function referralsAmount()
-    {
-        return $this->referrals()->sum('amount');
+        return $this->referral_link = route('register', ['ref' => $this->referral_token]);
     }
 }

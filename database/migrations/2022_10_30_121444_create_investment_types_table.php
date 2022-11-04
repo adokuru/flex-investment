@@ -13,11 +13,9 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('referrals', function (Blueprint $table) {
+        Schema::create('investment_types', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('user_id')->constrained();
-            $table->foreignId('referrer_id')->constrained('users');
-            $table->string('status');
+            $table->string('name');
             $table->timestamps();
         });
     }
@@ -29,6 +27,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('referrals');
+        Schema::dropIfExists('investment_types');
     }
 };

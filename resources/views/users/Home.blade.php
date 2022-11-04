@@ -194,7 +194,7 @@
                                 </svg>
                             </button>
 
-                            <div x-ref="popperRoot" class="popper-root" :class="isShowPopper && 'show'">
+                            {{-- <div x-ref="popperRoot" class="popper-root" :class="isShowPopper && 'show'">
                                 <div class="popper-box rounded-md border border-slate-150 bg-white py-1.5 font-inter dark:border-navy-500 dark:bg-navy-700">
                                     <ul>
                                         <li>
@@ -214,13 +214,13 @@
                                         </li>
                                     </ul>
                                 </div>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                     <div class="flex items-center space-x-4">
                         <div class="flex cursor-pointer items-center space-x-2">
                             <div class="h-3 w-3 rounded-full bg-accent"></div>
-                            <p>Sales</p>
+                            <p>Withdrawal</p>
                         </div>
                         <div class="flex cursor-pointer items-center space-x-2">
                             <div class="h-3 w-3 rounded-full bg-info"></div>
@@ -242,12 +242,12 @@
                         <div class="space-y-4">
                             <div class="flex cursor-pointer items-center justify-between">
                                 <div class="flex items-center space-x-3">
-                                    <div class="avatar">
+                                    {{-- <div class="avatar">
                                         <img class="rounded-full" src="/UserDashboard/images/avatar/avatar-20.jpg" alt="avatar" />
-                                    </div>
+                                    </div> --}}
                                     <div>
                                         <p class="text-slate-700 line-clamp-1 dark:text-navy-100">
-                                            Konnor Guzman
+                                            Interest Payment
                                         </p>
                                         <p class="text-xs text-slate-400 line-clamp-1 dark:text-navy-200">
                                             Dec 21, 2021 - 08:05
@@ -258,12 +258,12 @@
                             </div>
                             <div class="flex cursor-pointer items-center justify-between">
                                 <div class="flex items-center space-x-3">
-                                    <div class="avatar">
+                                    {{-- <div class="avatar">
                                         <img class="rounded-full" src="/UserDashboard/images/avatar/avatar-19.jpg" alt="avatar" />
-                                    </div>
+                                    </div> --}}
                                     <div>
                                         <p class="text-slate-700 line-clamp-1 dark:text-navy-100">
-                                            Henry Curtis
+                                            Interest Payment
                                         </p>
                                         <p class="text-xs text-slate-400 line-clamp-1 dark:text-navy-200">
                                             Dec 19, 2021 - 11:55
@@ -274,12 +274,12 @@
                             </div>
                             <div class="flex cursor-pointer items-center justify-between">
                                 <div class="flex items-center space-x-3">
-                                    <div class="avatar">
+                                    {{-- <div class="avatar">
                                         <img class="rounded-full" src="/UserDashboard/images/avatar/avatar-18.jpg" alt="avatar" />
-                                    </div>
+                                    </div> --}}
                                     <div>
                                         <p class="text-slate-700 line-clamp-1 dark:text-navy-100">
-                                            Derrick Simmons
+                                            Interest Payment
                                         </p>
                                         <p class="text-xs text-slate-400 line-clamp-1 dark:text-navy-200">
                                             Dec 16, 2021 - 14:45
@@ -290,12 +290,12 @@
                             </div>
                             <div class="flex cursor-pointer items-center justify-between">
                                 <div class="flex items-center space-x-3">
-                                    <div class="avatar">
+                                    {{-- <div class="avatar">
                                         <img class="rounded-full" src="/UserDashboard/images/avatar/avatar-11.jpg" alt="avatar" />
-                                    </div>
+                                    </div> --}}
                                     <div>
                                         <p class="text-slate-700 line-clamp-1 dark:text-navy-100">
-                                            Kartina West
+                                            Bronze plan subscription
                                         </p>
                                         <p class="text-xs text-slate-400 line-clamp-1 dark:text-navy-200">
                                             Dec 13, 2021 - 11:30
@@ -306,12 +306,12 @@
                             </div>
                             <div class="flex cursor-pointer items-center justify-between">
                                 <div class="flex items-center space-x-3">
-                                    <div class="avatar">
+                                    {{-- <div class="avatar">
                                         <img class="rounded-full" src="/UserDashboard/images/avatar/avatar-7.jpg" alt="avatar" />
-                                    </div>
+                                    </div> --}}
                                     <div>
                                         <p class="text-slate-700 line-clamp-1 dark:text-navy-100">
-                                            Samantha Shelton
+                                            BTC Deposit
                                         </p>
                                         <p class="text-xs text-slate-400 line-clamp-1 dark:text-navy-200">
                                             Dec 10, 2021 - 09:41
@@ -322,12 +322,12 @@
                             </div>
                             <div class="flex cursor-pointer items-center justify-between">
                                 <div class="flex items-center space-x-3">
-                                    <div class="avatar">
+                                    {{-- <div class="avatar">
                                         <img class="rounded-full" src="/UserDashboard/images/avatar/avatar-5.jpg" alt="avatar" />
-                                    </div>
+                                    </div> --}}
                                     <div>
                                         <p class="text-slate-700 line-clamp-1 dark:text-navy-100">
-                                            Joe Perkins
+                                            ETH Deposit
                                         </p>
                                         <p class="text-xs text-slate-400 line-clamp-1 dark:text-navy-200">
                                             Dec 06, 2021 - 11:41
@@ -344,7 +344,7 @@
             <div class="card col-span-12 px-4 pb-5 sm:px-5 lg:col-span-4">
                 <div class="flex items-center justify-between py-3">
                     <h2 class="font-medium tracking-wide text-slate-700 dark:text-navy-100">
-                        Send Money
+                        Select a Plan
                     </h2>
                     <div x-data="usePopper({ placement: 'bottom-end', offset: 4 })" @click.outside="if(isShowPopper) isShowPopper = false" class="inline-flex">
                         <button x-ref="popperRef" @click="isShowPopper = !isShowPopper" class="btn -mr-1 h-8 w-8 rounded-full p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25">
@@ -352,31 +352,9 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
                             </svg>
                         </button>
-
-                        <div x-ref="popperRoot" class="popper-root" :class="isShowPopper && 'show'">
-                            <div class="popper-box rounded-md border border-slate-150 bg-white py-1.5 font-inter dark:border-navy-500 dark:bg-navy-700">
-                                <ul>
-                                    <li>
-                                        <a href="#" class="flex h-8 items-center px-3 pr-8 font-medium tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100">Action</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="flex h-8 items-center px-3 pr-8 font-medium tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100">Another Action</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="flex h-8 items-center px-3 pr-8 font-medium tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100">Something else</a>
-                                    </li>
-                                </ul>
-                                <div class="my-1 h-px bg-slate-150 dark:bg-navy-500"></div>
-                                <ul>
-                                    <li>
-                                        <a href="#" class="flex h-8 items-center px-3 pr-8 font-medium tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100">Separated Link</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
                     </div>
                 </div>
-                <div class="flex space-x-2">
+                {{-- <div class="flex space-x-2">
                     <div class="avatar h-8 w-8 hover:z-10">
                         <img class="rounded-full ring ring-white dark:ring-navy-700" src="/UserDashboard/images/avatar/avatar-16.jpg" alt="avatar" />
                     </div>
@@ -394,22 +372,24 @@
                     <div class="avatar h-8 w-8 hover:z-10">
                         <img class="rounded-full ring ring-white dark:ring-navy-700" src="/UserDashboard/images/avatar/avatar-19.jpg" alt="avatar" />
                     </div>
-                </div>
+                </div> --}}
                 <div class="mt-2 flex items-center justify-between">
-                    <p class="text-xs+">View All Contacts</p>
+                    <p class="text-xs+">View All Plans</p>
 
-                    <button class="btn -mr-1 h-8 w-8 rounded-full p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25">
+                    <a class="btn -mr-1 h-8 w-8 rounded-full p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                         </svg>
-                    </button>
+                    </a>
                 </div>
                 <div class="mt-2 space-y-4">
                     <label class="block">
-                        <span class="text-xs+">Pay to</span>
-                        <input x-input-mask="{
+                        <span class="text-xs+">Select</span>
+                        <select x-input-mask="{
                   creditCard: true
-              }" class="form-input mt-1.5 h-9 w-full rounded-lg border border-slate-300 bg-transparent px-3 py-2 placeholder:text-slate-400/70 hover:border-slate-400 focus:border-primary dark:border-navy-450 dark:hover:border-navy-400 dark:focus:border-accent" placeholder="**** **** **** ****" type="text" />
+              }" class="form-input mt-1.5 h-9 w-full rounded-lg border border-slate-300 bg-transparent px-3 py-2 placeholder:text-slate-400/70 hover:border-slate-400 focus:border-primary dark:border-navy-450 dark:hover:border-navy-400 dark:focus:border-accent" placeholder="**** **** **** ****" type="text">
+                            <option>Bronze Plan</option>
+                        </select>
                     </label>
                     <div>
                         <span class="text-xs+">Amount</span>
