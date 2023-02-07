@@ -36,9 +36,5 @@ Route::middleware('auth')->group(function () {
 
 
 Route::any('test-crypto', function () {
-    // $client = new \GuzzleHttp\Client();
-    // $response = $client->request('GET', 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=bitcoin%2Cethereum%2Ctether%2Cbitcoin-cash%2Csolana%Moreno&order=market_cap_desc&per_page=100&page=1&sparkline=false&price_change_percentage=1h%2C24h%2C7d%2C14d%2C30d%2C200d%2C1y');
-    // $data = json_decode($response->getBody()->getContents(), true);
-    // dd($data);
     return Cryptocap::getAssets();
 });
