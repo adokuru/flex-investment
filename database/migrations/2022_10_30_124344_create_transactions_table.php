@@ -17,9 +17,6 @@ return new class extends Migration
             $table->id();
             $table->foreignId('user_id')->constrained('users')->onDelete('cascade');
             $table->unsignedBigInteger('wallet_id')->nullable();
-            $table->unsignedBigInteger('investment_plan_id')->nullable();
-            $table->unsignedBigInteger('deposit_id')->nullable();
-            $table->unsignedBigInteger('withdrawal_id')->nullable();
             $table->foreignId('transactions_type_id')->constrained();
             $table->string('currency');
             $table->decimal('amount', 18, 8);

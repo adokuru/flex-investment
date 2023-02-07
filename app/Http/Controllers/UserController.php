@@ -30,4 +30,14 @@ class UserController extends Controller
 
         return view('users.investments', compact('trialInvestment', 'flexibleInvestment', 'fixedInvestment'));
     }
+
+    public function transactions()
+    {
+        $fixedInvestment = InvestmentPlan::where('investment_type_id', 1)->latest()->get();
+        $flexibleInvestment = InvestmentPlan::where('investment_type_id', 2)->latest()->get();
+        $trialInvestment = InvestmentPlan::where('investment_type_id', 3)->latest()->get();
+        $user = auth()->user();
+
+        return view('users.transactions', compact('trialInvestment', 'flexibleInvestment', 'fixedInvestment'));
+    }
 }
