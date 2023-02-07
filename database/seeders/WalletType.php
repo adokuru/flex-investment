@@ -55,5 +55,25 @@ class WalletTypeSeeder extends Seeder
             'address' => 'qp6nlqfrxygkefpuwnzqudpjhdys0l9y7v3qflqj3x',
             'qrcode' => 'backend/assets/images/qr/Your_Bitcoin_Cash_QR_Code.png',
         ]);
+        WalletType::create([
+            'name' => 'Solana',
+            'description' => 'Bitcoin Cash is a cryptocurrency that is based on the Bitcoin protocol. It is a decentralized platform that uses peer-to-peer technology to operate with no central authority or single point of failure.',
+            'symbol' => 'SOL',
+            'getSymbol' => 'bitcoin-cash',
+            'value' => 1,
+            'icon' => 'backend/assets/images/dashboard/dashboard4.png',
+            'address' => 'qp6nlqfrxygkefpuwnzqudpjhdys0l9y7v3qflqj3x',
+            'qrcode' => 'backend/assets/images/qr/Your_Bitcoin_Cash_QR_Code.png',
+        ]);
+        WalletType::create([
+            'name' => 'Moreno',
+            'description' => 'Bitcoin Cash is a cryptocurrency that is based on the Bitcoin protocol. It is a decentralized platform that uses peer-to-peer technology to operate with no central authority or single point of failure.',
+            'symbol' => 'XMR',
+            'getSymbol' => 'bitcoin-cash',
+            'value' => 1,
+            'icon' => 'backend/assets/images/dashboard/dashboard4.png',
+            'address' => 'qp6nlqfrxygkefpuwnzqudpjhdys0l9y7v3qflqj3x',
+            'qrcode' => 'backend/assets/images/qr/Your_Bitcoin_Cash_QR_Code.png',
+        ]);
     }
 }
