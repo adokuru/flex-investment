@@ -20,7 +20,9 @@ class UserController extends Controller
 
         $transactions = Transaction::where('user_id', $user->id)->get();
 
-        return view('users.dashboard', compact('user', 'transactions', 'bitconwallet', 'ethwallet', 'btcashwallet', 'usdtwallet', 'solanaWallet', 'morenolWallet'));
+        $fixedInvestment = InvestmentPlan::where('investment_type_id', 1)->latest()->get();
+
+        return view('users.dashboard', compact('user', 'transactions', 'bitconwallet', 'ethwallet', 'btcashwallet', 'usdtwallet', 'solanaWallet', 'morenolWallet', 'fixedInvestment'));
     }
 
     public function investments()
@@ -41,5 +43,19 @@ class UserController extends Controller
         $user = auth()->user();
 
         return view('users.transactions', compact('trialInvestment', 'flexibleInvestment', 'fixedInvestment'));
+    }
+
+    public function deposit()
+    {
+        $user = auth()->user();
+        $bitconwallet = $user->wallet->where('wallet_type_id', 1)->where('status', 1)->first();
+        $ethwallet = $user->wallet->where('wallet_type_id', 2)->where('status', 1)->first();
+        $btcashwallet = $user->wallet->where('wallet_type_id', 4)->where('status', 1)->first();
+        $usdtwallet = $user->wallet->where('wallet_type_id', 3)->where('status', 1)->first();
+        $solanaWallet = $user->wallet->where('wallet_type_id', 5)->where('status', 1)->first();
+        $morenolWallet = $user->wallet->where('wallet_type_id', 6)->where('status', 1)->first();
+
+
+        return view('users.deposit', compact('user', 'bitconwallet', 'ethwallet', 'btcashwallet', 'usdtwallet', 'solanaWallet', 'morenolWallet'));
     }
 }

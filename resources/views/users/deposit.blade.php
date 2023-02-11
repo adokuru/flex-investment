@@ -3,7 +3,7 @@
 @section('content')
     <main class="main-content w-full pb-8 px-5">
         <h2 class="text-base font-medium tracking-wide text-slate-700 line-clamp-1 dark:text-navy-100 lg:text-xl p-4">
-            Investments
+            Deposits
         </h2>
         <div class="is-scrollbar-hidden min-w-full overflow-x-auto">
             <table class="is-hoverable w-full text-left">

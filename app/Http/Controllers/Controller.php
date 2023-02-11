@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Wallet;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
@@ -64,6 +65,9 @@ class Controller extends BaseController
                 'status' => 1,
             ],
         ];
-        $user->wallet()->createMany($wallets);
+
+        foreach ($wallets as $wallet) {
+            Wallet::create($wallet);
+        }
     }
 }

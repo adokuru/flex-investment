@@ -65,10 +65,10 @@
                                     </div>
                                     <div class="text-white">
                                         <p class="text-lg font-semibold tracking-wide">
-                                            $1,686.66
+                                            ${{ $bitconwallet != null ? $bitconwallet->usd_balance : '0.000000' }}
                                         </p>
                                         <p class="mt-1 text-xs font-medium">
-                                            Bitcoin (BTC)
+                                            {{ $bitconwallet != null ? $bitconwallet->amount : '0.000000' }} Bitcoin (BTC)
                                         </p>
                                     </div>
                                 </div>
@@ -87,10 +87,10 @@
                                     </div>
                                     <div class="text-white">
                                         <p class="text-lg font-semibold tracking-wide">
-                                            $5,589.16
+                                            ${{ $ethwallet != null ? $ethwallet->usd_balance : '0.000000' }}
                                         </p>
                                         <p class="mt-1 text-xs font-medium">
-                                            Ethereum (ETH)
+                                            {{ $ethwallet != null ? $ethwallet->amount : '0.000000' }} Ethereum (ETH)
                                         </p>
                                     </div>
                                 </div>
@@ -110,10 +110,10 @@
                                     </div>
                                     <div class="text-white">
                                         <p class="text-lg font-semibold tracking-wide">
-                                            2,139.22
+                                            {{ $solanaWallet != null ? $solanaWallet->usd_balance : '0.000000' }}
                                         </p>
                                         <p class="mt-1 text-xs font-medium">
-                                            Solana (SOL)
+                                            {{ $solanaWallet != null ? $solanaWallet->amount : '0.000000' }} Solana (SOL)
                                         </p>
                                     </div>
                                 </div>
@@ -133,10 +133,10 @@
                                     </div>
                                     <div class="text-white">
                                         <p class="text-lg font-semibold tracking-wide">
-                                            369.74
+                                            {{ $morenolWallet != null ? $morenolWallet->usd_balance : '0.000000' }}
                                         </p>
                                         <p class="mt-1 text-xs font-medium">
-                                            Moreno (XMR)
+                                            {{ $morenolWallet != null ? $morenolWallet->amount : '0.000000' }} Moreno (XMR)
                                         </p>
                                     </div>
                                 </div>
@@ -156,10 +156,10 @@
                                     </div>
                                     <div class="text-white">
                                         <p class="text-lg font-semibold tracking-wide">
-                                            369.74
+                                            {{ $usdtwallet != null ? $usdtwallet->usd_balance : '0.000000' }}
                                         </p>
                                         <p class="mt-1 text-xs font-medium">
-                                            Tether (USDT)
+                                            {{ $usdtwallet != null ? $usdtwallet->amount : '0.000000' }} Tether (USDT)
                                         </p>
                                     </div>
                                 </div>
@@ -179,10 +179,11 @@
                                     </div>
                                     <div class="text-white">
                                         <p class="text-lg font-semibold tracking-wide">
-                                            369.74
+                                            {{ $btcashwallet != null ? $btcashwallet->usd_balance : '0.000000' }}
                                         </p>
                                         <p class="mt-1 text-xs font-medium">
-                                            USD Coin (USDC)
+                                            {{ $btcashwallet != null ? $btcashwallet->amount : '0.000000' }} USD Coin
+                                            (USDC)
                                         </p>
                                     </div>
                                 </div>
@@ -193,12 +194,12 @@
             </div>
 
             <div class="card group col-span-12 pb-5 lg:col-span-8">
-                <div class="card col-span-2 px-4 pb-5 sm:px-5">
+                <div class="col-span-2 px-4 pb-5 sm:px-5 lg:col-span-4">
                     <div class="my-3 flex h-8 items-center justify-between">
                         <h2 class="font-medium tracking-wide text-slate-700 dark:text-navy-100">
                             Transactions
                         </h2>
-                        <a href="#"
+                        <a href="/investments"
                             class="border-b border-dotted border-current pb-0.5 text-xs+ font-medium text-primary outline-none transition-colors duration-300 hover:text-primary/70 focus:text-primary/70 dark:text-accent-light dark:hover:text-accent-light/70 dark:focus:text-accent-light/70">
                             View All
                         </a>
@@ -217,6 +218,32 @@
                                 </div>
                             </div>
                             <p class="font-medium text-success">$660.22</p>
+                        </div>
+                        <div class="flex cursor-pointer items-center justify-between">
+                            <div class="flex items-center space-x-3">
+                                <div>
+                                    <p class="text-slate-700 dark:text-navy-100">
+                                        Henry Curtis
+                                    </p>
+                                    <p class="text-xs text-slate-400 line-clamp-1 dark:text-navy-200">
+                                        Dec 19, 2021 - 11:55
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="font-medium text-success">$33.63</p>
+                        </div>
+                        <div class="flex cursor-pointer items-center justify-between">
+                            <div class="flex items-center space-x-3">
+                                <div>
+                                    <p class="text-slate-700 dark:text-navy-100">
+                                        Henry Curtis
+                                    </p>
+                                    <p class="text-xs text-slate-400 line-clamp-1 dark:text-navy-200">
+                                        Dec 19, 2021 - 11:55
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="font-medium text-success">$33.63</p>
                         </div>
                         <div class="flex cursor-pointer items-center justify-between">
                             <div class="flex items-center space-x-3">
@@ -277,7 +304,7 @@
             <div class="card col-span-12 px-4 pb-5 sm:px-5 lg:col-span-4">
                 <div class="flex items-center justify-between py-3">
                     <h2 class="font-medium tracking-wide text-slate-700 dark:text-navy-100">
-                        Select a Plan to invest
+                        Select a fixed plan to invest
                     </h2>
                     <div x-data="usePopper({ placement: 'bottom-end', offset: 4 })" @click.outside="if(isShowPopper) isShowPopper = false"
                         class="inline-flex">
@@ -292,9 +319,9 @@
                     </div>
                 </div>
                 <div class="mt-2 flex items-center justify-between">
-                    <p class="text-xs+">View All Plans</p>
+                    <a class="text-xs+">View All Plans</a>
 
-                    <a
+                    <a href="/investments"
                         class="btn -mr-1 h-8 w-8 rounded-full p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
@@ -310,8 +337,11 @@
                   creditCard: true
               }"
                             class="form-input mt-1.5 h-9 w-full rounded-lg border border-slate-300 bg-transparent px-3 py-2 placeholder:text-slate-400/70 hover:border-slate-400 focus:border-primary dark:border-navy-450 dark:hover:border-navy-400 dark:focus:border-accent"
-                            placeholder="**** **** **** ****" type="text">
-                            <option>Bronze Plan</option>
+                            placeholder="Select a fixed plan" type="text">
+                            @foreach ($fixedInvestment as $item)
+                                <option value="{{ $item->id }}">{{ $item->name }}</option>
+                            @endforeach
+
                         </select>
                     </label>
                     <div>

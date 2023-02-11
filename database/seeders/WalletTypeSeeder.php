@@ -46,9 +46,9 @@ class WalletTypeSeeder extends Seeder
             'qrcode' => 'backend/assets/images/qr/Your_USDT_Cash_QR_Code.jpeg',
         ]);
         WalletType::create([
-            'name' => 'Bitcoin Cash',
+            'name' => 'USD Coin',
             'description' => 'Bitcoin Cash is a cryptocurrency that is based on the Bitcoin protocol. It is a decentralized platform that uses peer-to-peer technology to operate with no central authority or single point of failure.',
-            'symbol' => 'BCH',
+            'symbol' => 'USDC',
             'getSymbol' => 'bitcoin-cash',
             'value' => 1,
             'icon' => 'backend/assets/images/dashboard/dashboard4.png',
