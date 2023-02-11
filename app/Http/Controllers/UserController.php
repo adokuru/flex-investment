@@ -15,10 +15,12 @@ class UserController extends Controller
         $ethwallet = $user->wallet->where('wallet_type_id', 2)->where('status', 1)->first();
         $btcashwallet = $user->wallet->where('wallet_type_id', 4)->where('status', 1)->first();
         $usdtwallet = $user->wallet->where('wallet_type_id', 3)->where('status', 1)->first();
+        $solanaWallet = $user->wallet->where('wallet_type_id', 5)->where('status', 1)->first();
+        $morenolWallet = $user->wallet->where('wallet_type_id', 6)->where('status', 1)->first();
 
         $transactions = Transaction::where('user_id', $user->id)->get();
 
-        return view('users.dashboard', compact('user', 'transactions', 'bitconwallet', 'ethwallet', 'btcashwallet', 'usdtwallet'));
+        return view('users.dashboard', compact('user', 'transactions', 'bitconwallet', 'ethwallet', 'btcashwallet', 'usdtwallet', 'solanaWallet', 'morenolWallet'));
     }
 
     public function investments()

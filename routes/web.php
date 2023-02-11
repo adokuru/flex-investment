@@ -37,9 +37,11 @@ Route::middleware('auth')->group(function () {
 
 
     // Admin Route
-    Route::get('users', [\App\Http\Controllers\UserController::class, 'index'])->name('users.index');
-    Route::get('profile', [\App\Http\Controllers\ProfileController::class, 'show'])->name('profile.show');
-    Route::put('profile', [\App\Http\Controllers\ProfileController::class, 'update'])->name('profile.update');
+    Route::get('/admin/dashboard', [\App\Http\Controllers\ProfileController::class, 'dashboard'])->name('dashboard');
+    Route::get('/admin/about', [\App\Http\Controllers\ProfileController::class, 'about'])->name('about');
+    Route::get('/admin/users', [\App\Http\Controllers\UserController::class, 'index'])->name('users.index');
+    Route::get('/admin/profile', [\App\Http\Controllers\ProfileController::class, 'show'])->name('profile.show');
+    Route::put('admin/profile', [\App\Http\Controllers\ProfileController::class, 'update'])->name('profile.update');
 });
 
 

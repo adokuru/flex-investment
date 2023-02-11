@@ -184,7 +184,8 @@
                         <div x-data="usePopper({ placement: 'right-end', offset: 12 })" @click.outside="if(isShowPopper) isShowPopper = false"
                             class="flex">
                             <button @click="isShowPopper = !isShowPopper" x-ref="popperRef" class="avatar h-12 w-12">
-                                <img class="rounded-full" src="/UserDashboard/images/avatar/avatar-12.jpg"
+                                <img class="rounded-full"
+                                    src="https://ui-avatars.com/api/?background=0D8ABC&color=fff&name={{ auth()->user()->name }}"
                                     alt="avatar" />
                                 <span
                                     class="absolute right-0 h-3.5 w-3.5 rounded-full border-2 border-white bg-success dark:border-navy-700"></span>
@@ -196,13 +197,14 @@
                                     <div
                                         class="flex items-center space-x-4 rounded-t-lg bg-slate-100 py-5 px-4 dark:bg-navy-800">
                                         <div class="avatar h-14 w-14">
-                                            <img class="rounded-full" src="/UserDashboard/images/avatar/avatar-12.jpg"
+                                            <img class="rounded-full"
+                                                src="https://ui-avatars.com/api/?background=0D8ABC&color=fff&name={{ auth()->user()->name }}"
                                                 alt="avatar" />
                                         </div>
                                         <div>
                                             <a href="#"
                                                 class="text-base font-medium text-slate-700 hover:text-primary focus:text-primary dark:text-navy-100 dark:hover:text-accent-light dark:focus:text-accent-light">
-                                                Travis Fuller
+                                                {{ auth()->user()->name }}
                                             </a>
                                         </div>
                                     </div>

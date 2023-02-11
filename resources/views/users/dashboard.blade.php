@@ -7,35 +7,13 @@
                 <div class="col-span-12 sm:col-span-6 lg:col-span-4">
                     <div class="px-4 text-white sm:px-5">
                         <div class="-mt-1 flex items-center space-x-2">
-                            <h2 class="text-base font-medium tracking-wide">Balance</h2>
-                            <div x-data="usePopper({ placement: 'bottom-end', offset: 4 })" @click.outside="if(isShowPopper) isShowPopper = false"
-                                class="inline-flex">
-                                <button x-ref="popperRef" @click="isShowPopper = !isShowPopper"
-                                    class="btn h-8 w-8 rounded-full p-0 hover:bg-white/20 focus:bg-white/20 active:bg-white/25">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
-                                    </svg>
-                                </button>
+                            <h2 class="text-base font-medium tracking-wide">Your Balance</h2>
 
-                                <div x-ref="popperRoot" class="popper-root" :class="isShowPopper && 'show'">
-                                    <div
-                                        class="popper-box rounded-md border border-slate-150 bg-white py-1.5 font-inter dark:border-navy-500 dark:bg-navy-700">
-                                        <ul>
-                                            <li>
-                                                <a href="#"
-                                                    class="flex h-8 items-center px-3 pr-8 font-medium tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100">Withdraw</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
 
                         <div class="mt-3">
-                            <p class="text-2xl font-semibold">$6,556.55</p>
-                            <p class="text-xs">+ 3.5%</p>
+                            <p class="text-2xl font-semibold">${{ auth()->user()->balance ?? 0 }}</p>
+                            {{-- <p class="text-xs">+ 3.5%</p> --}}
                         </div>
 
                         <div class="mt-4 flex space-x-7">
@@ -215,144 +193,82 @@
             </div>
 
             <div class="card group col-span-12 pb-5 lg:col-span-8">
-                <div class="my-3 flex flex-col justify-between px-4 sm:flex-row sm:items-center sm:px-5">
-                    <div class="flex flex-1 items-center justify-between space-x-2 sm:flex-initial">
-                        <h2 class="text-sm+ font-medium tracking-wide text-slate-700 dark:text-navy-100">
-                            History
+                <div class="card col-span-2 px-4 pb-5 sm:px-5">
+                    <div class="my-3 flex h-8 items-center justify-between">
+                        <h2 class="font-medium tracking-wide text-slate-700 dark:text-navy-100">
+                            Transactions
                         </h2>
-                        <div x-data="usePopper({ placement: 'bottom-start', offset: 4 })" @click.outside="if(isShowPopper) isShowPopper = false"
-                            :class="!isShowPopper && 'sm:opacity-0'"
-                            class="inline-flex focus-within:opacity-100 group-hover:opacity-100">
-                            <button x-ref="popperRef" @click="isShowPopper = !isShowPopper"
-                                class="btn h-8 w-8 rounded-full p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
-                                    viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
-                                </svg>
-                            </button>
+                        <a href="#"
+                            class="border-b border-dotted border-current pb-0.5 text-xs+ font-medium text-primary outline-none transition-colors duration-300 hover:text-primary/70 focus:text-primary/70 dark:text-accent-light dark:hover:text-accent-light/70 dark:focus:text-accent-light/70">
+                            View All
+                        </a>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex cursor-pointer items-center justify-between">
+                            <div class="flex items-center space-x-3">
 
+                                <div>
+                                    <p class="text-slate-700 dark:text-navy-100">
+                                        Konnor Guzman
+                                    </p>
+                                    <p class="text-xs text-slate-400 line-clamp-1 dark:text-navy-200">
+                                        Dec 21, 2021 - 08:05
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="font-medium text-success">$660.22</p>
                         </div>
-                    </div>
-                    <div class="flex items-center space-x-4">
-                        <div class="flex cursor-pointer items-center space-x-2">
-                            <div class="h-3 w-3 rounded-full bg-accent"></div>
-                            <p>Withdrawal</p>
+                        <div class="flex cursor-pointer items-center justify-between">
+                            <div class="flex items-center space-x-3">
+                                <div>
+                                    <p class="text-slate-700 dark:text-navy-100">
+                                        Henry Curtis
+                                    </p>
+                                    <p class="text-xs text-slate-400 line-clamp-1 dark:text-navy-200">
+                                        Dec 19, 2021 - 11:55
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="font-medium text-success">$33.63</p>
                         </div>
-                        <div class="flex cursor-pointer items-center space-x-2">
-                            <div class="h-3 w-3 rounded-full bg-info"></div>
-                            <p>Profit</p>
+                        <div class="flex cursor-pointer items-center justify-between">
+                            <div class="flex items-center space-x-3">
+                                <div>
+                                    <p class="text-slate-700 dark:text-navy-100">
+                                        Derrick Simmons
+                                    </p>
+                                    <p class="text-xs text-slate-400 line-clamp-1 dark:text-navy-200">
+                                        Dec 16, 2021 - 14:45
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="font-medium text-success">$674.63</p>
                         </div>
-                    </div>
-                </div>
-
-                <div class="grid grid-cols-12 gap-4 px-4 sm:gap-5 sm:px-5 lg:gap-6 lg:px-5">
-                    <div class="col-span-12 sm:order-last sm:col-span-6 sm:mt-2 xl:col-span-7">
-                        <div class="ax-transparent-gridline">
-                            <div x-init="$nextTick(() => {
-                                $el._x_chart = new ApexCharts($el, pages.charts.historyTransactionsLine);
-                                $el._x_chart.render()
-                            });"></div>
+                        <div class="flex cursor-pointer items-center justify-between">
+                            <div class="flex items-center space-x-3">
+                                <div>
+                                    <p class="text-slate-700 dark:text-navy-100">
+                                        Kartina West
+                                    </p>
+                                    <p class="text-xs text-slate-400 line-clamp-1 dark:text-navy-200">
+                                        Dec 13, 2021 - 11:30
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="font-medium text-error">$547.63</p>
                         </div>
-                    </div>
-                    <div class="col-span-12 rounded-lg bg-slate-50 p-3 dark:bg-navy-600 sm:col-span-6 xl:col-span-5">
-                        <div class="space-y-4">
-                            <div class="flex cursor-pointer items-center justify-between">
-                                <div class="flex items-center space-x-3">
-                                    {{-- <div class="avatar">
-                                        <img class="rounded-full" src="/UserDashboard/images/avatar/avatar-20.jpg" alt="avatar" />
-                                    </div> --}}
-                                    <div>
-                                        <p class="text-slate-700 line-clamp-1 dark:text-navy-100">
-                                            Interest Payment
-                                        </p>
-                                        <p class="text-xs text-slate-400 line-clamp-1 dark:text-navy-200">
-                                            Dec 21, 2021 - 08:05
-                                        </p>
-                                    </div>
+                        <div class="flex cursor-pointer items-center justify-between">
+                            <div class="flex items-center space-x-3">
+                                <div>
+                                    <p class="text-slate-700 dark:text-navy-100">
+                                        Samantha Shelton
+                                    </p>
+                                    <p class="text-xs text-slate-400 line-clamp-1 dark:text-navy-200">
+                                        Dec 10, 2021 - 09:41
+                                    </p>
                                 </div>
-                                <p class="font-medium text-success">$660.22</p>
                             </div>
-                            <div class="flex cursor-pointer items-center justify-between">
-                                <div class="flex items-center space-x-3">
-                                    {{-- <div class="avatar">
-                                        <img class="rounded-full" src="/UserDashboard/images/avatar/avatar-19.jpg" alt="avatar" />
-                                    </div> --}}
-                                    <div>
-                                        <p class="text-slate-700 line-clamp-1 dark:text-navy-100">
-                                            Interest Payment
-                                        </p>
-                                        <p class="text-xs text-slate-400 line-clamp-1 dark:text-navy-200">
-                                            Dec 19, 2021 - 11:55
-                                        </p>
-                                    </div>
-                                </div>
-                                <p class="font-medium text-success">$33.63</p>
-                            </div>
-                            <div class="flex cursor-pointer items-center justify-between">
-                                <div class="flex items-center space-x-3">
-                                    {{-- <div class="avatar">
-                                        <img class="rounded-full" src="/UserDashboard/images/avatar/avatar-18.jpg" alt="avatar" />
-                                    </div> --}}
-                                    <div>
-                                        <p class="text-slate-700 line-clamp-1 dark:text-navy-100">
-                                            Interest Payment
-                                        </p>
-                                        <p class="text-xs text-slate-400 line-clamp-1 dark:text-navy-200">
-                                            Dec 16, 2021 - 14:45
-                                        </p>
-                                    </div>
-                                </div>
-                                <p class="font-medium text-success">$674.63</p>
-                            </div>
-                            <div class="flex cursor-pointer items-center justify-between">
-                                <div class="flex items-center space-x-3">
-                                    {{-- <div class="avatar">
-                                        <img class="rounded-full" src="/UserDashboard/images/avatar/avatar-11.jpg" alt="avatar" />
-                                    </div> --}}
-                                    <div>
-                                        <p class="text-slate-700 line-clamp-1 dark:text-navy-100">
-                                            Bronze plan subscription
-                                        </p>
-                                        <p class="text-xs text-slate-400 line-clamp-1 dark:text-navy-200">
-                                            Dec 13, 2021 - 11:30
-                                        </p>
-                                    </div>
-                                </div>
-                                <p class="font-medium text-error">$547.63</p>
-                            </div>
-                            <div class="flex cursor-pointer items-center justify-between">
-                                <div class="flex items-center space-x-3">
-                                    {{-- <div class="avatar">
-                                        <img class="rounded-full" src="/UserDashboard/images/avatar/avatar-7.jpg" alt="avatar" />
-                                    </div> --}}
-                                    <div>
-                                        <p class="text-slate-700 line-clamp-1 dark:text-navy-100">
-                                            BTC Deposit
-                                        </p>
-                                        <p class="text-xs text-slate-400 line-clamp-1 dark:text-navy-200">
-                                            Dec 10, 2021 - 09:41
-                                        </p>
-                                    </div>
-                                </div>
-                                <p class="font-medium text-success">$736.24</p>
-                            </div>
-                            <div class="flex cursor-pointer items-center justify-between">
-                                <div class="flex items-center space-x-3">
-                                    {{-- <div class="avatar">
-                                        <img class="rounded-full" src="/UserDashboard/images/avatar/avatar-5.jpg" alt="avatar" />
-                                    </div> --}}
-                                    <div>
-                                        <p class="text-slate-700 line-clamp-1 dark:text-navy-100">
-                                            ETH Deposit
-                                        </p>
-                                        <p class="text-xs text-slate-400 line-clamp-1 dark:text-navy-200">
-                                            Dec 06, 2021 - 11:41
-                                        </p>
-                                    </div>
-                                </div>
-                                <p class="font-medium text-success">$558.88</p>
-                            </div>
+                            <p class="font-medium text-success">$736.24</p>
                         </div>
                     </div>
                 </div>
@@ -361,7 +277,7 @@
             <div class="card col-span-12 px-4 pb-5 sm:px-5 lg:col-span-4">
                 <div class="flex items-center justify-between py-3">
                     <h2 class="font-medium tracking-wide text-slate-700 dark:text-navy-100">
-                        Select a Wallet to Deposit
+                        Select a Plan to invest
                     </h2>
                     <div x-data="usePopper({ placement: 'bottom-end', offset: 4 })" @click.outside="if(isShowPopper) isShowPopper = false"
                         class="inline-flex">
@@ -426,6 +342,53 @@
                     class="btn mt-5 h-10 w-full bg-primary font-medium text-white hover:bg-primary-focus focus:bg-primary-focus active:bg-primary-focus/90 dark:bg-accent dark:hover:bg-accent-focus dark:focus:bg-accent-focus dark:active:bg-accent/90">
                     Invest
                 </button>
+            </div>
+
+            <div class="card col-span-12 px-4 pb-5 sm:px-5 w-full">
+                <div class="card">
+                    <div class="card-header pb-0">
+                        <h6>Market Data</h6>
+                    </div>
+                    <div class="card-body p-3">
+                        <!-- TradingView Widget BEGIN -->
+                        <div class="tradingview-widget-container">
+                            <div id="tradingview_e8053">
+                                <div id="tradingview_20755-wrapper"
+                                    style="position: relative;box-sizing: content-box;width: 100%;height: 550px;margin: 0 auto !important;padding: 0 !important;font-family: -apple-system, BlinkMacSystemFont, 'Trebuchet MS', Roboto, Ubuntu, sans-serif;">
+                                    <div style="width: 100%;height: 550px;background: transparent;padding: 0 !important;">
+                                        <iframe id="tradingview_20755"
+                                            src="https://s.tradingview.com/widgetembed/?frameElementId=tradingview_20755&amp;symbol=BITSTAMP%3ABTCUSD&amp;interval=D&amp;hidesidetoolbar=0&amp;symboledit=1&amp;saveimage=1&amp;toolbarbg=f1f3f6&amp;studies=%5B%5D&amp;theme=Light&amp;style=1&amp;timezone=Etc%2FUTC&amp;withdateranges=1&amp;showpopupbutton=1&amp;studies_overrides=%7B%7D&amp;overrides=%7B%7D&amp;enabled_features=%5B%5D&amp;disabled_features=%5B%5D&amp;showpopupbutton=1&amp;locale=en&amp;utm_source=allnzassets.org&amp;utm_medium=widget&amp;utm_campaign=chart&amp;utm_term=BITSTAMP%3ABTCUSD"
+                                            style="width: 100%; height: 100%; margin: 0 !important; padding: 0 !important;"
+                                            frameborder="0" allowtransparency="true" scrolling="no"
+                                            allowfullscreen=""></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                            <script src="https://s3.tradingview.com/tv.js"></script>
+                            <script>
+                                new TradingView.widget({
+                                    "width": "100%",
+                                    "height": 550,
+                                    "symbol": "BITSTAMP:BTCUSD",
+                                    "interval": "D",
+                                    "timezone": "Etc/UTC",
+                                    "theme": "Light",
+                                    "style": "1",
+                                    "locale": "en",
+                                    "toolbar_bg": "#f1f3f6",
+                                    "enable_publishing": false,
+                                    "withdateranges": true,
+                                    "hide_side_toolbar": false,
+                                    "allow_symbol_change": true,
+                                    "show_popup_button": true,
+                                    "popup_width": "1000",
+                                    "popup_height": "650",
+                                    "container_id": "tradingview_e8053"
+                                });
+                            </script>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>

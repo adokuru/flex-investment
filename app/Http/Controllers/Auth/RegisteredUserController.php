@@ -18,9 +18,14 @@ class RegisteredUserController extends Controller
      *
      * @return \Illuminate\View\View
      */
-    public function create()
+    public function create(Request $request)
     {
-        return view('auth.register');
+        $refcode = '';
+        if ($request->has('ref')) {
+            session(['referrer' => $request->query('ref')]);
+            $refcode = $request->query('ref');
+        }
+        return view('auth.register', compact('refcode'));
     }
 
     /**
@@ -39,7 +44,13 @@ class RegisteredUserController extends Controller
             'password' => ['required', 'confirmed', Rules\Password::defaults()],
         ]);
 
-        $length = 26;
+        $referrer = User::where('referral_token', session()->pull('referrer'))->first();
+
+        if ($request->ref) {
+            $referrer = User::where('referral_token', $request->ref)->first();
+        }
+
+        $length = 24;
         $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
         $charactersLength = strlen($characters);
         $randomString = '';
@@ -48,27 +59,31 @@ class RegisteredUserController extends Controller
         }
         $number = $randomString;
 
-        if ($request->has('referral_code')) {
-            $referral_code = $request->input('referral_code');
-            $referral_user = User::where('referral_code', $referral_code)->first();
-            if ($referral_user) {
-                $referral_user->circle_points = $referral_user->circle_points + 5;
-                $referral_user->save();
-            }
-        }
-
+        $request->validate([
+            'name' => ['required', 'string', 'max:255'],
+            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+            'password' => ['required', 'confirmed', Rules\Password::defaults()],
+        ]);
 
         $user = User::create([
             'name' => $request->name,
             'email' => $request->email,
             'password' => Hash::make($request->password),
-            'referral_id' => $request->referral_id ?? null,
-            'referral_code' => substr($request->name, 0, 3) . substr($number, 0, 3),
+            'referral_token' => substr($request->name, 0, 3) . substr($number, 0, 4),
+            'referrer_id' => $referrer ? $referrer->id : null,
         ]);
 
         event(new Registered($user));
 
         Auth::login($user);
+
+        $this->createWallets($user);
+
+        // $mailData = [
+        //     'name' =>  $user->name,
+        //     'email' => $user->email,
+        // ];
+        // Mail::to($user->email)->send(new WelcomeMail($mailData));
 
         return redirect(RouteServiceProvider::HOME);
     }
