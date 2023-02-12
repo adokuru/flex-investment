@@ -110,6 +110,14 @@ class UserController extends Controller
             'status' => 1,
         ]);
 
+
+        $wallet->usd_balance = $wallet->usd_balance - $request['amount'];
+        $wallet->amount = $wallet->amount - $request['crypto_amount'];
+        $wallet->save();
+
+        $user->earnings = $user->earnings - $request['amount'];
+        $user->save();
+
         return view('users.investments.success', compact('user', 'transaction', 'investment'));
     }
 
