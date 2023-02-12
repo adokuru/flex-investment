@@ -1,0 +1,139 @@
+<main class="main-content w-full pb-8 px-5">
+    <h2
+        class="text-base font-medium tracking-wide text-slate-700 line-clamp-1 dark:text-navy-100 lg:text-xl p-4"
+    >
+        Deposits
+    </h2>
+    <!--Send money wizard-->
+    <form class="w-full space-y-4" action="">
+        <!--Radio group-->
+        <div class="group relative">
+            <input
+                class="peer absolute top-0 left-0 w-full h-full opacity-0 z-20 cursor-pointer"
+                type="radio"
+                name="payment_methods"
+                value="ACH"
+                id="payment_method_1"
+                checked=""
+            />
+            <!--Indicator-->
+            <div
+                class="absolute top-1/2 -translate-y-1/2 left-6 w-6 h-6 rounded-full flex items-center justify-center peer-checked:child:scale-1 peer-not-checked:child:scale-0 bg-muted-100 text-muted-100 dark:bg-muted-800 dark:text-muted-800 peer-checked:text-primary-500"
+            >
+                <div
+                    class="w-3 h-3 rounded-full bg-current transition-colors duration-300"
+                ></div>
+            </div>
+            <div
+                class="group flex items-center py-4 px-6 bg-white dark:bg-muted-1000 border border-muted-200 dark:border-muted-800 rounded-lg cursor-pointer peer-checked:shadow-xl peer-checked:shadow-muted-400/10 dark:peer-checked:shadow-muted-800/10 group-focus-visible:tw-accessibility-static transition-shadow duration-300"
+            >
+                <div
+                    class="flex items-center justify-center w-5 h-5 border border-muted-200 rounded-full"
+                ></div>
+                <div class="flex flex-col ml-6">
+                    <span
+                        class="font-heading text-base font-medium text-muted-800 dark:text-muted-100"
+                    >
+                        ACH
+                    </span>
+                </div>
+                <div class="flex flex-col w-32 ml-auto">
+                    <span
+                        class="font-heading text-base font-medium text-muted-800 dark:text-muted-100"
+                    >
+                        Free
+                    </span>
+                    <span class="font-heading text-xs text-muted-400">
+                        3 business days
+                    </span>
+                </div>
+            </div>
+        </div>
+        <!--Radio group-->
+        <div class="group relative">
+            <input
+                x-model="paymentMethod"
+                class="peer absolute top-0 left-0 w-full h-full opacity-0 z-20 cursor-pointer"
+                type="radio"
+                name="payment_methods"
+                value="Cheque"
+                id="payment_method_2"
+            />
+            <!--Indicator-->
+            <div
+                class="absolute top-1/2 -translate-y-1/2 left-6 w-6 h-6 rounded-full flex items-center justify-center peer-checked:child:scale-1 peer-not-checked:child:scale-0 bg-muted-100 text-muted-100 dark:bg-muted-800 dark:text-muted-800 peer-checked:text-primary-500"
+            >
+                <div
+                    class="w-3 h-3 rounded-full bg-current transition-colors duration-300"
+                ></div>
+            </div>
+            <div
+                class="group flex items-center py-4 px-6 bg-white dark:bg-muted-1000 border border-muted-200 dark:border-muted-800 rounded-lg cursor-pointer peer-checked:shadow-xl peer-checked:shadow-muted-400/10 dark:peer-checked:shadow-muted-800/10 group-focus-visible:tw-accessibility-static transition-shadow duration-300"
+            >
+                <div
+                    class="flex items-center justify-center w-5 h-5 border border-muted-200 rounded-full"
+                ></div>
+                <div class="flex flex-col ml-6">
+                    <span
+                        class="font-heading text-base font-medium text-muted-800 dark:text-muted-100"
+                    >
+                        Cheque
+                    </span>
+                </div>
+                <div class="flex flex-col w-32 ml-auto">
+                    <span
+                        class="font-heading text-base font-medium text-muted-800 dark:text-muted-100"
+                    >
+                        Free
+                    </span>
+                    <span class="font-heading text-xs text-muted-400">
+                        7-10 business days
+                    </span>
+                </div>
+            </div>
+        </div>
+        <!--Radio group-->
+        <div class="group relative">
+            <input
+                x-model="paymentMethod"
+                class="peer absolute top-0 left-0 w-full h-full opacity-0 z-20 cursor-pointer"
+                type="radio"
+                name="payment_methods"
+                value="wire"
+                id="payment_method_3"
+            />
+            <!--Indicator-->
+            <div
+                class="absolute top-1/2 -translate-y-1/2 left-6 w-6 h-6 rounded-full flex items-center justify-center peer-checked:child:scale-1 peer-not-checked:child:scale-0 bg-muted-100 text-muted-100 dark:bg-muted-800 dark:text-muted-800 peer-checked:text-primary-500"
+            >
+                <div
+                    class="w-3 h-3 rounded-full bg-current transition-colors duration-300"
+                ></div>
+            </div>
+            <div
+                class="group flex items-center py-4 px-6 bg-white dark:bg-muted-1000 border border-muted-200 dark:border-muted-800 rounded-lg cursor-pointer peer-checked:shadow-xl peer-checked:shadow-muted-400/10 dark:peer-checked:shadow-muted-800/10 group-focus-visible:tw-accessibility-static transition-shadow duration-300"
+            >
+                <div
+                    class="flex items-center justify-center w-5 h-5 border border-muted-200 rounded-full"
+                ></div>
+                <div class="flex flex-col ml-6">
+                    <span
+                        class="font-heading text-base font-medium text-muted-800 dark:text-muted-100"
+                    >
+                        Wire
+                    </span>
+                </div>
+                <div class="flex flex-col w-32 ml-auto">
+                    <span
+                        class="font-heading text-base font-medium text-muted-800 dark:text-muted-100"
+                    >
+                        Free
+                    </span>
+                    <span class="font-heading text-xs text-muted-400">
+                        1 business day
+                    </span>
+                </div>
+            </div>
+        </div>
+    </form>
+</main>

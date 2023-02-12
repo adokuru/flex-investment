@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\WalletType;
 use Illuminate\Support\Facades\Route;
 use WisdomDiala\Cryptocap\Facades\Cryptocap;
 
@@ -31,7 +32,9 @@ Route::middleware('auth')->group(function () {
     Route::get('dashboard', [\App\Http\Controllers\UserController::class, 'index'])->name('users.index');
     Route::get('investments', [\App\Http\Controllers\UserController::class, 'investments'])->name('users.investments');
     Route::get('transactions', [\App\Http\Controllers\UserController::class, 'transactions'])->name('users.transactions');
-    Route::get('deposit', [\App\Http\Controllers\UserController::class, 'deposit'])->name('users.deposit');
+    Route::get('deposits', [\App\Http\Controllers\UserController::class, 'deposit'])->name('users.deposit');
+    Route::post('deposits', [\App\Http\Controllers\UserController::class, 'selectWalletType'])->name('deposit.selectWalletType');
+    Route::post('deposits-add', [\App\Http\Controllers\UserController::class, 'setAmount'])->name('deposit.setAmount');
     Route::get('withdrawal', [\App\Http\Controllers\UserController::class, 'withdrawal'])->name('users.withdrawal');
 
 
@@ -47,4 +50,12 @@ Route::middleware('auth')->group(function () {
 
 Route::any('test-crypto', function () {
     return Cryptocap::getAssets();
+});
+
+Route::get('/test', function () {
+    $walletTypes = WalletType::all();
+    foreach ($walletTypes as $walletType) {
+        $walletType->updatePrice();
+    }
+    return 'done';
 });

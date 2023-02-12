@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\InvestmentPlan;
 use App\Models\Transaction;
 use App\Models\User;
+use App\Models\WalletType;
+use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
@@ -55,7 +57,39 @@ class UserController extends Controller
         $solanaWallet = $user->wallet->where('wallet_type_id', 5)->where('status', 1)->first();
         $morenolWallet = $user->wallet->where('wallet_type_id', 6)->where('status', 1)->first();
 
+        // merge all wallets
 
-        return view('users.deposit', compact('user', 'bitconwallet', 'ethwallet', 'btcashwallet', 'usdtwallet', 'solanaWallet', 'morenolWallet'));
+        $wallets = collect([$bitconwallet, $ethwallet, $btcashwallet, $usdtwallet, $solanaWallet, $morenolWallet]);
+
+
+        return view('users.deposit', compact('user', 'bitconwallet', 'ethwallet', 'btcashwallet', 'usdtwallet', 'solanaWallet', 'morenolWallet', 'wallets'));
+    }
+
+    public function selectWalletType(Request $request)
+    {
+        $request->validate([
+            'wallet_type' => 'required',
+        ]);
+
+        $user = auth()->user();
+
+        $wallet = $user->wallet->where('id', $request['wallet_type'])->where('status', 1)->first();
+
+        return view('users.deposits.amount', compact('user', 'wallet'));
+    }
+    public function setAmount(Request $request)
+    {
+        $request->validate([
+            'wallet_type' => 'required',
+            'amount' => 'required',
+        ]);
+
+        dd($request->all());
+
+        $user = auth()->user();
+
+        $wallet = $user->wallet->where('id', $request['wallet_type'])->where('status', 1)->first();
+
+        return view('users.deposits.amount', compact('user', 'wallet'));
     }
 }
