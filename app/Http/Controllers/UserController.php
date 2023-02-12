@@ -21,7 +21,7 @@ class UserController extends Controller
         $solanaWallet = $user->wallet->where('wallet_type_id', 5)->where('status', 1)->first();
         $morenolWallet = $user->wallet->where('wallet_type_id', 6)->where('status', 1)->first();
 
-        $transactions = Transaction::where('user_id', $user->id)->get();
+        $transactions = Transaction::where('user_id', $user->id)->where('status', 1)->latest()->limit(6)->get();
 
         $fixedInvestment = InvestmentPlan::where('investment_type_id', 1)->latest()->get();
 

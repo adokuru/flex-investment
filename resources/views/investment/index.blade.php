@@ -1,6 +1,6 @@
 <x-app-layout>
     <x-slot name="header">
-        {{ __('Users') }}
+        {{ __('User Investment') }}
     </x-slot>
 
     <div class="p-4 bg-white rounded-lg shadow-xs">
@@ -11,29 +11,28 @@
                         <tr
                             class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase bg-gray-50 border-b">
                             <th class="px-4 py-3">Name</th>
-                            <th class="px-4 py-3">Email</th>
-                            <th class="px-4 py-3">Actions</th>
+                            <th class="px-4 py-3">Amount</th>
+                            <th class="px-4 py-3">Currency</th>
+                            <th class="px-4 py-3">Status</th>
+                            {{-- <th class="px-4 py-3">Actions</th> --}}
                         </tr>
                     </thead>
                     <tbody class="bg-white divide-y">
-                        @foreach ($users as $user)
+                        @foreach ($investments as $investment)
                             <tr class="text-gray-700">
                                 <td class="px-4 py-3 text-sm">
-                                    {{ $user->name }}
+                                    {{ $investment->user->name }}
                                 </td>
                                 <td class="px-4 py-3 text-sm">
-                                    {{ $user->email }}
+                                    {{ $investment->amount }}
                                 </td>
                                 <td class="px-4 py-3 text-sm">
-                                    <a href="{{ route('users.edit', $user->id) }}"
-                                        class="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-sm hover:bg-green-200">Edit</a>
-                                    <form action="{{ route('users.destroy', $user->id) }}" method="POST"
-                                        class="inline-block">
-                                        @csrf
-                                        @method('DELETE')
-                                        <button type="submit"
-                                            class="px-2 py-1 font-semibold leading-tight text-red-700 bg-red-100 rounded-sm hover:bg-red-200">Delete</button>
-                                    </form>
+                                    {{ $investment->wallet->walletType->symbol }}
+                                </td>
+                                <td class="px-4 py-3 text-sm">
+                                    {{ ($investment->status == 1 ? 'Success' : $investment->status == 0) ? 'Pending' : 'Rejected' }}
+                                </td>
+
                             </tr>
                         @endforeach
                     </tbody>
@@ -41,7 +40,7 @@
             </div>
             <div
                 class="px-4 py-3 text-xs font-semibold tracking-wide text-gray-500 uppercase bg-gray-50 border-t sm:grid-cols-9">
-                {{ $users->links() }}
+                {{ $investments->links() }}
             </div>
         </div>
     </div>

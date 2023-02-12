@@ -213,7 +213,7 @@
                             </svg>
                         </div>
                         <p class="text-base font-medium text-slate-700 dark:text-navy-100">
-                            $2,225.22
+                            up to 10%
                         </p>
                     </div>
                 </div>

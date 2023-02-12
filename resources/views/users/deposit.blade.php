@@ -83,8 +83,8 @@
                                                             class="font-heading text-base font-medium text-muted-800 dark:text-muted-100">
                                                             {{ $item->amount }}
                                                         </span>
-                                                        <span class="font-heading text-xs text-muted-400">
-                                                            {{ $item->usd_balance }}
+                                                        <span class="font-heading text-xs text-muted-600">
+                                                            ${{ $item->usd_balance }}
                                                         </span>
                                                     </div>
                                                 </div>

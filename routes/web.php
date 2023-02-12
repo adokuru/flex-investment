@@ -3,6 +3,7 @@
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\UserController;
+use App\Models\Wallet;
 use App\Models\WalletType;
 use Illuminate\Support\Facades\Route;
 use WisdomDiala\Cryptocap\Facades\Cryptocap;
@@ -48,9 +49,22 @@ Route::middleware('auth')->group(function () {
     // Admin Route
     Route::get('/admin/dashboard', [AdminController::class, 'dashboard'])->name('dashboard');
     Route::get('/admin/about', [ProfileController::class, 'about'])->name('about');
-    Route::get('/admin/users', [UserController::class, 'index'])->name('users.index');
+    Route::get('/admin/users', [AdminController::class, 'users'])->name('users.index');
+    Route::post('/admin/users', [AdminController::class, 'users'])->name('users.index');
+    Route::get('/admin/users/{user}', [AdminController::class, 'show'])->name('users.show');
+    Route::get('/admin/users/{user}/edit', [AdminController::class, 'edit'])->name('users.edit');
+    Route::put('/admin/users/{user}', [AdminController::class, 'update'])->name('users.update');
+    Route::delete('/admin/users/{user}', [AdminController::class, 'destroy'])->name('users.destroy');
     Route::get('/admin/profile', [ProfileController::class, 'show'])->name('profile.show');
     Route::put('admin/profile', [ProfileController::class, 'update'])->name('profile.update');
+
+    // Transactions
+    Route::get('/admin/transactions', [AdminController::class, 'transactions'])->name('transactions.index');
+    Route::post('/admin/transactions', [AdminController::class, 'transactions'])->name('transactions.index');
+    Route::get('/admin/transactions/{transaction}', [AdminController::class, 'show'])->name('transactions.show');
+    Route::get('/admin/transactions/{transaction}/edit', [AdminController::class, 'edit'])->name('transactions.edit');
+    Route::put('/admin/transactions/{transaction}', [AdminController::class, 'update'])->name('transactions.update');
+    Route::delete('/admin/transactions/{transaction}', [AdminController::class, 'destroy'])->name('transactions.destroy');
 });
 
 
@@ -62,6 +76,15 @@ Route::get('/test', function () {
     $walletTypes = WalletType::all();
     foreach ($walletTypes as $walletType) {
         $walletType->updatePrice();
+    }
+    return 'done';
+});
+
+Route::get('/test2', function () {
+    $wallets = Wallet::all();
+    foreach ($wallets as $wallet) {
+        $wallet->usd_balance = (float)($wallet->amount * $wallet->walletType->value);
+        $wallet->save();
     }
     return 'done';
 });

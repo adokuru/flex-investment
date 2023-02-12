@@ -20,4 +20,14 @@ class Transaction extends Model
     {
         return $this->belongsTo(TransactionsType::class);
     }
+
+    public function wallet()
+    {
+        return $this->belongsTo(Wallet::class);
+    }
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }
