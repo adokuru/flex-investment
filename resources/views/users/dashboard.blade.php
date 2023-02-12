@@ -12,7 +12,7 @@
                         </div>
 
                         <div class="mt-3">
-                            <p class="text-2xl font-semibold">${{ auth()->user()->balance ?? 0 }}</p>
+                            <p class="text-2xl font-semibold">${{ number_format(auth()->user()->balance ?? 0, 2) }}</p>
                             {{-- <p class="text-xs">+ 3.5%</p> --}}
                         </div>
 
@@ -65,7 +65,7 @@
                                     </div>
                                     <div class="text-white">
                                         <p class="text-lg font-semibold tracking-wide">
-                                            ${{ $bitconwallet != null ? $bitconwallet->usd_balance : '0.000000' }}
+                                            ${{ number_format($bitconwallet != null ? $bitconwallet->usd_balance : '0.000000', 2) }}
                                         </p>
                                         <p class="mt-1 text-xs font-medium">
                                             {{ $bitconwallet != null ? $bitconwallet->amount : '0.000000' }} Bitcoin (BTC)
@@ -87,7 +87,7 @@
                                     </div>
                                     <div class="text-white">
                                         <p class="text-lg font-semibold tracking-wide">
-                                            ${{ $ethwallet != null ? $ethwallet->usd_balance : '0.000000' }}
+                                            ${{ number_format($ethwallet != null ? $ethwallet->usd_balance : '0.000000', 2) }}
                                         </p>
                                         <p class="mt-1 text-xs font-medium">
                                             {{ $ethwallet != null ? $ethwallet->amount : '0.000000' }} Ethereum (ETH)
@@ -110,7 +110,7 @@
                                     </div>
                                     <div class="text-white">
                                         <p class="text-lg font-semibold tracking-wide">
-                                            {{ $solanaWallet != null ? $solanaWallet->usd_balance : '0.000000' }}
+                                            {{ number_format($solanaWallet != null ? $solanaWallet->usd_balance : '0.000000', 2) }}
                                         </p>
                                         <p class="mt-1 text-xs font-medium">
                                             {{ $solanaWallet != null ? $solanaWallet->amount : '0.000000' }} Solana (SOL)
@@ -133,7 +133,7 @@
                                     </div>
                                     <div class="text-white">
                                         <p class="text-lg font-semibold tracking-wide">
-                                            {{ $morenolWallet != null ? $morenolWallet->usd_balance : '0.000000' }}
+                                            {{ number_format($morenolWallet != null ? $morenolWallet->usd_balance : '0.000000', 2) }}
                                         </p>
                                         <p class="mt-1 text-xs font-medium">
                                             {{ $morenolWallet != null ? $morenolWallet->amount : '0.000000' }} Moreno (XMR)
@@ -156,7 +156,7 @@
                                     </div>
                                     <div class="text-white">
                                         <p class="text-lg font-semibold tracking-wide">
-                                            {{ $usdtwallet != null ? $usdtwallet->usd_balance : '0.000000' }}
+                                            {{ number_format($usdtwallet != null ? $usdtwallet->usd_balance : '0.000000', 2) }}
                                         </p>
                                         <p class="mt-1 text-xs font-medium">
                                             {{ $usdtwallet != null ? $usdtwallet->amount : '0.000000' }} Tether (USDT)
@@ -179,7 +179,7 @@
                                     </div>
                                     <div class="text-white">
                                         <p class="text-lg font-semibold tracking-wide">
-                                            {{ $btcashwallet != null ? $btcashwallet->usd_balance : '0.000000' }}
+                                            {{ number_format($btcashwallet != null ? $btcashwallet->usd_balance : '0.000000', 2) }}
                                         </p>
                                         <p class="mt-1 text-xs font-medium">
                                             {{ $btcashwallet != null ? $btcashwallet->amount : '0.000000' }} USD Coin
@@ -199,7 +199,7 @@
                         <h2 class="font-medium tracking-wide text-slate-700 dark:text-navy-100">
                             Transactions
                         </h2>
-                        <a href="/investments"
+                        <a href="/transactions"
                             class="border-b border-dotted border-current pb-0.5 text-xs+ font-medium text-primary outline-none transition-colors duration-300 hover:text-primary/70 focus:text-primary/70 dark:text-accent-light dark:hover:text-accent-light/70 dark:focus:text-accent-light/70">
                             View All
                         </a>
@@ -208,7 +208,6 @@
                         @forelse ($transactions as $item)
                             <div class="flex cursor-pointer items-center justify-between">
                                 <div class="flex items-center space-x-3">
-
                                     <div>
                                         <p class="text-slate-700 dark:text-navy-100">
                                             {{ $item->transaction_reference }}
@@ -219,8 +218,8 @@
                                     </div>
                                 </div>
                                 <p
-                                    class="font-medium {{ $item->transactions_type_id == 1 || 4 || 5 ? 'text-green-500' : 'text-red-500' }}">
-                                    {{ $item->transactions_type_id == 1 || 4 || 5 ? '+' : '-' }} {{ $item->amount }}
+                                    class="font-medium {{ $item->transactions_type_id == 1 ? 'text-green-500' : 'text-red-500' }}">
+                                    {{ $item->transactions_type_id == 1 ? '+' : '-' }} {{ $item->amount }}
                             </div>
 
                         @empty

@@ -96,7 +96,7 @@ class UserController extends Controller
             'amount' => $request['crypto_amount'],
             'value' => $request['amount'],
             'status' => 1,
-            'transactions_type_id' => 2,
+            'transactions_type_id' => 3,
             'currency' => $wallet->walletType->symbol,
             'transaction_reference' => 'Investment',
         ]);
@@ -177,6 +177,20 @@ class UserController extends Controller
 
         return view('users.deposits.amount', compact('user', 'wallet'));
     }
+
+    public function selectwithdrawalWalletType(Request $request)
+    {
+        $request->validate([
+            'wallet_type' => 'required',
+        ]);
+
+        $user = auth()->user();
+
+        $wallet = $user->wallet->where('id', $request['wallet_type'])->where('status', 1)->first();
+
+        return view('users.withdraw.amount', compact('user', 'wallet'));
+    }
+
     public function setAmount(Request $request)
     {
         $request->validate([
@@ -193,6 +207,63 @@ class UserController extends Controller
 
         return view('users.deposits.review', compact('user', 'wallet', 'amount'));
     }
+    public function setwithdrawalAmount(Request $request)
+    {
+        $request->validate([
+            'wallet_type' => 'required',
+            'amount' => 'required',
+        ]);
+
+        $user = auth()->user();
+
+        $wallet = $user->wallet->where('id', $request['wallet_type'])->where('status', 1)->first();
+
+        $amount = $request['amount'];
+
+        if ($wallet->usd_balance < $amount) {
+            return redirect()->back()->with('error', 'Insufficient Balance');
+        }
+
+
+        return view('users.withdraw.review', compact('user', 'wallet', 'amount'));
+    }
+
+    public function withdrawalAdd(Request $request)
+    {
+        $request->validate([
+            'wallet_type' => 'required',
+            'amount' => 'required',
+            'crypto_amount' => 'required'
+        ]);
+
+        $user = auth()->user();
+
+        $wallet = $user->wallet->where('id', $request['wallet_type'])->where('status', 1)->first();
+        $amount = $request['amount'];
+
+        Transaction::create([
+            'user_id' => $user->id,
+            'wallet_id' => $wallet->id,
+            'amount' => $request->crypto_amount,
+            'value' => $amount,
+            'status' => 0,
+            'transactions_type_id' => 2,
+            'currency' => $wallet->walletType->symbol,
+            'transaction_reference' => 'Withdrawal',
+        ]);
+
+        // $wallet->usd_balance = $wallet->usd_balance - $amount;
+
+        // $wallet->save();
+
+        // $user->earnings = $user->earnings - $amount;
+
+        // $user->save();
+
+        return view('users.withdraw.success', compact('user', 'wallet', 'amount'));
+    }
+
+
 
     public function makePayment(Request $request)
     {
@@ -229,5 +300,24 @@ class UserController extends Controller
         ]);
 
         return view('users.deposits.success');
+    }
+
+
+    public function withdrawal()
+    {
+        $user = auth()->user();
+        $bitconwallet = $user->wallet->where('wallet_type_id', 1)->where('status', 1)->first();
+        $ethwallet = $user->wallet->where('wallet_type_id', 2)->where('status', 1)->first();
+        $btcashwallet = $user->wallet->where('wallet_type_id', 4)->where('status', 1)->first();
+        $usdtwallet = $user->wallet->where('wallet_type_id', 3)->where('status', 1)->first();
+        $solanaWallet = $user->wallet->where('wallet_type_id', 5)->where('status', 1)->first();
+        $morenolWallet = $user->wallet->where('wallet_type_id', 6)->where('status', 1)->first();
+
+        // merge all wallets
+
+        $wallets = collect([$bitconwallet, $ethwallet, $btcashwallet, $usdtwallet, $solanaWallet, $morenolWallet]);
+
+
+        return view('users.withdraw', compact('user', 'bitconwallet', 'ethwallet', 'btcashwallet', 'usdtwallet', 'solanaWallet', 'morenolWallet', 'wallets'));
     }
 }

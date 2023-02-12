@@ -39,15 +39,17 @@ Route::middleware('auth')->group(function () {
     Route::post('investments-add-review', [UserController::class, 'investment_adds'])->name('investment.setAmount');
     Route::post('investments-success', [UserController::class, 'investments_add_money'])->name('investment.investments_add_money');
     Route::get('investments-success/{id}', [UserController::class, 'investments_success'])->name('user.investments.success');
-    Route::get('transactions', [UserController::class, 'investments_success'])->name('user.investments.success');
+    Route::get('transactions', [UserController::class, 'transactions'])->name('user.transactions');
     Route::get('deposits', [UserController::class, 'deposit'])->name('users.deposit');
     Route::post('deposits', [UserController::class, 'selectWalletType'])->name('deposit.selectWalletType');
     Route::post('deposits-add', [UserController::class, 'setAmount'])->name('deposit.setAmount');
 
     Route::post('deposits-success', [UserController::class, 'makePayment'])->name('deposit.makePayment');
 
-    Route::get('withdrawal', [UserController::class, 'w=ithdrawal'])->name('users.withdrawal');
-
+    Route::get('withdrawal', [UserController::class, 'withdrawal'])->name('users.withdrawal');
+    Route::post('withdrawal', [UserController::class, 'selectwithdrawalWalletType'])->name('withdrawal.selectWalletType');
+    Route::post('withdrawal-add', [UserController::class, 'setwithdrawalAmount'])->name('withdrawal.setAmount');
+    Route::post('withdrawal-success', [UserController::class, 'withdrawalAdd'])->name('withdrawal.withdrawalAdd');
 
 
     // Admin Route

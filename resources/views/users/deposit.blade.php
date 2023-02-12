@@ -1,5 +1,5 @@
 @extends('layouts.user')
-@section('title', 'Dashboard')
+@section('title', 'Deposit')
 @section('content')
     <main class="main-content w-full pb-8 px-5">
         <h2 class="text-base font-medium tracking-wide text-slate-700 line-clamp-1 dark:text-navy-100 lg:text-xl p-4">
@@ -58,8 +58,7 @@
                                                 <input
                                                     class="peer absolute top-0 left-0 w-full h-full opacity-0 z-20 cursor-pointer"
                                                     type="radio" name="wallet_type" value="{{ $item->id }}"
-                                                    id="payment_method_{{ $item->id }}"
-                                                    checked="{{ $loop->first ? 'checked' : '' }}">
+                                                    id="payment_method_{{ $item->id }}">
                                                 <!--Indicator-->
                                                 <div
                                                     class="absolute top-1/2 -translate-y-1/2 left-6 w-6 h-6 rounded-full flex items-center justify-center peer-checked:child:scale-1 peer-not-checked:child:scale-0 bg-muted-100 text-muted-100 dark:bg-muted-800 dark:text-muted-800 peer-checked:text-primary-500">

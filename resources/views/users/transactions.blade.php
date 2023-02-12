@@ -34,10 +34,6 @@
                                         </th>
                                         <th
                                             class="whitespace-nowrap bg-slate-200 px-4 py-3 font-semibold uppercase text-slate-800 dark:bg-navy-800 dark:text-navy-100 lg:px-5">
-                                            Payment
-                                        </th>
-                                        <th
-                                            class="whitespace-nowrap bg-slate-200 px-4 py-3 font-semibold uppercase text-slate-800 dark:bg-navy-800 dark:text-navy-100 lg:px-5">
                                             Total
                                         </th>
 
@@ -82,26 +78,7 @@
                                                     </div>
                                                 @endif
                                             </td>
-                                            <td class="whitespace-nowrap px-4 py-3 sm:px-5">
-                                                @if ($item->status == 1)
-                                                    <div class="badge space-x-2.5 text-xs+ text-success">
-                                                        <div class="h-2 w-2 rounded-full bg-current"></div>
-                                                        <span>Paid</span>
-                                                    </div>
-                                                @endif
-                                                @if ($item->status == 0)
-                                                    <div class="badge space-x-2.5 text-xs+ text-warning">
-                                                        <div class="h-2 w-2 rounded-full bg-current"></div>
-                                                        <span>Await Auth</span>
-                                                    </div>
-                                                @endif
-                                                @if ($item->status == 2)
-                                                    <div class="badge space-x-2.5 text-xs+ text-failed">
-                                                        <div class="h-2 w-2 rounded-full bg-current"></div>
-                                                        <span>Failed</span>
-                                                    </div>
-                                                @endif
-                                            </td>
+
 
                                             <td class="whitespace-nowrap px-4 py-3 sm:px-5">
                                                 <p class="text-sm+ font-medium text-slate-700 dark:text-navy-100">
@@ -124,17 +101,8 @@
                                 </tbody>
                             </table>
                         </div>
-                        <div
-                            class="flex flex-col justify-between space-y-4 px-4 py-4 sm:flex-row sm:items-center sm:space-y-0 sm:px-5">
-                            <div class="flex items-center space-x-2 text-xs+">
-
-                            </div>
-
-                            <ol class="pagination">
-                                {{ $transactions->links() }}
-                            </ol>
-
-                            <div class="text-xs+"></div>
+                        <div class="space-y-4 px-4 py-4">
+                            {{ $transactions->links() }}
                         </div>
                     </div>
                 </div>

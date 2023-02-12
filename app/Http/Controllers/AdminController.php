@@ -51,7 +51,7 @@ class AdminController extends Controller
 
     public function transactions()
     {
-        $transactions = Transaction::paginate(10);
+        $transactions = Transaction::latest()->paginate(10);
 
         return view('transactions.index', compact('transactions'));
     }
@@ -67,12 +67,16 @@ class AdminController extends Controller
             $transaction->update(['status' => 1]);
 
             if ($transaction->transactions_type_id == 2) {
-                $walletType = WalletType::where('symbol', $transaction->currency)->first();
-                $transaction->withdraw->update(['status' => 1]);
+                $wallet = Wallet::where('id', $transaction->wallet_id)->first();
                 $user = User::findOrFail($transaction->user_id);
-                $user->earnings = $user->earnings - ($transaction->amount * $walletType->value);
+                $user->earnings = $user->earnings - ($transaction->amount * $wallet->walletType->value);
                 $user->save();
+
+                $wallet->usd_balance = $wallet->usd_balance - $transaction->amount;
+
+                $wallet->amount = $wallet->amount - ($transaction->amount / $wallet->walletType->value);
             }
+
             if ($transaction->transactions_type_id == 1) {
                 $wallet = Wallet::where('id', $transaction->wallet_id)->first();
                 $wallet->update(['amount' => $wallet->amount + $transaction->amount]);
