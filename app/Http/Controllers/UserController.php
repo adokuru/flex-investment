@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Deposit;
 use App\Models\InvestmentPlan;
 use App\Models\Transaction;
 use App\Models\User;
@@ -84,12 +85,51 @@ class UserController extends Controller
             'amount' => 'required',
         ]);
 
-        dd($request->all());
 
         $user = auth()->user();
 
         $wallet = $user->wallet->where('id', $request['wallet_type'])->where('status', 1)->first();
 
-        return view('users.deposits.amount', compact('user', 'wallet'));
+        $amount = $request['amount'];
+
+        return view('users.deposits.review', compact('user', 'wallet', 'amount'));
+    }
+
+    public function makePayment(Request $request)
+    {
+        $request->validate([
+            'wallet_type' => 'required',
+            'amount' => 'required',
+            'crypto_amount' => 'required'
+        ]);
+
+
+        $user = auth()->user();
+
+        $wallet = $user->wallet->where('id', $request['wallet_type'])->where('status', 1)->first();
+        $amount = $request['amount'];
+
+        // create Transaction and deposit
+        $transaction = Transaction::create([
+            'user_id' => $user->id,
+            'wallet_id' => $wallet->id,
+            'amount' => $request['crypto_amount'],
+            'value' => $amount,
+            'status' => 0,
+            'transactions_type_id' => 1,
+            'currency' => $wallet->walletType->symbol,
+            'transaction_reference' => 'Deposit',
+        ]);
+
+        Deposit::create([
+            'user_id' => $user->id,
+            'wallet_id' => $wallet->id,
+            'amount' => $amount,
+            'status' => 0,
+            'transaction_id' => $transaction->id,
+            'value' => $request['amount'],
+        ]);
+
+        return view('users.deposits.success');
     }
 }

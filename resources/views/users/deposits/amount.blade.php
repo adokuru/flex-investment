@@ -62,7 +62,7 @@
                                             <!--Amount input-->
                                             <div class="group relative">
                                                 <input type="number" name="amount" id="amount"
-                                                    class=" pl-12  h-14 text-4xl leading-5 font-sans w-full text-muted-600 border-b-2 border-muted-300 focus:border-primary-500 placeholder:text-muted-300 dark:placeholder:text-muted-700 dark:bg-muted-900 dark:text-muted-200 dark:border-muted-800 dark:focus:border-primary-500 outline-none transition-all duration-300"
+                                                    class=" pl-12 bg-white  h-14 text-4xl leading-5 font-sans w-full text-muted-600 border-b-2 border-muted-300 focus:border-primary-500 placeholder:text-muted-300 dark:placeholder:text-muted-700 dark:bg-muted-900 dark:text-muted-200 dark:border-muted-800 dark:focus:border-primary-500 outline-none transition-all duration-300"
                                                     placeholder="0.00" />
                                                 <div
                                                     class="absolute top-0 left-0 h-14 w-14 flex justify-center items-center text-muted-400 dark:text-muted-600 group-focus-within:text-primary-500 transition-colors duration-300 cursor-pointer">
@@ -98,7 +98,7 @@
                                                                 </span>
                                                                 <span
                                                                     class="block font-heading text-xs text-muted-500 dark:text-muted-400">
-                                                                    {{ $wallet->walletType->value }} / 1
+                                                                    ${{ $wallet->walletType->value }} / 1
                                                                     {{ $wallet->walletType->symbol }}
                                                                 </span>
                                                             </div>

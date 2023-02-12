@@ -20,7 +20,9 @@ return new class extends Migration
             $table->foreignId('transactions_type_id')->constrained();
             $table->string('currency');
             $table->decimal('amount', 18, 8);
+            $table->decimal('value', 18, 8);
             $table->string('status')->default(0);
+            $table->string('transaction_reference');
             $table->timestamps();
         });
     }

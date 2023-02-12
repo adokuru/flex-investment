@@ -35,7 +35,10 @@ Route::middleware('auth')->group(function () {
     Route::get('deposits', [\App\Http\Controllers\UserController::class, 'deposit'])->name('users.deposit');
     Route::post('deposits', [\App\Http\Controllers\UserController::class, 'selectWalletType'])->name('deposit.selectWalletType');
     Route::post('deposits-add', [\App\Http\Controllers\UserController::class, 'setAmount'])->name('deposit.setAmount');
-    Route::get('withdrawal', [\App\Http\Controllers\UserController::class, 'withdrawal'])->name('users.withdrawal');
+
+    Route::post('deposits-success', [\App\Http\Controllers\UserController::class, 'makePayment'])->name('deposit.makePayment');
+
+    Route::get('withdrawal', [\App\Http\Controllers\UserController::class, 'w=ithdrawal'])->name('users.withdrawal');
 
 
 
