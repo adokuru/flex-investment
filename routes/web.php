@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\UserController;
 use App\Models\WalletType;
 use Illuminate\Support\Facades\Route;
 use WisdomDiala\Cryptocap\Facades\Cryptocap;
@@ -29,25 +32,25 @@ require __DIR__ . '/auth.php';
 
 Route::middleware('auth')->group(function () {
     // User Routes
-    Route::get('dashboard', [\App\Http\Controllers\UserController::class, 'index'])->name('users.index');
-    Route::get('investments', [\App\Http\Controllers\UserController::class, 'investments'])->name('users.investments');
-    Route::get('transactions', [\App\Http\Controllers\UserController::class, 'transactions'])->name('users.transactions');
-    Route::get('deposits', [\App\Http\Controllers\UserController::class, 'deposit'])->name('users.deposit');
-    Route::post('deposits', [\App\Http\Controllers\UserController::class, 'selectWalletType'])->name('deposit.selectWalletType');
-    Route::post('deposits-add', [\App\Http\Controllers\UserController::class, 'setAmount'])->name('deposit.setAmount');
+    Route::get('dashboard', [UserController::class, 'index'])->name('users.index');
+    Route::get('investments', [UserController::class, 'investments'])->name('users.investments');
+    Route::get('transactions', [UserController::class, 'transactions'])->name('users.transactions');
+    Route::get('deposits', [UserController::class, 'deposit'])->name('users.deposit');
+    Route::post('deposits', [UserController::class, 'selectWalletType'])->name('deposit.selectWalletType');
+    Route::post('deposits-add', [UserController::class, 'setAmount'])->name('deposit.setAmount');
 
-    Route::post('deposits-success', [\App\Http\Controllers\UserController::class, 'makePayment'])->name('deposit.makePayment');
+    Route::post('deposits-success', [UserController::class, 'makePayment'])->name('deposit.makePayment');
 
-    Route::get('withdrawal', [\App\Http\Controllers\UserController::class, 'w=ithdrawal'])->name('users.withdrawal');
+    Route::get('withdrawal', [UserController::class, 'w=ithdrawal'])->name('users.withdrawal');
 
 
 
     // Admin Route
-    Route::get('/admin/dashboard', [\App\Http\Controllers\ProfileController::class, 'dashboard'])->name('dashboard');
-    Route::get('/admin/about', [\App\Http\Controllers\ProfileController::class, 'about'])->name('about');
-    Route::get('/admin/users', [\App\Http\Controllers\UserController::class, 'index'])->name('users.index');
-    Route::get('/admin/profile', [\App\Http\Controllers\ProfileController::class, 'show'])->name('profile.show');
-    Route::put('admin/profile', [\App\Http\Controllers\ProfileController::class, 'update'])->name('profile.update');
+    Route::get('/admin/dashboard', [AdminController::class, 'dashboard'])->name('dashboard');
+    Route::get('/admin/about', [ProfileController::class, 'about'])->name('about');
+    Route::get('/admin/users', [UserController::class, 'index'])->name('users.index');
+    Route::get('/admin/profile', [ProfileController::class, 'show'])->name('profile.show');
+    Route::put('admin/profile', [ProfileController::class, 'update'])->name('profile.update');
 });
 
 

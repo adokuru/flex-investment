@@ -7,6 +7,11 @@ use App\Http\Requests\ProfileUpdateRequest;
 
 class ProfileController extends Controller
 {
+    public function dashboard()
+    {
+        return view('dashboard');
+    }
+
     public function show()
     {
         return view('auth.profile');
