@@ -35,6 +35,9 @@ Route::middleware('auth')->group(function () {
     // User Routes
     Route::get('dashboard', [UserController::class, 'index'])->name('users.index');
     Route::get('investments', [UserController::class, 'investments'])->name('users.investments');
+    Route::get('investments/{id}', [UserController::class, 'investments_add'])->name('investments.add');
+    Route::post('investments-add-review', [UserController::class, 'investment_adds'])->name('investment.setAmount');
+    Route::post('investments-success', [UserController::class, 'investments_add_money'])->name('investment.investments_add_money');
     Route::get('transactions', [UserController::class, 'transactions'])->name('users.transactions');
     Route::get('deposits', [UserController::class, 'deposit'])->name('users.deposit');
     Route::post('deposits', [UserController::class, 'selectWalletType'])->name('deposit.selectWalletType');
@@ -57,6 +60,7 @@ Route::middleware('auth')->group(function () {
     Route::delete('/admin/users/{user}', [AdminController::class, 'destroy'])->name('users.destroy');
     Route::get('/admin/profile', [ProfileController::class, 'show'])->name('profile.show');
     Route::put('admin/profile', [ProfileController::class, 'update'])->name('profile.update');
+
 
     // Transactions
     Route::get('/admin/transactions', [AdminController::class, 'transactions'])->name('transactions.index');

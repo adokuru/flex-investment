@@ -6,6 +6,7 @@ use App\Models\Deposit;
 use App\Models\InvestmentPlan;
 use App\Models\Transaction;
 use App\Models\User;
+use App\Models\UserInvestment;
 use App\Models\WalletType;
 use Illuminate\Http\Request;
 
@@ -38,14 +39,98 @@ class UserController extends Controller
         return view('users.investments', compact('trialInvestment', 'flexibleInvestment', 'fixedInvestment'));
     }
 
-    public function transactions()
+    public function investment_adds(Request $request)
     {
-        $fixedInvestment = InvestmentPlan::where('investment_type_id', 1)->latest()->get();
-        $flexibleInvestment = InvestmentPlan::where('investment_type_id', 2)->latest()->get();
-        $trialInvestment = InvestmentPlan::where('investment_type_id', 3)->latest()->get();
+        $request->validate([
+            'investment_plan_id' => 'required',
+            'amount' => 'required',
+            'wallet_id' => 'required',
+        ]);
+
+        $amount = $request['amount'];
+
+        if ($request['amount'] < 500) {
+            return redirect()->back()->withErrors(['msg' => 'Minimum amount is $500']);
+        }
+
         $user = auth()->user();
 
-        return view('users.transactions', compact('trialInvestment', 'flexibleInvestment', 'fixedInvestment'));
+        $wallet = $user->wallet->where('id', $request['wallet_id'])->where('status', 1)->first();
+
+        if ($wallet->usd_balance < $request['amount']) {
+            return redirect()->back()->withErrors(['msg' => 'Insufficient balance']);
+        }
+
+        $investment = InvestmentPlan::where('id', $request['investment_plan_id'])->first();
+
+        if ($request['amount'] < $investment->minimum_price) {
+            return redirect()->back()->withErrors(['msg' => 'Minimum amount is $' . $investment->minimum_price]);
+        }
+
+        if ($investment->maximum_price != 0) {
+            if ($request['amount'] > $investment->maximum_price) {
+                return redirect()->back()->withErrors(['msg' => 'Maximum amount is $' . $investment->maximum_price]);
+            }
+        }
+
+        return view('users.investments.review', compact('user', 'investment', 'wallet', 'amount'));
+    }
+
+    public function investments_add_money(Request $request)
+    {
+        $request->validate([
+            'investment_plan_id' => 'required',
+            'amount' => 'required',
+            'wallet_id' => 'required',
+            'crypto_amount' => 'required',
+        ]);
+
+        $user = auth()->user();
+
+        $wallet = $user->wallet->where('id', $request['wallet_id'])->where('status', 1)->first();
+
+        $investment = InvestmentPlan::where('id', $request['investment_plan_id'])->first();
+
+        $transaction = Transaction::create([
+            'user_id' => $user->id,
+            'wallet_id' => $request['wallet_id'],
+            'amount' => $request['crypto_amount'],
+            'value' => $request['amount'],
+            'status' => 1,
+            'transactions_type_id' => 2,
+            'currency' => $wallet->walletType->symbol,
+            'transaction_reference' => 'Investment',
+        ]);
+
+        UserInvestment::create([
+            'user_id' => $user->id,
+            'investment_plan_id' => $request['investment_plan_id'],
+            'investment_type_id' => $investment->investment_type_id,
+            'transaction_id' => $transaction->id,
+            'amount' => $request['amount'],
+            'status' => 1,
+        ]);
+
+        return redirect()->route('user.investments')->with('success', 'Investment created successfully');
+    }
+
+    public function investments_add($id)
+    {
+        $user = auth()->user();
+
+        $investment = InvestmentPlan::where('id', $id)->first();
+
+        $wallets = $user->wallet->where('status', 1);
+
+        return view('users.investments.add', compact('user', 'investment', 'wallets'));
+    }
+
+    public function transactions()
+    {
+        $user = auth()->user();
+        $transactions = Transaction::where('user_id', $user->id)->latest()->paginate(10);
+
+        return view('users.transactions', compact('transactions'));
     }
 
     public function deposit()

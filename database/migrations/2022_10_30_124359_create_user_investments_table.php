@@ -18,9 +18,8 @@ return new class extends Migration
             $table->foreignId('user_id')->constrained();
             $table->foreignId('investment_type_id')->constrained();
             $table->foreignId('investment_plan_id')->constrained();
+            $table->foreignId('transaction_id')->constrained();
             $table->string('amount');
-            $table->string('duration');
-            $table->string('interest');
             $table->string('status');
             $table->timestamps();
         });
