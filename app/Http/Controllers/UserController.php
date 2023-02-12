@@ -124,10 +124,9 @@ class UserController extends Controller
         Deposit::create([
             'user_id' => $user->id,
             'wallet_id' => $wallet->id,
-            'amount' => $amount,
             'status' => 0,
             'transaction_id' => $transaction->id,
-            'value' => $request['amount'],
+            'value' => $request['crypto_amount'],
         ]);
 
         return view('users.deposits.success');
