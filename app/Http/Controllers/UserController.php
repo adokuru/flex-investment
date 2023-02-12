@@ -320,4 +320,11 @@ class UserController extends Controller
 
         return view('users.withdraw', compact('user', 'bitconwallet', 'ethwallet', 'btcashwallet', 'usdtwallet', 'solanaWallet', 'morenolWallet', 'wallets'));
     }
+
+    public function referrals()
+    {
+        $user = auth()->user();
+        $referrals = $user->referrals;
+        return view('users.referrals', compact('user', 'referrals'));
+    }
 }

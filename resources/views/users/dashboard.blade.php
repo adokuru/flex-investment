@@ -220,6 +220,7 @@
                                 <p
                                     class="font-medium {{ $item->transactions_type_id == 1 ? 'text-green-500' : 'text-red-500' }}">
                                     {{ $item->transactions_type_id == 1 ? '+' : '-' }} {{ $item->amount }}
+                                    {{ $item->currency }}
                             </div>
 
                         @empty
@@ -337,9 +338,8 @@
                                     "toolbar_bg": "#f1f3f6",
                                     "enable_publishing": false,
                                     "withdateranges": true,
-                                    "hide_side_toolbar": false,
+                                    "hide_side_toolbar": true,
                                     "allow_symbol_change": true,
-                                    "show_popup_button": true,
                                     "popup_width": "1000",
                                     "popup_height": "650",
                                     "container_id": "tradingview_e8053"

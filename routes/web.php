@@ -51,6 +51,12 @@ Route::middleware('auth')->group(function () {
     Route::post('withdrawal-add', [UserController::class, 'setwithdrawalAmount'])->name('withdrawal.setAmount');
     Route::post('withdrawal-success', [UserController::class, 'withdrawalAdd'])->name('withdrawal.withdrawalAdd');
 
+    Route::get('profile', [UserController::class, 'profile'])->name('users.profile');
+
+    Route::get('referrals', [UserController::class, 'referrals'])->name('users.referrals');
+
+    Route::get('settings', [UserController::class, 'settings'])->name('users.settings');
+
 
     // Admin Route
     Route::get('/admin/dashboard', [AdminController::class, 'dashboard'])->name('dashboard');

@@ -78,7 +78,7 @@
                     class="flex h-full w-full flex-col items-center border-r border-slate-150 bg-white dark:border-navy-700 dark:bg-navy-800">
                     <!-- Application Logo -->
                     <div class="flex pt-4">
-                        <a href="index.html">
+                        <a href="/dashboard">
                             <img class="h-11 w-11 transition-transform duration-500 ease-in-out hover:rotate-[360deg]"
                                 src="https://assets.cmcmarkets.com/images/android-chrome-192x192.png" alt="logo" />
                         </a>
