@@ -31,13 +31,17 @@
                                     {{ $transaction->wallet->walletType->symbol }}
                                 </td>
                                 <td class="px-4 py-3 text-sm">
-                                    {{ ($transaction->status == 1 ? 'Success' : $transaction->status == 0) ? 'Pending' : 'Rejected' }}
+                                    {{ $transaction->transaction_reference }}
+                                </td>
+
+                                <td class="px-4 py-3 text-sm">
+                                    {{ $transaction->status == 1 ? 'Success' : ($transaction->status == 0 ? 'Pending' : 'Rejected') }}
                                 </td>
                                 <td class="px-4 py-3 text-sm">
                                     @if ($transaction->status == 0)
-                                        <a href="{{ route('users.edit', $transaction->id) }}"
+                                        <a href="{{ route('transactions.approveTransaction', $transaction->id) }}"
                                             class="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-sm hover:bg-green-200">Approve</a>
-                                        <a href="{{ route('users.edit', $transaction->id) }}"
+                                        <a href="{{ route('transactions.rejectTransaction', $transaction->id) }}"
                                             class="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-sm hover:bg-green-200">Reject</a>
                                     @else
                                         No Action Required

@@ -67,11 +67,10 @@ class UserController extends Controller
             return redirect()->back()->withErrors(['msg' => 'Minimum amount is $' . $investment->minimum_price]);
         }
 
-        if ($investment->maximum_price != 0) {
-            if ($request['amount'] > $investment->maximum_price) {
-                return redirect()->back()->withErrors(['msg' => 'Maximum amount is $' . $investment->maximum_price]);
-            }
+        if ($request['amount'] > $investment->maximum_price) {
+            return redirect()->back()->withErrors(['msg' => 'Maximum amount is $' . $investment->maximum_price]);
         }
+
 
         return view('users.investments.review', compact('user', 'investment', 'wallet', 'amount'));
     }
@@ -111,7 +110,14 @@ class UserController extends Controller
             'status' => 1,
         ]);
 
-        return redirect()->route('user.investments')->with('success', 'Investment created successfully');
+        return view('users.investments.success', compact('user', 'transaction'));
+    }
+
+    public function investments_success($id)
+    {
+        $user = auth()->user();
+        $transaction = Transaction::where('id', $id)->first();
+        return view('users.investments.success', compact('user', 'transaction'));
     }
 
     public function investments_add($id)

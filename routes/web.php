@@ -38,7 +38,8 @@ Route::middleware('auth')->group(function () {
     Route::get('investments/{id}', [UserController::class, 'investments_add'])->name('investments.add');
     Route::post('investments-add-review', [UserController::class, 'investment_adds'])->name('investment.setAmount');
     Route::post('investments-success', [UserController::class, 'investments_add_money'])->name('investment.investments_add_money');
-    Route::get('transactions', [UserController::class, 'transactions'])->name('users.transactions');
+    Route::get('investments-success/{id}', [UserController::class, 'investments_success'])->name('user.investments.success');
+    Route::get('transactions', [UserController::class, 'investments_success'])->name('user.investments.success');
     Route::get('deposits', [UserController::class, 'deposit'])->name('users.deposit');
     Route::post('deposits', [UserController::class, 'selectWalletType'])->name('deposit.selectWalletType');
     Route::post('deposits-add', [UserController::class, 'setAmount'])->name('deposit.setAmount');
@@ -67,6 +68,8 @@ Route::middleware('auth')->group(function () {
     Route::post('/admin/transactions', [AdminController::class, 'transactions'])->name('transactions.index');
     Route::get('/admin/transactions/{transaction}', [AdminController::class, 'show'])->name('transactions.show');
     Route::get('/admin/transactions/{transaction}/edit', [AdminController::class, 'edit'])->name('transactions.edit');
+    Route::get('/admin/transactions/approve/{id}', [AdminController::class, 'approveTransaction'])->name('transactions.approveTransaction');
+    Route::get('/admin/transactions/reject/{id}', [AdminController::class, 'edit'])->name('transactions.rejectTransaction');
     Route::put('/admin/transactions/{transaction}', [AdminController::class, 'update'])->name('transactions.update');
     Route::delete('/admin/transactions/{transaction}', [AdminController::class, 'destroy'])->name('transactions.destroy');
 });

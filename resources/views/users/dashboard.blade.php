@@ -27,7 +27,7 @@
                                                 d="M7 11l5-5m0 0l5 5m-5-5v12" />
                                         </svg>
                                     </div>
-                                    <p class="text-base font-medium">$2,225.22</p>
+                                    <p class="text-base font-medium">$0</p>
                                 </div>
                             </div>
                             <div>
@@ -40,7 +40,7 @@
                                                 d="M17 13l-5 5m0 0l-5-5m5 5V6" />
                                         </svg>
                                     </div>
-                                    <p class="text-base font-medium">$225.22</p>
+                                    <p class="text-base font-medium">$0</p>
                                 </div>
                             </div>
                         </div>
@@ -193,7 +193,7 @@
                 </div>
             </div>
 
-            <div class="card group col-span-12 pb-5 lg:col-span-8">
+            <div class="card group col-span-12 pb-5 lg:col-span-12">
                 <div class="col-span-2 px-4 pb-5 sm:px-5 lg:col-span-4">
                     <div class="my-3 flex h-8 items-center justify-between">
                         <h2 class="font-medium tracking-wide text-slate-700 dark:text-navy-100">
@@ -231,7 +231,7 @@
                 </div>
             </div>
 
-            <div class="card col-span-12 px-4 pb-5 sm:px-5 lg:col-span-4">
+            {{-- <div class="card col-span-12 px-4 pb-5 sm:px-5 lg:col-span-4">
                 <div class="flex items-center justify-between py-3">
                     <h2 class="font-medium tracking-wide text-slate-700 dark:text-navy-100">
                         Select a fixed plan to invest
@@ -302,7 +302,7 @@
                     class="btn mt-5 h-10 w-full bg-primary font-medium text-white hover:bg-primary-focus focus:bg-primary-focus active:bg-primary-focus/90 dark:bg-accent dark:hover:bg-accent-focus dark:focus:bg-accent-focus dark:active:bg-accent/90">
                     Invest
                 </button>
-            </div>
+            </div> --}}
 
             <div class="card col-span-12 px-4 pb-5 sm:px-5 w-full">
                 <div class="card">

@@ -76,7 +76,7 @@ class InvestmentPlanSeeder extends Seeder
             'description' => 'This is a trial plan to allow you access to the platform',
             'contract_duration' => 1,
             'minimum_price' => 500,
-            'maximum_price' => 30000000,
+            'maximum_price' => 500,
             'fixed_return_rate' => 10.0,
             'flexible_return_rate' => 4.5,
         ]);
