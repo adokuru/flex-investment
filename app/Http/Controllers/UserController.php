@@ -110,7 +110,7 @@ class UserController extends Controller
             'status' => 1,
         ]);
 
-        return view('users.investments.success', compact('user', 'transaction'));
+        return view('users.investments.success', compact('user', 'transaction', 'investment'));
     }
 
     public function investments_success($id)

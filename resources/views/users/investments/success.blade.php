@@ -68,7 +68,7 @@
                                                 Investment Successful
                                             </h2>
                                             <p class="font-sans text-muted-500 dark:text-muted-400 mb-5">
-                                                Amazing! You've properly invested in {{ $investment->name }}.
+                                                Amazing! You've invested in {{ $investment->name }}.
                                             </p>
                                             <div class="flex justify-center">
                                                 <a href="/dashboard"
