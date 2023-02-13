@@ -37,7 +37,7 @@
     <meta name="twitter:title" content="Home">
 
 
-    <title>@yield('title') - CFDs &amp; Forex | Online Trading| CMC Markets</title>
+    <title>@yield('title') - CFDs &amp; Forex | Online Trading| CML Markets</title>
     <meta name="description"
         content="Trade CFDs with CMC Markets, a leading global provider. Trade on up to 10,000 instruments, including forex, indices, commodities, shares and treasuries.">
     <meta name="revised" content="09/06/2022 11:51:02">
@@ -51,8 +51,6 @@
 
     <!-- Javascript Assets -->
     <script src="/UserDashboard/js/app.js" defer></script>
-    {{-- <script src="{{ asset('js/app.js') }}" defer></script>
-    <script src="{{ asset('js/init-alpine.js') }}"></script> --}}
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com/" />
