@@ -37,7 +37,7 @@
     <meta name="twitter:title" content="Home">
 
 
-    <title>@yield('title') - CFDs &amp; Forex | Online Trading| CML Markets</title>
+    <title>@yield('title') - CML &amp; Forex | Online Trading| CML Markets</title>
     <meta name="description"
         content="Trade CFDs with CMC Markets, a leading global provider. Trade on up to 10,000 instruments, including forex, indices, commodities, shares and treasuries.">
     <meta name="revised" content="09/06/2022 11:51:02">
@@ -77,8 +77,8 @@
                     <!-- Application Logo -->
                     <div class="flex pt-4">
                         <a href="/dashboard">
-                            <img class="h-11 w-11 transition-transform duration-500 ease-in-out hover:rotate-[360deg]"
-                                src="https://assets.cmcmarkets.com/images/android-chrome-192x192.png" alt="logo" />
+                            <img class="h-full w-full transition-transform duration-500 ease-in-out hover:rotate-[360deg]"
+                                src="/images/cmlicon.png" alt="logo" />
                         </a>
                     </div>
 
