@@ -40,12 +40,16 @@
                     <div class="uk-width-2-3@m">
                         <div class="uk-grid uk-grid-small" data-uk-grid>
                             <div class="uk-width-auto@m">
-                                <i class="fas fa-money-bill-wave fa-2x in-icon-wrap large primary-color uk-margin-right"></i>
+                                <i
+                                    class="fas fa-money-bill-wave fa-2x in-icon-wrap large primary-color uk-margin-right"></i>
                             </div>
                             <div class="uk-width-expand">
-                                <h3>Why trade with CMC markets?</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation repudiandae ullamco.</p>
-                                <div class="uk-grid uk-child-width-1-2@s uk-child-width-1-2@m in-margin-bottom-30@s" data-uk-grid>
+                                <h3>Why trade with CML markets?</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                    repudiandae ullamco.</p>
+                                <div class="uk-grid uk-child-width-1-2@s uk-child-width-1-2@m in-margin-bottom-30@s"
+                                    data-uk-grid>
                                     <div>
                                         <ul class="uk-list uk-list-bullet in-list-check">
                                             <li>Direct Market Access (DMA)</li>
@@ -107,7 +111,8 @@
                                     <h3>Get up to $600 plus 60 days of commission-free stocks &amp; forex trades</h3>
                                 </div>
                                 <div class="uk-width-auto">
-                                    <a class="uk-button uk-button-primary uk-border-rounded" href="#">Open an Account</a>
+                                    <a class="uk-button uk-button-primary uk-border-rounded" href="#">Open an
+                                        Account</a>
                                 </div>
                             </div>
                         </div>

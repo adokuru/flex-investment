@@ -56,8 +56,8 @@ Route::middleware('auth')->group(function () {
     Route::get('referrals', [UserController::class, 'referrals'])->name('users.referrals');
 
     Route::get('settings', [UserController::class, 'settings'])->name('users.settings');
-
-
+});
+Route::middleware('auth', 'isAdmin')->group(function () {
     // Admin Route
     Route::get('/admin/dashboard', [AdminController::class, 'dashboard'])->name('dashboard');
     Route::get('/admin/about', [ProfileController::class, 'about'])->name('about');
