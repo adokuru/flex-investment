@@ -31,7 +31,7 @@ Route::get('/markets', function () {
 
 require __DIR__ . '/auth.php';
 
-Route::middleware('auth')->group(function () {
+Route::middleware('auth', 'verified')->group(function () {
     // User Routes
     Route::get('dashboard', [UserController::class, 'index'])->name('users.index');
     Route::get('investments', [UserController::class, 'investments'])->name('users.investments');
