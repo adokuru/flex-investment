@@ -10,38 +10,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#313131" />
     <!-- Site Properties -->
-    <link rel="apple-touch-icon" sizes="57x57" href="https://assets.cmcmarkets.com/images/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="https://assets.cmcmarkets.com/images/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="https://assets.cmcmarkets.com/images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="https://assets.cmcmarkets.com/images/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114"
-        href="https://assets.cmcmarkets.com/images/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120"
-        href="https://assets.cmcmarkets.com/images/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144"
-        href="https://assets.cmcmarkets.com/images/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152"
-        href="https://assets.cmcmarkets.com/images/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180"
-        href="https://assets.cmcmarkets.com/images/apple-touch-icon-180x180.png">
-    <link rel="icon" type="image/png" href="https://assets.cmcmarkets.com/images/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="https://assets.cmcmarkets.com/images/android-chrome-192x192.png"
-        sizes="192x192">
-    <link rel="icon" type="image/png" href="https://assets.cmcmarkets.com/images/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/png" href="https://assets.cmcmarkets.com/images/favicon-16x16.png" sizes="16x16">
+    <link rel="apple-touch-icon" sizes="114x114" href=https://cmltrading.com/images/cmlicon.png">
+    <link rel="icon" type="image/png" href="https://cmltrading.com/images/cmlicon.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://cmltrading.com/images/cmlicon.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="https://cmltrading.com/images/cmlicon.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="https://cmltrading.com/images/cmlicon.png" sizes="16x16">
     <!--END-WIDGET-5B1FA573-1C84-442B-90AF-F49BAC152130-->
-    <link rel="canonical" href="https://www.cmcmarkets.com/en/">
+    <link rel="canonical" href="https://www.cmltrading.com">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:creator" content="@cmcmarkets">
+    <meta name="twitter:creator" content="@cmltrading">
     <meta name="twitter:description"
-        content="Trade CFDs with CMC Markets, a leading global provider. Trade on up to 10,000 instruments, including forex, indices, commodities, shares and treasuries.">
-    <meta name="twitter:site" content="@cmcmarkets">
+        content="Trade CFDs with CML Markets, a leading global provider. Trade on up to 10,000 instruments, including forex, indices, commodities, shares and treasuries.">
+    <meta name="twitter:site" content="@cmltrading">
     <meta name="twitter:title" content="Home">
 
 
     <title>@yield('title') - CML &amp; Forex | Online Trading| CML Markets</title>
     <meta name="description"
-        content="Trade CFDs with CMC Markets, a leading global provider. Trade on up to 10,000 instruments, including forex, indices, commodities, shares and treasuries.">
+        content="Trade CFDs with CML Markets, a leading global provider. Trade on up to 10,000 instruments, including forex, indices, commodities, shares and treasuries.">
     <meta name="revised" content="09/06/2022 11:51:02">
     <!-- Critical preload -->
     <link rel="preload" href="/js/vendors/uikit.min.js" as="script">

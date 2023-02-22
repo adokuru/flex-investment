@@ -15,7 +15,12 @@
         trading, cml markets demo, cml markets app, cml markets mt4, cml markets mt5, cml markets review, cml markets
         login, cml markets trading, cml markets demo, cml markets app, cml markets mt4, cml markets mt5">
     <!--END-WIDGET-5B1FA573-1C84-442B-90AF-F49BAC152130-->
-    <link rel="canonical" href="https://www.cmltrading.com/en/">
+    <link rel="icon" type="image/png" href="https://cmltrading.com/images/cmlicon.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://cmltrading.com/images/cmlicon.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="https://cmltrading.com/images/cmlicon.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="https://cmltrading.com/images/cmlicon.png" sizes="16x16">
+
+    <link rel="canonical" href="https://www.cmltrading.com">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:creator" content="@cmltrading">
     <meta name="twitter:description"
@@ -84,8 +89,8 @@
                                         <div class="uk-margin-small uk-width-1-1 uk-inline">
                                             <span class="uk-form-icon uk-form-icon-flip fas fa-user fa-sm"></span>
                                             <input class="uk-input uk-border-rounded" name="email"
-                                                value="{{ old('email') }}" id="email" value="" type="text"
-                                                placeholder="email">
+                                                value="{{ old('email') }}" id="email" value=""
+                                                type="text" placeholder="email">
                                         </div>
                                         <div class="uk-margin-small uk-width-1-1 uk-inline">
                                             <span class="uk-form-icon uk-form-icon-flip fas fa-lock fa-sm"></span>
