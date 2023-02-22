@@ -261,6 +261,8 @@ width: 100% !important;
                                                                         <p
                                                                             style="
                                           margin: 0;
+                                          padding-left: 20px;
+                                            padding-right: 20px;
                                           font-size: 14px;
                                           text-align: center;
                                           mso-line-height-alt: 21px;
