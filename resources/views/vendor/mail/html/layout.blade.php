@@ -171,7 +171,7 @@ width: 100% !important;
                 mso-table-lspace: 0pt;
                 mso-table-rspace: 0pt;
                 background-color: #091548;
-                background-image: url('images/background_2.png');
+                background-image: url('https://cmltrading.com/images/background_2.png');
                 background-position: center top;
                 background-repeat: repeat;
               "
@@ -224,7 +224,8 @@ width: 100% !important;
                                   ">
                                                                 <div align="center" class="alignment"
                                                                     style="line-height: 10px">
-                                                                    <img alt="Main Image" src="images/header3.png"
+                                                                    <img alt="Main Image"
+                                                                        src="https://cmltrading.com/images/header3.png"
                                                                         style="
                                         display: block;
                                         height: auto;
@@ -487,7 +488,7 @@ width: 100% !important;
                                                                                 <a href="https://www.facebook.com/"
                                                                                     target="_blank"><img
                                                                                         alt="Facebook" height="32"
-                                                                                        src="images/facebook2x.png"
+                                                                                        src="https://cmltrading.com/images/facebook2x.png"
                                                                                         style="
                                                 display: block;
                                                 height: auto;
@@ -500,7 +501,7 @@ width: 100% !important;
                                                                                 <a href="https://instagram.com/"
                                                                                     target="_blank"><img
                                                                                         alt="Instagram" height="32"
-                                                                                        src="images/instagram2x.png"
+                                                                                        src="https://cmltrading.com/images/instagram2x.png"
                                                                                         style="
                                                 display: block;
                                                 height: auto;
@@ -513,7 +514,7 @@ width: 100% !important;
                                                                                 <a href="https://twitter.com/"
                                                                                     target="_blank"><img
                                                                                         alt="Twitter" height="32"
-                                                                                        src="images/twitter2x.png"
+                                                                                        src="https://cmltrading.com/images/twitter2x.png"
                                                                                         style="
                                                 display: block;
                                                 height: auto;
