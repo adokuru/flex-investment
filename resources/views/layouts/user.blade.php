@@ -32,14 +32,14 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:creator" content="@cmcmarkets">
     <meta name="twitter:description"
-        content="Trade CFDs with CMC Markets, a leading global provider. Trade on up to 10,000 instruments, including forex, indices, commodities, shares and treasuries.">
+        content="Trade CFDs with CML Trading, a leading global provider. Trade on up to 10,000 instruments, including forex, indices, commodities, shares and treasuries.">
     <meta name="twitter:site" content="@cmcmarkets">
     <meta name="twitter:title" content="Home">
 
 
     <title>@yield('title') - CML &amp; Forex | Online Trading| CML Markets</title>
     <meta name="description"
-        content="Trade CFDs with CMC Markets, a leading global provider. Trade on up to 10,000 instruments, including forex, indices, commodities, shares and treasuries.">
+        content="Trade CFDs with CML Trading, a leading global provider. Trade on up to 10,000 instruments, including forex, indices, commodities, shares and treasuries.">
     <meta name="revised" content="09/06/2022 11:51:02">
 
 

@@ -208,10 +208,10 @@
                             understand how spread bets and CFDs work and whether you can afford to take the high risk of
                             losing your money.
 
-                            CMC Markets is, depending on the context, a reference to CMC Markets Germany GmbH, CMC
-                            Markets UK plc or CMC Spreadbet plc. CMC Markets Germany GmbH is a company licensed and
+                            CML Trading is, depending on the context, a reference to CML Trading Germany GmbH, CMC
+                            Markets UK plc or CMC Spreadbet plc. CML Trading Germany GmbH is a company licensed and
                             regulated by the Bundesanstalt für Finanzdienstleistungsaufsicht (BaFin) under registration
-                            number 154814. CMC Markets UK Plc and CMC Spreadbet plc are registered in the Register of
+                            number 154814. CML Trading UK Plc and CMC Spreadbet plc are registered in the Register of
                             Companies of the Financial Conduct Authority under registration numbers 173730 and 170627.
 
                             Telephone calls and online chat conversations may be recorded and monitored. Apple, iPad,
@@ -287,7 +287,7 @@
                         </ul>
                     </div>
                     <div class="uk-width-expand@m uk-text-right@m">
-                        <p>© 2022 CMC Markets.</p>
+                        <p>© 2022 CML Trading.</p>
                     </div>
                 </div>
             </div>

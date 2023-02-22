@@ -24,9 +24,9 @@
     <meta name="twitter:title" content="Home">
 
 
-    <title>Register - CFDs &amp; Forex | Online Trading| CMC Markets</title>
+    <title>Register - CFDs &amp; Forex | Online Trading| CML Trading</title>
     <meta name="description"
-        content="Trade CFDs with CMC Markets, a leading global provider. Trade on up to 10,000 instruments, including forex, indices, commodities, shares and treasuries.">
+        content="Trade CFDs with CML Trading, a leading global provider. Trade on up to 10,000 instruments, including forex, indices, commodities, shares and treasuries.">
     <meta name="revised" content="09/06/2022 11:51:02">
     <!-- Critical preload -->
     <link rel="preload" href="/js/vendors/uikit.min.js" as="script">
