@@ -27,6 +27,19 @@ Route::get('/markets', function () {
     return view('market');
 });
 
+Route::get('/plans', function () {
+    return view('plans');
+});
+
+
+Route::get('/contact', function () {
+    return view('contact');
+});
+
+Route::get('/about', function () {
+    return view('about');
+});
+
 
 
 require __DIR__ . '/auth.php';

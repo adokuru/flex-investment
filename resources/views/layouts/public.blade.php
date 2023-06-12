@@ -109,7 +109,7 @@
                             <li><a href="/">Home<i></i></a>
                             </li>
                             <li><a href="markets">Markets</a></li>
-                            <li><a href="markets">Trading Plans</a></li>
+                            <li><a href="plans">Trading Plans</a></li>
                             <li><a href="#">Company<i class="fas fa-chevron-down"></i></a>
                                 <div class="uk-navbar-dropdown">
                                     <ul class="uk-nav uk-navbar-dropdown-nav">
@@ -161,7 +161,7 @@
                 <div class="uk-grid-medium" data-uk-grid>
                     <div class="uk-width-expand@m">
                         <img class="uk-margin-small-right in-margin-top-30@s" src="img/in-lazy.gif"
-                            data-src="img/in-logo-2.svg" alt="wave" width="134" height="23" data-uk-img>
+                            data-src="/images/logo.svg" alt="wave" width="150" height="50" data-uk-img>
                         <p class="uk-text-large uk-margin-small-top">Trade with financial thinking.</p>
                         <p class="uk-visible@m">
                             *Awarded No.1 Platform Technology & No.1 Web-Based Platform, ForexBrokers.com Awards 2021;
@@ -208,10 +208,10 @@
                             understand how spread bets and CFDs work and whether you can afford to take the high risk of
                             losing your money.
 
-                            CML Trading is, depending on the context, a reference to CML Trading Germany GmbH, CMC
-                            Markets UK plc or CMC Spreadbet plc. CML Trading Germany GmbH is a company licensed and
+                            CML Trading is, depending on the context, a reference to CML Trading Germany GmbH, CML
+                            Markets UK plc or CML Spreadbet plc. CML Trading Germany GmbH is a company licensed and
                             regulated by the Bundesanstalt für Finanzdienstleistungsaufsicht (BaFin) under registration
-                            number 154814. CML Trading UK Plc and CMC Spreadbet plc are registered in the Register of
+                            number 154814. CML Trading UK Plc and CML Spreadbet plc are registered in the Register of
                             Companies of the Financial Conduct Authority under registration numbers 173730 and 170627.
 
                             Telephone calls and online chat conversations may be recorded and monitored. Apple, iPad,
@@ -278,16 +278,13 @@
                 <div class="uk-grid">
                     <div class="uk-width-3-4@m uk-visible@m">
                         <ul class="uk-subnav uk-subnav-divider">
-                            <li><a href="#">Regulations</a></li>
-                            <li><a href="#">Legal documents</a></li>
-                            <li><a href="#">Important information</a></li>
-                            <li><a href="#">Privacy</a></li>
-                            <li><a href="#">Public relations</a></li>
-                            <li><a href="#">Careers</a></li>
+                            <li><a href="/plans">Plans</a></li>
+                            <li><a href="/about">About Us</a></li>
+                            <li><a href="https://creativecommons.org/licenses/by/3.0/">Privacy</a></li>
                         </ul>
                     </div>
                     <div class="uk-width-expand@m uk-text-right@m">
-                        <p>© 2022 CML Trading.</p>
+                        <p>© 2023 CML Trading.</p>
                     </div>
                 </div>
             </div>

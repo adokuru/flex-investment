@@ -59,7 +59,7 @@ body {
 }
 
 .in-highlight::before {
-    content: '';
+    content: "";
     background: #ead9b3;
     position: absolute;
     left: 0;
@@ -72,7 +72,7 @@ body {
 .in-list-check li::before {
     background-image: none;
     font-size: 14px;
-    font-family: 'Font Awesome 5 Free';
+    font-family: "Font Awesome 5 Free";
     font-weight: 900;
     content: "\f00c";
     color: #c99c3b;
@@ -92,7 +92,11 @@ header .uk-logo {
 
 header .in-header-home {
     background: rgba(0, 0, 0, 0.5);
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(255, 255, 255, 0) 100%
+    );
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#ffffff', GradientType=0);
 }
 
@@ -104,7 +108,7 @@ header .in-header-home .uk-navbar-nav li a:hover {
     color: white;
 }
 
-header .in-header-home .uk-navbar-nav>li.uk-active>a {
+header .in-header-home .uk-navbar-nav > li.uk-active > a {
     color: white;
 }
 
@@ -234,7 +238,7 @@ header .uk-card-secondary a:hover {
     box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.13);
 }
 
-.uk-sticky.uk-active .uk-navbar-nav>li>a,
+.uk-sticky.uk-active .uk-navbar-nav > li > a,
 .uk-sticky.uk-active .uk-navbar-item,
 .uk-sticky.uk-active .uk-navbar-toggle {
     min-height: 75px;
@@ -248,7 +252,7 @@ header .uk-card-secondary a:hover {
     color: white;
 }
 
-.uk-sticky.uk-active .uk-navbar-nav>li.uk-active>a {
+.uk-sticky.uk-active .uk-navbar-nav > li.uk-active > a {
     color: white;
 }
 
@@ -267,7 +271,7 @@ header .uk-card-secondary a:hover {
 .uk-sticky.uk-active a.uk-logo {
     width: 134px;
     height: 23px;
-    background: url(../img/in-logo-1.svg);
+    background: url(../img/logo.svg);
     background-size: 99.7%;
     margin-top: -2px;
 }
@@ -434,11 +438,15 @@ footer .in-footer-socials i.fa-twitter {
     }
 }
 
-footer .uk-section-secondary:not(.uk-preserve-color) .uk-subnav>*> :first-child {
+footer
+    .uk-section-secondary:not(.uk-preserve-color)
+    .uk-subnav
+    > *
+    > :first-child {
     color: rgba(255, 255, 255, 0.7);
 }
 
-footer .uk-subnav-divider> ::before {
+footer .uk-subnav-divider > ::before {
     height: 1em;
 }
 
@@ -568,7 +576,7 @@ footer .uk-subnav-divider> ::before {
 }
 
 .in-widget-tag a:hover .uk-label {
-    transition: all ease .5s;
+    transition: all ease 0.5s;
     background-color: #c99c3b;
     color: #fff;
 }
@@ -675,7 +683,10 @@ footer .uk-subnav-divider> ::before {
     color: #dbdbdb;
 }
 
-.in-content-10 .uk-card-primary.uk-card-body .uk-search-default .uk-search-input {
+.in-content-10
+    .uk-card-primary.uk-card-body
+    .uk-search-default
+    .uk-search-input {
     height: 46px;
     background-color: #fff;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
@@ -692,7 +703,9 @@ footer .uk-subnav-divider> ::before {
     color: #666;
 }
 
-.in-content-10 .uk-card-primary.uk-card-body .uk-search-input::-ms-input-placeholder {
+.in-content-10
+    .uk-card-primary.uk-card-body
+    .uk-search-input::-ms-input-placeholder {
     color: #999;
 }
 
@@ -701,7 +714,7 @@ footer .uk-subnav-divider> ::before {
 }
 
 .in-content-11 .uk-card-default {
-    transition: all ease .5s;
+    transition: all ease 0.5s;
     border: 1px solid #e8e8e8;
     background-color: #fff;
 }
@@ -726,12 +739,12 @@ footer .uk-subnav-divider> ::before {
 
 .in-content-11 .uk-card-default:hover h4 {
     color: #c99c3b;
-    transition: all ease .5s;
+    transition: all ease 0.5s;
 }
 
 .in-content-11 .uk-card-default:hover .in-icon-wrap {
     background-color: #c99c3b;
-    transition: all ease .5s;
+    transition: all ease 0.5s;
 }
 
 /* faq component */
@@ -741,7 +754,7 @@ footer .uk-subnav-divider> ::before {
 
 .in-faq-5 .uk-accordion-title::before {
     content: "\f053";
-    font-family: 'Font Awesome 5 Free';
+    font-family: "Font Awesome 5 Free";
     font-style: normal;
     font-weight: 900;
     font-size: 13px;
@@ -821,7 +834,7 @@ footer .uk-subnav-divider> ::before {
 }
 
 @media (max-width: 960px) {
-    .in-timeline-1>.uk-child-width-1-1>div {
+    .in-timeline-1 > .uk-child-width-1-1 > div {
         margin-top: 0;
     }
 }
@@ -971,14 +984,14 @@ footer .uk-subnav-divider> ::before {
     border-color: #c99c3b;
 }
 
-.in-wave-4 .in-wave-pricing .uk-list-bullet>li {
+.in-wave-4 .in-wave-pricing .uk-list-bullet > li {
     padding-left: 35px;
 }
 
-.in-wave-4 .in-wave-pricing .uk-list-bullet>li::before {
+.in-wave-4 .in-wave-pricing .uk-list-bullet > li::before {
     background-image: none;
     font-size: 16px;
-    font-family: 'Font Awesome 5 Free';
+    font-family: "Font Awesome 5 Free";
     font-weight: 900;
     content: "\f058";
     color: #1e87f0;
@@ -1059,7 +1072,7 @@ footer .uk-subnav-divider> ::before {
     }
 }
 
-.in-wave-7 .uk-grid-divider> :not(.uk-first-column)::before {
+.in-wave-7 .uk-grid-divider > :not(.uk-first-column)::before {
     border-color: #c99c3b;
 }
 
@@ -1082,7 +1095,7 @@ footer .uk-subnav-divider> ::before {
     color: #c99c3b;
 }
 
-.in-wave-8 .in-front-news.uk-list-divider>li:nth-child(n+2) {
+.in-wave-8 .in-front-news.uk-list-divider > li:nth-child(n + 2) {
     margin-top: 25px;
     padding-top: 25px;
 }
@@ -1276,23 +1289,23 @@ footer .uk-subnav-divider> ::before {
     border-right: 0;
 }
 
-.in-wave-17 .uk-tile:nth-child(n+4) {
+.in-wave-17 .uk-tile:nth-child(n + 4) {
     border-bottom: 0;
 }
 
 @media (min-width: 640px) and (max-width: 960px) {
-    .in-wave-17 .uk-tile:nth-child(n+1) {
+    .in-wave-17 .uk-tile:nth-child(n + 1) {
         border-right: 0;
     }
 
-    .in-wave-17 .uk-tile:nth-child(n+3),
+    .in-wave-17 .uk-tile:nth-child(n + 3),
     .in-wave-17 .uk-tile:last-child {
         border-bottom: 0;
     }
 }
 
 @media (max-width: 639px) {
-    .in-wave-17 .uk-tile:nth-child(n+1) {
+    .in-wave-17 .uk-tile:nth-child(n + 1) {
         border-right: 0;
     }
 
@@ -1357,27 +1370,27 @@ footer .uk-subnav-divider> ::before {
 }
 
 .in-card-10 .in-card-green {
-    background-color: #27BC9C;
+    background-color: #27bc9c;
 }
 
 .in-card-10 .in-card-blue {
-    background-color: #4284DD;
+    background-color: #4284dd;
 }
 
 .in-card-10 .in-card-purple {
-    background-color: #9A5BB4;
+    background-color: #9a5bb4;
 }
 
 .in-card-10 .in-card-navy {
-    background-color: #35495D;
+    background-color: #35495d;
 }
 
 .in-card-10 .in-card-grey {
-    background-color: #95A5A6;
+    background-color: #95a5a6;
 }
 
 .in-card-10 .in-card-orange {
-    background-color: #E47D2F;
+    background-color: #e47d2f;
 }
 
 .in-content-10 .uk-card-primary {
@@ -1437,7 +1450,7 @@ footer .uk-subnav-divider> ::before {
     }
 }
 
-body>div.in-loader {
+body > div.in-loader {
     position: fixed;
     background: white;
     width: 100%;
@@ -1452,7 +1465,7 @@ body>div.in-loader {
     justify-content: center;
 }
 
-body>div.in-loader div {
+body > div.in-loader div {
     width: 1rem;
     height: 1rem;
     margin: 2rem 0.3rem;
@@ -1462,17 +1475,17 @@ body>div.in-loader div {
     animation: 0.9s bounce infinite alternate;
 }
 
-body>div.in-loader div:nth-child(2) {
+body > div.in-loader div:nth-child(2) {
     -webkit-animation-delay: 0.3s;
     animation-delay: 0.3s;
 }
 
-body>div.in-loader div:nth-child(3) {
+body > div.in-loader div:nth-child(3) {
     -webkit-animation-delay: 0.6s;
     animation-delay: 0.6s;
 }
 
-body:not(.loaded)>div.in-loader {
+body:not(.loaded) > div.in-loader {
     opacity: 1;
 }
 
@@ -1480,7 +1493,7 @@ body:not(.loaded) {
     overflow: hidden;
 }
 
-body.loaded>div.in-loader {
+body.loaded > div.in-loader {
     -webkit-animation: hideLoader 0.5s linear 0.5s forwards;
     animation: hideLoader 0.5s linear 0.5s forwards;
 }
@@ -1512,7 +1525,7 @@ a.in-brand-google:hover {
 
 .in-brand-facebook,
 a.in-brand-facebook {
-    background-color: #3B5999;
+    background-color: #3b5999;
     color: #fff;
 }
 
@@ -1523,7 +1536,7 @@ a.in-brand-facebook:hover {
 
 .in-brand-twitter,
 a.in-brand-twitter {
-    background-color: #1DA1F2;
+    background-color: #1da1f2;
     color: #fff;
 }
 
@@ -1534,7 +1547,7 @@ a.in-brand-twitter:hover {
 
 .in-brand-pinterest,
 a.in-brand-pinterest {
-    background-color: #BD081C;
+    background-color: #bd081c;
     color: #fff;
 }
 
@@ -1545,7 +1558,7 @@ a.in-brand-pinterest:hover {
 
 .in-brand-youtube,
 a.in-brand-youtube {
-    background-color: #CD201F;
+    background-color: #cd201f;
     color: #fff;
 }
 
@@ -1596,26 +1609,32 @@ a.in-generic-email:hover {
 }
 
 @font-face {
-    font-family: 'Rubik';
+    font-family: "Rubik";
     font-style: normal;
     font-weight: 300;
-    src: local("Rubik Light"), local("Rubik-Light"), url("../fonts/rubik-v9-latin-300.woff2") format("woff2"), url("../fonts/rubik-v9-latin-300.woff") format("woff");
+    src: local("Rubik Light"), local("Rubik-Light"),
+        url("../fonts/rubik-v9-latin-300.woff2") format("woff2"),
+        url("../fonts/rubik-v9-latin-300.woff") format("woff");
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Rubik';
+    font-family: "Rubik";
     font-style: normal;
     font-weight: 400;
-    src: local("Rubik"), local("Rubik-Regular"), url("../fonts/rubik-v9-latin-regular.woff2") format("woff2"), url("../fonts/rubik-v9-latin-regular.woff") format("woff");
+    src: local("Rubik"), local("Rubik-Regular"),
+        url("../fonts/rubik-v9-latin-regular.woff2") format("woff2"),
+        url("../fonts/rubik-v9-latin-regular.woff") format("woff");
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Rubik';
+    font-family: "Rubik";
     font-style: normal;
     font-weight: 500;
-    src: local("Rubik Medium"), local("Rubik-Medium"), url("../fonts/rubik-v9-latin-500.woff2") format("woff2"), url("../fonts/rubik-v9-latin-500.woff") format("woff");
+    src: local("Rubik Medium"), local("Rubik-Medium"),
+        url("../fonts/rubik-v9-latin-500.woff2") format("woff2"),
+        url("../fonts/rubik-v9-latin-500.woff") format("woff");
     font-display: swap;
 }
 
@@ -1729,7 +1748,6 @@ a.in-generic-email:hover {
 }
 
 @media (max-width: 960px) {
-
     /* margin remove */
     .in-margin-remove-top\@s {
         margin-top: 0 !important;
@@ -1889,15 +1907,15 @@ a.in-totop {
 .fa-lg {
     font-size: 1.33333em;
     line-height: 0.75em;
-    vertical-align: -.0667em;
+    vertical-align: -0.0667em;
 }
 
 .fa-xs {
-    font-size: .75em;
+    font-size: 0.75em;
 }
 
 .fa-sm {
-    font-size: .875em;
+    font-size: 0.875em;
 }
 
 .fa-1x {
@@ -7696,27 +7714,29 @@ readers do not read off random characters that represent icons */
 
 @font-face {
     font-display: swap;
-    font-family: 'Font Awesome 5 Brands';
+    font-family: "Font Awesome 5 Brands";
     font-style: normal;
     font-weight: 400;
-    src: url("../fonts/fa-brands-400.woff2") format("woff2"), url("../fonts/fa-brands-400.woff") format("woff");
+    src: url("../fonts/fa-brands-400.woff2") format("woff2"),
+        url("../fonts/fa-brands-400.woff") format("woff");
 }
 
 .fab {
-    font-family: 'Font Awesome 5 Brands';
+    font-family: "Font Awesome 5 Brands";
     font-weight: 400;
 }
 
 @font-face {
     font-display: swap;
-    font-family: 'Font Awesome 5 Free';
+    font-family: "Font Awesome 5 Free";
     font-style: normal;
     font-weight: 900;
-    src: url("../fonts/fa-solid-900.woff2") format("woff2"), url("../fonts/fa-solid-900.woff") format("woff");
+    src: url("../fonts/fa-solid-900.woff2") format("woff2"),
+        url("../fonts/fa-solid-900.woff") format("woff");
 }
 
 .fa,
 .fas {
-    font-family: 'Font Awesome 5 Free';
+    font-family: "Font Awesome 5 Free";
     font-weight: 900;
 }
