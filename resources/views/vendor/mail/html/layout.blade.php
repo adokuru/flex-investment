@@ -243,7 +243,7 @@ width: 100% !important;
                                         <tbody>
                                             <tr>
                                                 <td class="column column-1"
-                                                    style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; background-color: #282343; border-bottom: 8px solid #151030; border-left: 16px solid #151030; border-right: 16px solid #151030; border-top: 8px solid #151030; vertical-align: top;"
+                                                    style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; border-bottom: 8px solid #151030; border-left: 16px solid #151030; border-right: 16px solid #151030; border-top: 8px solid #151030; vertical-align: top;"
                                                     width="100%">
                                                     <table border="0" cellpadding="10" cellspacing="0"
                                                         class="paragraph_block block-1" role="presentation"
@@ -282,7 +282,7 @@ width: 100% !important;
                                         <tbody>
                                             <tr>
                                                 <td class="column column-1"
-                                                    style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; background-color: #282343; border-bottom: 8px solid #151030; border-left: 16px solid #151030; border-right: 16px solid #151030; border-top: 8px solid #151030; vertical-align: top;"
+                                                    style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; border-bottom: 8px solid #151030; border-left: 16px solid #151030; border-right: 16px solid #151030; border-top: 8px solid #151030; vertical-align: top;"
                                                     width="100%">
                                                     <table border="0" cellpadding="10" cellspacing="0"
                                                         class="paragraph_block block-1" role="presentation"

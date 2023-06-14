@@ -260,7 +260,6 @@
                             </div>
                             <div class="uk-width-1-2@m uk-text-right@m">
                                 <div class="in-footer-socials in-margin-bottom-40@s">
-                                    <a href="#"><i class="fab fa-youtube"></i></a>
                                     <a href="#"><i class="fab fa-facebook-square"></i></a>
                                     <a href="#"><i class="fab fa-instagram"></i></a>
                                     <a href="#"><i class="fab fa-twitter"></i></a>
