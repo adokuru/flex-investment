@@ -56,8 +56,8 @@ class InvestmentPlanSeeder extends Seeder
             'contract_duration' => 18,
             'minimum_price' => 500000,
             'maximum_price' => 999000,
-            'fixed_return_rate' => 90,
-            'flexible_return_rate' => 227.4,
+            'fixed_return_rate' => 227.4,
+            'flexible_return_rate' =>  90,
         ]);
         InvestmentPlan::create([
             'investment_type_id' => 1,
@@ -66,8 +66,8 @@ class InvestmentPlanSeeder extends Seeder
             'contract_duration' => 24,
             'minimum_price' => 1000000,
             'maximum_price' => 4999000,
-            'fixed_return_rate' => 120,
-            'flexible_return_rate' => 303.6,
+            'fixed_return_rate' => 303.6,
+            'flexible_return_rate' => 120,
         ]);
 
         InvestmentPlan::create([
@@ -109,8 +109,8 @@ class InvestmentPlanSeeder extends Seeder
             'contract_duration' => 18,
             'minimum_price' => 500000,
             'maximum_price' => 999000,
-            'fixed_return_rate' => 90,
-            'flexible_return_rate' => 227.4,
+            'fixed_return_rate' => 227.4,
+            'flexible_return_rate' =>  90,
         ]);
         InvestmentPlan::create([
             'investment_type_id' => 2,
@@ -119,8 +119,8 @@ class InvestmentPlanSeeder extends Seeder
             'contract_duration' => 24,
             'minimum_price' => 1000000,
             'maximum_price' => 4999000,
-            'fixed_return_rate' => 120,
-            'flexible_return_rate' => 303.6,
+            'fixed_return_rate' => 303.6,
+            'flexible_return_rate' => 120,
         ]);
     }
 }
