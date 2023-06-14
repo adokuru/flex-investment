@@ -141,7 +141,8 @@
                                     <a class="uk-margin-right" href="/contact"><i
                                             class="fas fa-comment-alt uk-margin-small-right"></i>contact us</a>
                                     <a href="#"><i
-                                            class="fas fa-phone-alt uk-margin-small-right uk-margin-small-left"></i>1-800-123-4567</a>
+                                            class="fas fa-user uk-margin-small-right uk-margin-small-left"></i>Live
+                                        Chat</a>
                                 </div>
                             </div>
                         </div>
@@ -228,31 +229,31 @@
                                     data-uk-grid>
                                     <div>
                                         <div class="uk-card uk-card-default uk-card-small uk-card-body">
-                                            <img src="img/in-lazy.gif" data-src="img/in-wave-visa.svg"
+                                            <img src="/img/in-lazy.gif" data-src="/img/in-wave-visa.svg"
                                                 alt="wave-payment" width="59" height="22" data-uk-img>
                                         </div>
                                     </div>
                                     <div>
                                         <div class="uk-card uk-card-default uk-card-small uk-card-body">
-                                            <img src="img/in-lazy.gif" data-src="img/in-wave-mastercard.svg"
+                                            <img src="/img/in-lazy.gif" data-src="/img/in-wave-mastercard.svg"
                                                 alt="wave-payment" width="59" height="22" data-uk-img>
                                         </div>
                                     </div>
                                     <div>
                                         <div class="uk-card uk-card-default uk-card-small uk-card-body">
-                                            <img src="img/in-lazy.gif" data-src="img/in-wave-skrill.svg"
+                                            <img src="/img/in-lazy.gif" data-src="/img/in-wave-skrill.svg"
                                                 alt="wave-payment" width="59" height="22" data-uk-img>
                                         </div>
                                     </div>
                                     <div>
                                         <div class="uk-card uk-card-default uk-card-small uk-card-body">
-                                            <img src="img/in-lazy.gif" data-src="img/in-wave-paypal.svg"
+                                            <img src="/img/in-lazy.gif" data-src="/img/in-wave-paypal.svg"
                                                 alt="wave-payment" width="59" height="22" data-uk-img>
                                         </div>
                                     </div>
                                     <div>
                                         <div class="uk-card uk-card-default uk-card-small uk-card-body uk-visible@m">
-                                            <img src="img/in-lazy.gif" data-src="img/in-wave-neteller.svg"
+                                            <img src="/img/in-lazy.gif" data-src="/img/in-wave-neteller.svg"
                                                 alt="wave-payment" width="59" height="22" data-uk-img>
                                         </div>
                                     </div>
@@ -277,7 +278,6 @@
                         <ul class="uk-subnav uk-subnav-divider">
                             <li><a href="/plans">Plans</a></li>
                             <li><a href="/about">About Us</a></li>
-                            <li><a href="https://creativecommons.org/licenses/by/3.0/">Privacy</a></li>
                         </ul>
                     </div>
                     <div class="uk-width-expand@m uk-text-right@m">

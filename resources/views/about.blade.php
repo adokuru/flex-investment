@@ -21,8 +21,12 @@
                             </div>
                             <div>
                                 <h3>Philosophy</h3>
-                                <p>At vero eos etme accusamus iusto odio ent dignissimos deleniti atque corrupti quos
-                                    ducimus moll quilla blanditiis expedita est distinctio.</p>
+                                <p class="uk-margin-remove-bottom">Our philosophy is simple. We want to empower our clients.
+                                    What sets us apart from our competitors is our deep understanding of what traders need.
+                                    We’ve learnt that the combination of pricing, execution speed, cutting-edge platforms,
+                                    product range, customer support and market analysis are the key ingredients that give
+                                    our clients the confidence to trade.
+                                </p>
                             </div>
                         </div>
                         <div class="uk-flex uk-flex-left">
@@ -41,8 +45,12 @@
                             </div>
                             <div>
                                 <h3>Culture</h3>
-                                <p>At vero eos etme accusamus iusto odio ent dignissimos deleniti atque corrupti quos
-                                    ducimus moll quilla blanditiis expedita est distinctio.</p>
+                                <p>
+                                    Our company vision was to create a superior trading destination where traders
+                                    could access a full suite of products in global markets. The convenience of being able
+                                    to trade CFDs across Forex, Shares, Indices, Commodities & Cryptocurrencies from a
+                                    single account is one of the key reasons traders choose Markets.
+                                </p>
                             </div>
                         </div>
                     </div>
