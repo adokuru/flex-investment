@@ -283,11 +283,11 @@
                                         industry-leading entry prices</p>
                                     <hr>
                                     <ul class="uk-list uk-list-bullet">
-                                        <li>One of the established industry leaders</li>
-                                        <li>Three decades of trading know-how</li>
-                                        <li>Award-winning customer service*</li>
-                                        <li>Highly-regarded trader education*</li>
-                                        <li>Advanced risk management</li>
+                                        <li>One month fixed asset</li>
+                                        <li>Earn up to 12.5 APR</li>
+                                        <li>100% risk free</li>
+                                        <li>Lowest minimum deposit </li>
+                                        <li>Enjoy up to 50% referral bonus</li>
                                         <li>Tax-free spread betting profits</li>
                                         <li>Low minimum deposit</li>
                                     </ul>
@@ -306,13 +306,13 @@
                                         and commissions</p>
                                     <hr>
                                     <ul class="uk-list uk-list-bullet">
-                                        <li>Award-winning trading platform*</li>
-                                        <li>Wide range of charting tools</li>
-                                        <li>Fast, automated excecution</li>
-                                        <li>Expert news & analysis</li>
-                                        <li>Competitive spreads</li>
-                                        <li>Advanced trading tools</li>
+                                        <li>24 month fixed asset</li>
+                                        <li>Earn up to 303.6 APR</li>
+                                        <li>100% risk free</li>
+                                        <li>Lowest minimum deposit </li>
+                                        <li>Enjoy up to 50% referral bonus</li>
                                         <li>Tax-free spread betting profits</li>
+                                        <li>Low minimum deposit</li>
                                     </ul>
                                     <a href="#"
                                         class="uk-button uk-button-primary uk-border-rounded uk-align-center">Open an
