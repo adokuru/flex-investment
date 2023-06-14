@@ -45,9 +45,10 @@
                             </div>
                             <div class="uk-width-expand">
                                 <h3>Why trade with CML markets?</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                    repudiandae ullamco.</p>
+                                <p>What sets us apart from our competitors is our deep understanding of what traders need.
+                                    We've learnt that the combination of pricing, execution speed, cutting-edge platforms,
+                                    product range, customer support and market analysis are the key ingredients that give
+                                    our clients the confidence to trade.</p>
                                 <div class="uk-grid uk-child-width-1-2@s uk-child-width-1-2@m in-margin-bottom-30@s"
                                     data-uk-grid>
                                     <div>
@@ -108,7 +109,9 @@
                         <div class="uk-card uk-card-default uk-card-body uk-box-shadow-small uk-border-rounded">
                             <div class="uk-grid uk-flex-middle" data-uk-grid>
                                 <div class="uk-width-1-1 uk-width-expand@m">
-                                    <h3>Get up to $600 plus 60 days of commission-free stocks &amp; forex trades</h3>
+                                    <h3>
+                                        Get up to 100% bonus on your first deposit and up to 50% referral bonus
+                                    </h3>
                                 </div>
                                 <div class="uk-width-auto">
                                     <a class="uk-button uk-button-primary uk-border-rounded" href="#">Open an
