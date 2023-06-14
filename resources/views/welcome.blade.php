@@ -107,7 +107,7 @@
                                     width="48" height="48" data-uk-img>
                             </div>
                             <div class="uk-width-expand">
-                                <p>Low minimum<br>deposit of $100</p>
+                                <p>Low minimum<br>deposit of $1,000</p>
                             </div>
                         </div>
                     </div>
