@@ -32,7 +32,7 @@
                             <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m uk-box-shadow-medium">
                                 <p class="uk-text-small uk-text-uppercase">Minimum funding<span
                                         class="uk-label uk-border-pill uk-text-small uk-margin-small-left">USD
-                                        5,000</span></p>
+                                        10,000</span></p>
                                 <h2 class="uk-margin-top uk-margin-remove-bottom">Bronze plan</h2>
                                 <p class="uk-text-lead uk-text-muted uk-margin-remove-top">Benefit from industry-leading
                                     entry prices</p>
@@ -54,7 +54,7 @@
                             <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m uk-box-shadow-medium">
                                 <p class="uk-text-small uk-text-uppercase">Minimum funding<span
                                         class="uk-label uk-border-pill uk-text-small uk-margin-small-left">USD
-                                        50,000</span></p>
+                                        100,000</span></p>
                                 <h2 class="uk-margin-top uk-margin-remove-bottom">Silver Plan</h2>
                                 <p class="uk-text-lead uk-text-muted uk-margin-remove-top">Benefit from industry-leading
                                     entry prices</p>
@@ -76,7 +76,7 @@
                             <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m uk-box-shadow-medium">
                                 <p class="uk-text-small uk-text-uppercase">Minimum funding<span
                                         class="uk-label uk-border-pill uk-text-small uk-margin-small-left">USD
-                                        100,000</span></p>
+                                        500,000</span></p>
                                 <h2 class="uk-margin-top uk-margin-remove-bottom">Gold Plan</h2>
                                 <p class="uk-text-lead uk-text-muted uk-margin-remove-top">Benefit from industry-leading
                                     entry prices</p>
@@ -98,7 +98,7 @@
                             <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m uk-box-shadow-medium">
                                 <p class="uk-text-small uk-text-uppercase">Minimum funding<span
                                         class="uk-label uk-border-pill uk-text-small uk-margin-small-left">USD
-                                        500,000</span></p>
+                                        1,000,000</span></p>
                                 <h2 class="uk-margin-top uk-margin-remove-bottom">Platinum plan</h2>
                                 <p class="uk-text-lead uk-text-muted uk-margin-remove-top">Benefit from industry-leading
                                     entry prices</p>
