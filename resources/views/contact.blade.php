@@ -1,5 +1,5 @@
 @extends('layouts.public')
-@section('title', 'Plans')
+@section('title', 'Contact Us')
 @section('content')
     <main>
         <!-- section content begin -->
