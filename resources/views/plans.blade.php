@@ -46,7 +46,8 @@
                                     <li>Tax-free spread betting profits</li>
                                     <li>Low minimum deposit</li>
                                 </ul>
-                                <a href="#" class="uk-button uk-button-primary uk-border-rounded uk-align-center">Open
+                                <a href="/register"
+                                    class="uk-button uk-button-primary uk-border-rounded uk-align-center">Open
                                     an
                                     account<i class="fas fa-chevron-circle-right fa-xs uk-margin-small-left"></i></a>
                             </div>
@@ -67,7 +68,8 @@
                                     <li>Tax-free spread betting profits</li>
                                     <li>6 months equity payment</li>
                                 </ul>
-                                <a href="#" class="uk-button uk-button-primary uk-border-rounded uk-align-center">Open
+                                <a href="/register"
+                                    class="uk-button uk-button-primary uk-border-rounded uk-align-center">Open
                                     an
                                     account<i class="fas fa-chevron-circle-right fa-xs uk-margin-small-left"></i></a>
                             </div>
@@ -88,7 +90,8 @@
                                     <li>Tax-free spread betting profits</li>
                                     <li>3 months equity payment</li>
                                 </ul>
-                                <a href="#" class="uk-button uk-button-primary uk-border-rounded uk-align-center">Open
+                                <a href="/register"
+                                    class="uk-button uk-button-primary uk-border-rounded uk-align-center">Open
                                     an
                                     account<i class="fas fa-chevron-circle-right fa-xs uk-margin-small-left"></i></a>
                             </div>
@@ -109,7 +112,8 @@
                                     <li>Tax-free spread betting profits</li>
                                     <li>Monthly equity payment</li>
                                 </ul>
-                                <a href="#" class="uk-button uk-button-primary uk-border-rounded uk-align-center">Open
+                                <a href="/register"
+                                    class="uk-button uk-button-primary uk-border-rounded uk-align-center">Open
                                     an
                                     account<i class="fas fa-chevron-circle-right fa-xs uk-margin-small-left"></i></a>
                             </div>
