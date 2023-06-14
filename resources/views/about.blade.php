@@ -9,8 +9,8 @@
                     <div class="uk-width-1-1">
                         <div class="uk-width-3-5@m">
                             <h1 class="uk-margin-small-bottom">Putting our clients first <span class="in-highlight">since
-                                    1986</span></h1>
-                            <p class="uk-text-lead uk-text-muted uk-margin-remove-top">For more than 30 years, we’ve been
+                                    2015</span></h1>
+                            <p class="uk-text-lead uk-text-muted uk-margin-remove-top">For more than 8 years, we’ve been
                                 empowering clients by helping them take control of their financial lives.</p>
                         </div>
                     </div>
@@ -85,16 +85,11 @@
                                                 class="uk-text-small uk-text-muted uk-text-uppercase uk-margin-remove-bottom">
                                                 Chief Executive Officer</p>
                                             <h4 class="uk-margin-small-top">Cynthia Dixon</h4>
-                                            <p>Nostrum exercitationem ullam corporis suscipit labor samnisi ute aliquid
-                                                fugiat.</p>
-                                            <div>
-                                                <a class="uk-link-muted" href="#"><i
-                                                        class="fab fa-facebook-f uk-margin-small-right"></i></a>
-                                                <a class="uk-link-muted" href="#"><i
-                                                        class="fab fa-twitter uk-margin-small-right"></i></a>
-                                                <a class="uk-link-muted" href="#"><i
-                                                        class="fab fa-linkedin-in"></i></a>
-                                            </div>
+                                            <p>Cynthia Dixon is a seasoned business leader and entrepreneur, serving as the
+                                                Chief Executive Officer (CEO) of a prominent crypto trading platform. With
+                                                her exceptional expertise in the cryptocurrency industry, she has played a
+                                                pivotal role in driving the platform's growth and success.</p>
+
                                         </div>
                                     </div>
                                     <div class="uk-flex uk-flex-left">
@@ -105,18 +100,16 @@
                                         <div>
                                             <p
                                                 class="uk-text-small uk-text-muted uk-text-uppercase uk-margin-remove-bottom">
-                                                Executive Assistant</p>
+                                                Head Trader</p>
                                             <h4 class="uk-margin-small-top">Arthur Parker</h4>
-                                            <p>Nostrum exercitationem ullam corporis suscipit labor samnisi ute aliquid
-                                                fugiat.</p>
-                                            <div>
-                                                <a class="uk-link-muted" href="#"><i
-                                                        class="fab fa-facebook-f uk-margin-small-right"></i></a>
-                                                <a class="uk-link-muted" href="#"><i
-                                                        class="fab fa-twitter uk-margin-small-right"></i></a>
-                                                <a class="uk-link-muted" href="#"><i
-                                                        class="fab fa-linkedin-in"></i></a>
-                                            </div>
+                                            <p>
+                                                Arthur Parker is a highly skilled and experienced Head Trader of a leading
+                                                crypto trading platform. With a deep understanding of financial markets and
+                                                a passion for the crypto industry, Arthur plays a pivotal role in shaping
+                                                the platform's trading strategies and driving profitable outcomes for
+                                                clients.
+                                            </p>
+
                                         </div>
                                     </div>
                                     <div class="uk-flex uk-flex-left uk-grid-margin uk-first-column">
@@ -127,18 +120,15 @@
                                         <div>
                                             <p
                                                 class="uk-text-small uk-text-muted uk-text-uppercase uk-margin-remove-bottom">
-                                                Marketing Specialist</p>
+                                                Head of Marketing</p>
                                             <h4 class="uk-margin-small-top">Evelyn Mason</h4>
-                                            <p>Nostrum exercitationem ullam corporis suscipit labor samnisi ute aliquid
-                                                fugiat.</p>
-                                            <div>
-                                                <a class="uk-link-muted" href="#"><i
-                                                        class="fab fa-facebook-f uk-margin-small-right"></i></a>
-                                                <a class="uk-link-muted" href="#"><i
-                                                        class="fab fa-twitter uk-margin-small-right"></i></a>
-                                                <a class="uk-link-muted" href="#"><i
-                                                        class="fab fa-linkedin-in"></i></a>
-                                            </div>
+                                            <p>
+                                                Evelyn Mason is a dynamic and accomplished professional serving as the Head
+                                                of Marketing for a prominent crypto trading platform. With her creative
+                                                vision and strategic approach, Evelyn plays a pivotal role in driving brand
+                                                awareness, user acquisition, and customer engagement for the platform.
+                                            </p>
+
                                         </div>
                                     </div>
                                     <div class="uk-flex uk-flex-left uk-grid-margin">
@@ -149,18 +139,16 @@
                                         <div>
                                             <p
                                                 class="uk-text-small uk-text-muted uk-text-uppercase uk-margin-remove-bottom">
-                                                Human Resources</p>
+                                                CTO</p>
                                             <h4 class="uk-margin-small-top">Bryan Greene</h4>
-                                            <p>Nostrum exercitationem ullam corporis suscipit labor samnisi ute aliquid
-                                                fugiat.</p>
-                                            <div>
-                                                <a class="uk-link-muted" href="#"><i
-                                                        class="fab fa-facebook-f uk-margin-small-right"></i></a>
-                                                <a class="uk-link-muted" href="#"><i
-                                                        class="fab fa-twitter uk-margin-small-right"></i></a>
-                                                <a class="uk-link-muted" href="#"><i
-                                                        class="fab fa-linkedin-in"></i></a>
-                                            </div>
+                                            <p>
+                                                Bryan Greene is a highly skilled and visionary technologist serving as the
+                                                Chief Technology Officer (CTO) of a leading crypto trading platform. With
+                                                his expertise in blockchain technology, software development, and system
+                                                architecture, Bryan plays a critical role in shaping the platform's
+                                                technological strategy and driving innovation.
+                                            </p>
+
                                         </div>
                                     </div>
                                 </div>
@@ -181,8 +169,6 @@
                                 <h4 class="uk-text-muted">Number speaks</h4>
                                 <h1 class="uk-margin-medium-bottom">We always ready<br>for a <span
                                         class="in-highlight">challenge.</span></h1>
-                                <a href="#" class="uk-button uk-button-primary uk-border-rounded">Learn more<i
-                                        class="fas fa-chevron-circle-right fa-xs uk-margin-small-left"></i></a>
                             </div>
                             <div class="uk-width-1-2@m">
                                 <div class="uk-margin-large uk-grid" data-uk-grid="">
@@ -194,8 +180,10 @@
                                     </div>
                                     <div class="uk-width-expand@m">
                                         <h4>Trading instruments</h4>
-                                        <p>Reprehenderit qui in svoluptate velit esse quam molestiae vel illum qui dolorem
-                                            eum fugiat quo.</p>
+                                        <p>
+                                            Trading instruments refer to the various financial assets that can be bought or
+                                            sold on a trading platform.
+                                        </p>
                                     </div>
                                 </div>
                                 <div class="uk-margin-large uk-grid" data-uk-grid="">
@@ -207,8 +195,8 @@
                                     </div>
                                     <div class="uk-width-expand@m">
                                         <h4>Countries covered</h4>
-                                        <p>At vero eos et accusamus iusto dignissimos ducimus qui blanditiis praesentium
-                                            voluta deleniti.</p>
+                                        {{-- <p>At vero eos et accusamus iusto dignissimos ducimus qui blanditiis praesentium
+                                            voluta deleniti.</p> --}}
                                     </div>
                                 </div>
                             </div>
