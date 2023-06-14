@@ -15,7 +15,6 @@
     <link rel="icon" type="image/png" href="https://cmltrading.com/images/cmlicon.png" sizes="192x192">
     <link rel="icon" type="image/png" href="https://cmltrading.com/images/cmlicon.png" sizes="96x96">
     <link rel="icon" type="image/png" href="https://cmltrading.com/images/cmlicon.png" sizes="16x16">
-    <!--END-WIDGET-5B1FA573-1C84-442B-90AF-F49BAC152130-->
     <link rel="canonical" href="https://www.cmltrading.com">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:creator" content="@cmltrading">
@@ -114,7 +113,6 @@
                                 <div class="uk-navbar-dropdown">
                                     <ul class="uk-nav uk-navbar-dropdown-nav">
                                         <li><a href="about">About</a></li>
-                                        <li><a href="careers">Careers</a></li>
                                         <li><a href="contact">Contact</a></li>
                                     </ul>
                                 </div>
