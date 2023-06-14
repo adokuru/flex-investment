@@ -210,7 +210,7 @@
                                     <h3> Get up to 100% bonus on your first deposit and up to 50% referral bonus</h3>
                                 </div>
                                 <div class="uk-width-auto">
-                                    <a class="uk-button uk-button-primary uk-border-rounded" href="#">Open an
+                                    <a class="uk-button uk-button-primary uk-border-rounded" href="/register">Open an
                                         Account</a>
                                 </div>
                             </div>

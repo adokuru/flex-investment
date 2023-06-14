@@ -114,7 +114,7 @@
                                     </h3>
                                 </div>
                                 <div class="uk-width-auto">
-                                    <a class="uk-button uk-button-primary uk-border-rounded" href="#">Open an
+                                    <a class="uk-button uk-button-primary uk-border-rounded" href="/register">Open an
                                         Account</a>
                                 </div>
                             </div>
