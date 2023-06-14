@@ -121,7 +121,7 @@
                             </svg>
                         </div>
                         <p class="text-base font-medium text-slate-700 dark:text-navy-100">
-                            up to 10%
+                            up to 12.5%
                         </p>
                     </div>
                 </div>
@@ -149,7 +149,7 @@
                             <div>
                                 <p class="text-xs+">Low</p>
                                 <p class="text-xl font-semibold text-slate-700 dark:text-navy-100">
-                                    {{ $item->fixed_return_rate - 1 }}%
+                                    {{ $item->flexible_return_rate }}%
                                 </p>
                             </div>
                             <div>
@@ -177,7 +177,7 @@
                                     <div class="h-2 w-2 rounded-full bg-success"></div>
                                     <div class="flex space-x-1 text-xs">
                                         <span>
-                                            {{ $item->maximum_price > 5000000 ? 'infinite' : number_format($item->maximum_price) }}</span>
+                                            {{ $item->maximum_price > 1000000 ? 'infinite' : number_format($item->maximum_price) }}</span>
                                     </div>
                                 </div>
                             </div>
