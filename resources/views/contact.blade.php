@@ -14,9 +14,9 @@
                     <div class="uk-width-1-1@m uk-margin-large-top">
                         <div class="uk-grid uk-grid-large" data-uk-grid="">
                             <div class="uk-width-1-3@m uk-first-column">
-                                <h4 class="uk-margin-remove-bottom">Visit our office</h4>
+                                {{-- <h4 class="uk-margin-remove-bottom">Visit our office</h4>
                                 <p class="uk-margin-small-top">Satrio Tower 16th Floor, Jl. Prof Dr Satrio Kuningan, Jakarta
-                                </p>
+                                </p> --}}
                                 <h4 class="uk-margin-medium-top uk-margin-remove-bottom">Message us</h4>
                                 <p class="uk-margin-small-top">info@cmltrading.com<br></p>
                                 <div class="uk-margin-medium-top in-contact-socials">

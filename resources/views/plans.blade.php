@@ -53,8 +53,8 @@
                             <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m uk-box-shadow-medium">
                                 <p class="uk-text-small uk-text-uppercase">Minimum funding<span
                                         class="uk-label uk-border-pill uk-text-small uk-margin-small-left">USD
-                                        5,000</span></p>
-                                <h2 class="uk-margin-top uk-margin-remove-bottom">Bronze plan</h2>
+                                        50,000</span></p>
+                                <h2 class="uk-margin-top uk-margin-remove-bottom">Silver Plan</h2>
                                 <p class="uk-text-lead uk-text-muted uk-margin-remove-top">Benefit from industry-leading
                                     entry prices</p>
                                 <hr>
@@ -65,7 +65,7 @@
                                     <li>Highly-regarded trader education*</li>
                                     <li>Advanced risk management</li>
                                     <li>Tax-free spread betting profits</li>
-                                    <li>Low minimum deposit</li>
+                                    <li>6 months equity payment</li>
                                 </ul>
                                 <a href="#" class="uk-button uk-button-primary uk-border-rounded uk-align-center">Open
                                     an
@@ -74,8 +74,8 @@
                             <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m uk-box-shadow-medium">
                                 <p class="uk-text-small uk-text-uppercase">Minimum funding<span
                                         class="uk-label uk-border-pill uk-text-small uk-margin-small-left">USD
-                                        5,000</span></p>
-                                <h2 class="uk-margin-top uk-margin-remove-bottom">Bronze plan</h2>
+                                        100,000</span></p>
+                                <h2 class="uk-margin-top uk-margin-remove-bottom">Gold Plan</h2>
                                 <p class="uk-text-lead uk-text-muted uk-margin-remove-top">Benefit from industry-leading
                                     entry prices</p>
                                 <hr>
@@ -86,7 +86,7 @@
                                     <li>Highly-regarded trader education*</li>
                                     <li>Advanced risk management</li>
                                     <li>Tax-free spread betting profits</li>
-                                    <li>Low minimum deposit</li>
+                                    <li>3 months equity payment</li>
                                 </ul>
                                 <a href="#" class="uk-button uk-button-primary uk-border-rounded uk-align-center">Open
                                     an
@@ -95,8 +95,8 @@
                             <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m uk-box-shadow-medium">
                                 <p class="uk-text-small uk-text-uppercase">Minimum funding<span
                                         class="uk-label uk-border-pill uk-text-small uk-margin-small-left">USD
-                                        5,000</span></p>
-                                <h2 class="uk-margin-top uk-margin-remove-bottom">Bronze plan</h2>
+                                        500,000</span></p>
+                                <h2 class="uk-margin-top uk-margin-remove-bottom">Platinum plan</h2>
                                 <p class="uk-text-lead uk-text-muted uk-margin-remove-top">Benefit from industry-leading
                                     entry prices</p>
                                 <hr>
@@ -107,36 +107,12 @@
                                     <li>Highly-regarded trader education*</li>
                                     <li>Advanced risk management</li>
                                     <li>Tax-free spread betting profits</li>
-                                    <li>Low minimum deposit</li>
+                                    <li>Monthly equity payment</li>
                                 </ul>
                                 <a href="#" class="uk-button uk-button-primary uk-border-rounded uk-align-center">Open
                                     an
                                     account<i class="fas fa-chevron-circle-right fa-xs uk-margin-small-left"></i></a>
                             </div>
-
-                            {{-- <div>
-                                <div class="uk-card uk-card-default uk-card-body uk-box-shadow-medium">
-                                    <p class="uk-text-small uk-text-uppercase">Minimum funding<span
-                                            class="uk-label uk-border-pill uk-text-small uk-margin-small-left">USD
-                                            500,000</span></p>
-                                    <h2 class="uk-margin-top uk-margin-remove-bottom">Platinum plan</h2>
-                                    <p class="uk-text-lead uk-text-muted uk-margin-remove-top">Receive even tighter spreads
-                                        and commissions</p>
-                                    <hr>
-                                    <ul class="uk-list uk-list-bullet">
-                                        <li>Award-winning trading platform*</li>
-                                        <li>Wide range of charting tools</li>
-                                        <li>Fast, automated excecution</li>
-                                        <li>Expert news & analysis</li>
-                                        <li>Competitive spreads</li>
-                                        <li>Advanced trading tools</li>
-                                        <li>Tax-free spread betting profits</li>
-                                    </ul>
-                                    <a href="#"
-                                        class="uk-button uk-button-primary uk-border-rounded uk-align-center">Open an
-                                        account<i class="fas fa-chevron-circle-right fa-xs uk-margin-small-left"></i></a>
-                                </div>
-                            </div> --}}
                         </div>
                     </div>
                     <div class="uk-width-1-1">

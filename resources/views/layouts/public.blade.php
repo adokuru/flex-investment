@@ -134,13 +134,15 @@
                         <div class="uk-card uk-card-secondary uk-card-small uk-card-body uk-border-rounded">
                             <div class="uk-grid uk-text-small" data-uk-grid>
                                 <div class="uk-width-3-4@m uk-visible@m">
-                                    <p>Trading involves substantial risk and may result in the loss of your
-                                        invested/greater that your invested capital, respectively.</p>
+                                    <p>
+                                        We are here to make your trading experience awesome. Your investment is
+                                        guaranteed because the risk is on us trading for you.
+                                    </p>
                                 </div>
                                 <div class="uk-width-expand@m uk-text-center uk-text-right@m">
                                     <a class="uk-margin-right" href="/contact"><i
                                             class="fas fa-comment-alt uk-margin-small-right"></i>contact us</a>
-                                    <a href="#"><i
+                                    <a href="javascript:void(Tawk_API.toggle())"><i
                                             class="fas fa-user uk-margin-small-right uk-margin-small-left"></i>Live
                                         Chat</a>
                                 </div>
@@ -297,6 +299,21 @@
     <script src="/js/vendors/uikit.min.js"></script>
     <script src="/js/vendors/indonez.min.js"></script>
     <script src="/js/config-theme.js"></script>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {},
+            Tawk_LoadStart = new Date();
+        (function() {
+            var s1 = document.createElement("script"),
+                s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/6489c0b6cc26a871b02281f3/1h2t1hj5q';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
 </body>
 
 </html>
