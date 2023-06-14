@@ -277,7 +277,7 @@
                                 <div class="uk-card uk-card-default uk-card-body uk-box-shadow-medium">
                                     <p class="uk-text-small uk-text-uppercase">Minimum funding<span
                                             class="uk-label uk-border-pill uk-text-small uk-margin-small-left">USD
-                                            1,000,000</span></p>
+                                            1,000</span></p>
                                     <h2 class="uk-margin-top uk-margin-remove-bottom">Trial plan</h2>
                                     <p class="uk-text-lead uk-text-muted uk-margin-remove-top">Benefit from
                                         industry-leading entry prices</p>
@@ -300,7 +300,7 @@
                                 <div class="uk-card uk-card-default uk-card-body uk-box-shadow-large">
                                     <p class="uk-text-small uk-text-uppercase">Minimum funding<span
                                             class="uk-label uk-border-pill uk-text-small uk-margin-small-left">USD
-                                            500,000</span></p>
+                                            1,000,000</span></p>
                                     <h2 class="uk-margin-top uk-margin-remove-bottom">Platinum plan</h2>
                                     <p class="uk-text-lead uk-text-muted uk-margin-remove-top">Receive even tighter spreads
                                         and commissions</p>
