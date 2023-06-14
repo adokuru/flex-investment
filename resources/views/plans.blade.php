@@ -41,7 +41,6 @@
                                     <li>6 month fixed asset</li>
                                     <li>Earn up to 75.9 APR</li>
                                     <li>100% risk free</li>
-                                    <li>Lowest minimum deposit </li>
                                     <li>Enjoy up to 50% referral bonus</li>
                                     <li>Tax-free spread betting profits</li>
                                     <li>6 months equity payment</li>
@@ -63,7 +62,6 @@
                                     <li>12 month fixed asset</li>
                                     <li>Earn up to 151.8 APR</li>
                                     <li>100% risk free</li>
-                                    <li>Lowest minimum deposit </li>
                                     <li>Enjoy up to 50% referral bonus</li>
                                     <li>Tax-free spread betting profits</li>
                                     <li>4 months equity payment</li>
@@ -85,7 +83,6 @@
                                     <li>18 month fixed asset</li>
                                     <li>Earn up to 227.4 APR</li>
                                     <li>100% risk free</li>
-                                    <li>Lowest minimum deposit </li>
                                     <li>Enjoy up to 50% referral bonus</li>
                                     <li>Tax-free spread betting profits</li>
                                     <li>2 months equity payment</li>
@@ -107,7 +104,6 @@
                                     <li>24 month fixed asset</li>
                                     <li>Earn up to 303.6 APR</li>
                                     <li>100% risk free</li>
-                                    <li>Lowest minimum deposit </li>
                                     <li>Enjoy up to 50% referral bonus</li>
                                     <li>Tax-free spread betting profits</li>
                                     <li>Monthly equity payment</li>

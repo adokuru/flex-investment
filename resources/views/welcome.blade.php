@@ -309,10 +309,9 @@
                                         <li>24 month fixed asset</li>
                                         <li>Earn up to 303.6 APR</li>
                                         <li>100% risk free</li>
-                                        <li>Lowest minimum deposit </li>
                                         <li>Enjoy up to 50% referral bonus</li>
                                         <li>Tax-free spread betting profits</li>
-                                        <li>Low minimum deposit</li>
+                                        <li>Monthly equity payment</li>
                                     </ul>
                                     <a href="#"
                                         class="uk-button uk-button-primary uk-border-rounded uk-align-center">Open an
