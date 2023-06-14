@@ -55,13 +55,13 @@
                             <div>
                                 <p class="text-xs+">Low</p>
                                 <p class="text-xl font-semibold text-slate-700 dark:text-navy-100">
-                                    {{ $item->fixed_return_rate - 1 }}%
+                                    {{ $item->fixed_return_rate }}%
                                 </p>
                             </div>
                             <div>
                                 <p class="text-xs+">High</p>
                                 <p class="text-xl font-semibold text-slate-700 dark:text-navy-100">
-                                    {{ $item->fixed_return_rate }}%
+                                    {{ $item->flexible_return_rate }}%
                                 </p>
                             </div>
                         </div>
