@@ -203,7 +203,7 @@
                         <div class="uk-card uk-card-default uk-card-body uk-box-shadow-small uk-border-rounded">
                             <div class="uk-grid uk-flex-middle" data-uk-grid>
                                 <div class="uk-width-1-1 uk-width-expand@m">
-                                    <h3>Get up to $600 plus 60 days of commission-free stocks &amp; forex trades</h3>
+                                    <h3> Get up to 100% bonus on your first deposit and up to 50% referral bonus</h3>
                                 </div>
                                 <div class="uk-width-auto">
                                     <a class="uk-button uk-button-primary uk-border-rounded" href="#">Open an
