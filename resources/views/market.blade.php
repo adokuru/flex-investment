@@ -1,5 +1,5 @@
 @extends('layouts.public')
-@section('title', 'Welcome')
+@section('title', 'Crypto Market Cap ')
 @section('content')
     <main>
         <!-- section content begin -->

@@ -24,7 +24,7 @@
     <meta name="twitter:title" content="Home">
 
 
-    <title>@yield('title') - CML Trading &amp; Leading Crypto Asset Managers</title>
+    <title>@yield('title') - CML Trading | Leading Crypto Asset Managers</title>
     <meta name="description"
         content="Trade CFDs with CML Markets, Leading Crypto Asset Managers. Trade on up to 10,000 instruments, including forex, indices, commodities, shares and treasuries.">
     <meta name="revised" content="09/06/2022 11:51:02">

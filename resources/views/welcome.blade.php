@@ -1,5 +1,5 @@
 @extends('layouts.public')
-@section('title', 'Welcome')
+@section('title', ' ')
 @section('content')
     <main>
         <div class="uk-section uk-padding-remove-vertical">

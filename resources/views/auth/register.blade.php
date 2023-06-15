@@ -24,7 +24,7 @@
     <meta name="twitter:title" content="Home">
 
 
-    <title>Register - CFDs &amp; Forex | Online Trading| CML Trading</title>
+    <title>Register - CML Trading | Leading Crypto Asset Manager</title>
     <meta name="description"
         content="Trade CFDs with CML Trading, a leading global provider. Trade on up to 10,000 instruments, including forex, indices, commodities, shares and treasuries.">
     <meta name="revised" content="09/06/2022 11:51:02">
