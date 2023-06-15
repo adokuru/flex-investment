@@ -1,5 +1,27 @@
 @extends('layouts.public')
-@section('title', ' ')
+<html lang="en">
+<title>CML Trading | Leading Crypto Asset Managers</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#313131" />
+<!-- Site Properties -->
+<link rel="apple-touch-icon" sizes="114x114" href=https://cmltrading.com/images/cmlicon.png">
+<link rel="icon" type="image/png" href="https://cmltrading.com/images/cmlicon.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://cmltrading.com/images/cmlicon.png" sizes="192x192">
+<link rel="icon" type="image/png" href="https://cmltrading.com/images/cmlicon.png" sizes="96x96">
+<link rel="icon" type="image/png" href="https://cmltrading.com/images/cmlicon.png" sizes="16x16">
+<link rel="canonical" href="https://www.cmltrading.com">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:creator" content="@cmltrading">
+<meta name="twitter:description"
+    content="Trade CFDs with CML Markets, Leading Crypto Asset Managers. Trade on up to 10,000 instruments, including forex, indices, commodities, shares and treasuries.">
+<meta name="twitter:site" content="@cmltrading">
+<meta name="twitter:title" content="Home">
+<meta name="description"
+    content="Trade CFDs with CML Markets, Leading Crypto Asset Managers. Trade on up to 10,000 instruments, including forex, indices, commodities, shares and treasuries.">
+<meta name="revised" content="09/06/2022 11:51:02">
+
+</html>
 @section('content')
     <main>
         <div class="uk-section uk-padding-remove-vertical">
