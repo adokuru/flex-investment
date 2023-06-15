@@ -24,7 +24,7 @@
                 <div class="uk-grid uk-flex uk-flex-center">
                     <div class="uk-width-1-1 uk-text-center">
                         <h1 class="uk-margin-medium-bottom"><span class="in-highlight">Complete</span> package for every
-                            traders</h1>
+                            Investor</h1>
                     </div>
                     <div class="uk-width-3-4@m uk-width-1-1 uk-text-center uk-margin-medium-bottom">
                         <div class="uk-grid-collapse  uk-child-width-1-3@m in-wave-pricing" data-uk-grid>
@@ -42,8 +42,9 @@
                                     <li>Earn up to 75.9 APR</li>
                                     <li>100% risk free</li>
                                     <li>Enjoy up to 50% referral bonus</li>
-                                    <li>Tax-free spread betting profits</li>
+                                    <li>Three decades of trading know-how & Advanced risk management</li>
                                     <li>6 months equity payment</li>
+                                    <li>Get up to 100% first deposit bonus</li>
                                 </ul>
                                 <a href="/register"
                                     class="uk-button uk-button-primary uk-border-rounded uk-align-center">Open
@@ -63,8 +64,10 @@
                                     <li>Earn up to 151.8 APR</li>
                                     <li>100% risk free</li>
                                     <li>Enjoy up to 50% referral bonus</li>
-                                    <li>Tax-free spread betting profits</li>
+                                    <li>Three decades of trading know-how & Advanced risk management</li>
                                     <li>4 months equity payment</li>
+                                    <li>Get up to 100% first deposit bonus</li>
+
                                 </ul>
                                 <a href="/register"
                                     class="uk-button uk-button-primary uk-border-rounded uk-align-center">Open
@@ -84,8 +87,10 @@
                                     <li>Earn up to 227.4 APR</li>
                                     <li>100% risk free</li>
                                     <li>Enjoy up to 50% referral bonus</li>
-                                    <li>Tax-free spread betting profits</li>
+                                    <li>Three decades of trading know-how & Advanced risk management</li>
                                     <li>2 months equity payment</li>
+                                    <li>Get up to 100% first deposit bonus</li>
+
                                 </ul>
                                 <a href="/register"
                                     class="uk-button uk-button-primary uk-border-rounded uk-align-center">Open
@@ -105,8 +110,10 @@
                                     <li>Earn up to 303.6 APR</li>
                                     <li>100% risk free</li>
                                     <li>Enjoy up to 50% referral bonus</li>
-                                    <li>Tax-free spread betting profits</li>
+                                    <li>Three decades of trading know-how & Advanced risk management</li>
                                     <li>Monthly equity payment</li>
+                                    <li>Get up to 100% first deposit bonus</li>
+
                                 </ul>
                                 <a href="/register"
                                     class="uk-button uk-button-primary uk-border-rounded uk-align-center">Open
@@ -164,7 +171,7 @@
                                     class="fas fa-money-bill-wave fa-2x in-icon-wrap large primary-color uk-margin-right"></i>
                             </div>
                             <div class="uk-width-expand">
-                                <h3>Why trade with CML markets?</h3>
+                                <h3>Why Invest with CML markets?</h3>
                                 <p>Our award-winning CFD trading platform provides access to over 12,000 global instruments,
                                     at competitive spreads and margin rates. Trade CFDs on major forex pairs from 0.7 points
                                     and popular indices from 1 point.</p>

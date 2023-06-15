@@ -15,10 +15,10 @@
                             <div class="uk-grid" data-uk-grid>
                                 <div class="uk-width-3-5@m">
                                     <div class="uk-overlay">
-                                        <h1>Trade Shares and Forex with Financial Thinking</h1>
-                                        <p class="uk-text-lead uk-visible@m">Access 40,000+ instruments – across asset
-                                            classes – to trade, hedge and invest from a single account.</p>
-                                        <a href="#"
+                                        <h1>A digital-native asset manager, for a digital-driven world.</h1>
+                                        <p class="uk-text-lead uk-visible@m">The investment climate is changing, and
+                                            investors need to create ﬁnancial legacies that will stand the test of time.</p>
+                                        <a href="/register"
                                             class="uk-button uk-button-primary uk-border-rounded uk-visible@m"><i
                                                 class="fas fa-scroll uk-margin-small-right"></i>Discover it now</a>
                                     </div>
@@ -36,10 +36,12 @@
                             <div class="uk-grid" data-uk-grid>
                                 <div class="uk-width-3-5@m">
                                     <div class="uk-overlay">
-                                        <h1>Multi-regulated Global Forex and Shares Broker</h1>
-                                        <p class="uk-text-lead uk-visible@m">A trusted destination for traders worldwide,
-                                            Authorised by FCA, ASIC &amp; FSCA with multi-lingual support 24/5.</p>
-                                        <a href="#"
+                                        <h1>Invest in digital Economy</h1>
+                                        <p class="uk-text-lead uk-visible@m">
+                                            Blockchain technology and digital assets are radically transforming industries,
+                                            creating the digital economy, and ultimately, building a digital-native world.
+                                        </p>
+                                        <a href="/register"
                                             class="uk-button uk-button-primary uk-border-rounded uk-visible@m"><i
                                                 class="fas fa-scroll uk-margin-small-right"></i>Discover it now</a>
                                     </div>
@@ -57,10 +59,12 @@
                             <div class="uk-grid" data-uk-grid>
                                 <div class="uk-width-3-5@m">
                                     <div class="uk-overlay">
-                                        <h1>Award-winning Products and Trading platforms</h1>
-                                        <p class="uk-text-lead uk-visible@m">Tap into the world's markets and explore
-                                            endless trading opportunities with tight spreads and no commission.</p>
-                                        <a href="#"
+                                        <h1>Future Proof your investment</h1>
+                                        <p class="uk-text-lead uk-visible@m">
+                                            Investors are searching for opportunities to future-proof their portfolios by
+                                            investing in the digital economy and the companies, ideas, and technologies that
+                                            underpin it.</p>
+                                        <a href="/register"
                                             class="uk-button uk-button-primary uk-border-rounded uk-visible@m"><i
                                                 class="fas fa-scroll uk-margin-small-right"></i>Discover it now</a>
                                     </div>
@@ -118,7 +122,7 @@
                                     width="48" height="48" data-uk-img>
                             </div>
                             <div class="uk-width-expand">
-                                <p>Over 2,100<br>assets to trade</p>
+                                <p>Over 7<br>assets to invest</p>
                             </div>
                         </div>
                     </div>
@@ -131,10 +135,11 @@
             <div class="uk-container in-wave-2">
                 <div class="uk-grid">
                     <div class="uk-width-3-4@m">
-                        <h1 class="uk-margin-remove-bottom">Industry-<span class="in-highlight">leading</span> prices</h1>
-                        <p class="uk-text-lead uk-text-muted uk-margin-small-top uk-margin-bottom">Get ultra-competitive
-                            spreads and commissions across all asset classes. Receive even better rates as your volume
-                            increases.</p>
+                        <h1 class="uk-margin-remove-bottom">Featured-<span class="in-highlight">Products</span></h1>
+                        <p class="uk-text-lead uk-text-muted uk-margin-small-top uk-margin-bottom">CML Trading suite of
+                            single asset and diversified funds offer investors comprehensive exposure to the digital asset
+                            market.
+                        </p>
                     </div>
                 </div>
                 <div class="uk-grid-medium uk-grid-match" data-uk-grid>
@@ -142,11 +147,11 @@
                         <div class="uk-card uk-card-default uk-card-body uk-border-rounded uk-background-contain uk-background-bottom-center"
                             style="background-image: url(img/in-wave-card-bg-1.png);">
                             <h5 class="uk-margin-remove">
-                                <a href="#">FX <i class="fas fa-chevron-right fa-xs"></i></a>
+                                <a href="#">Trail Plan<i class="fas fa-chevron-right fa-xs"></i></a>
                             </h5>
-                            <p class="uk-margin-remove">Spread as low as</p>
-                            <h1 class="uk-margin-top">0.2</h1>
-                            <p class="uk-margin-remove-top uk-margin-bottom">pip</p>
+                            <p class="uk-margin-remove">Returns up to</p>
+                            <h1 class="uk-margin-top">12.5</h1>
+                            <p class="uk-margin-remove-top uk-margin-bottom">%</p>
                             <p>Trade 182 FX spot pairs and 140 forwards across majors, minors, exotics and metals.</p>
                         </div>
                     </div>
@@ -154,47 +159,51 @@
                         <div class="uk-card uk-card-default uk-card-body uk-border-rounded uk-background-contain uk-background-bottom-center"
                             style="background-image: url(img/in-wave-card-bg-2.png);">
                             <h5 class="uk-margin-remove">
-                                <a href="#">CFDs <i class="fas fa-chevron-right fa-xs"></i></a>
+                                <a href="#">Bronze Plan <i class="fas fa-chevron-right fa-xs"></i></a>
                             </h5>
-                            <p class="uk-margin-remove">Spread from</p>
-                            <h1 class="uk-margin-top">0.4</h1>
-                            <p class="uk-margin-remove-top uk-margin-bottom">on US500</p>
+                            <p class="uk-margin-remove">Returns up to</p>
+                            <h1 class="uk-margin-top">75.9</h1>
+                            <p class="uk-margin-remove-top uk-margin-bottom">%</p>
                             <p>Go long or short on 9,000+ instruments with tight spreads & low commissions.</p>
                         </div>
                     </div>
                     <div class="uk-width-1-2@s uk-width-1-4@m">
                         <div class="uk-card uk-card-default uk-card-body uk-border-rounded uk-background-contain uk-background-bottom-center"
-                            style="background-image: url(img/in-wave-card-bg-3.png);">
+                            style="background-image: url(img/in-wave-card-bg-2.png);">
                             <h5 class="uk-margin-remove">
-                                <a href="#">Stocks <i class="fas fa-chevron-right fa-xs"></i></a>
+                                <a href="#">Silver Plan <i class="fas fa-chevron-right fa-xs"></i></a>
                             </h5>
-                            <p class="uk-margin-remove">Commissions from</p>
-                            <h1 class="uk-margin-top">$3</h1>
-                            <p class="uk-margin-remove-top uk-margin-bottom">on US stocks</p>
-                            <p>Access 19,000+ stocks across core and emerging markets on 36 exchanges worldwide.</p>
+                            <p class="uk-margin-remove">Returns up to</p>
+                            <h1 class="uk-margin-top">151.8</h1>
+                            <p class="uk-margin-remove-top uk-margin-bottom">%</p>
+                            <p>Go long or short on 9,000+ instruments with tight spreads & low commissions.</p>
                         </div>
                     </div>
                     <div class="uk-width-1-2@s uk-width-1-4@m">
                         <div class="uk-card uk-card-default uk-card-body uk-border-rounded uk-background-contain uk-background-bottom-center"
-                            style="background-image: url(img/in-wave-card-bg-4.png);">
+                            style="background-image: url(img/in-wave-card-bg-2.png);">
                             <h5 class="uk-margin-remove">
-                                <a href="#">Commodities <i class="fas fa-chevron-right fa-xs"></i></a>
+                                <a href="#">Gold Plan <i class="fas fa-chevron-right fa-xs"></i></a>
                             </h5>
-                            <p class="uk-margin-remove">Commission as low as</p>
-                            <h1 class="uk-margin-top">$1.25</h1>
-                            <p class="uk-margin-remove-top uk-margin-bottom">per lot</p>
-                            <p>Trade a wide range of commodities as CFDs, futures, options, spot pairs, & more.</p>
+                            <p class="uk-margin-remove">Returns up to</p>
+                            <h1 class="uk-margin-top">303.6</h1>
+                            <p class="uk-margin-remove-top uk-margin-bottom">%</p>
+                            <p>Go long or short on 9,000+ instruments with tight spreads & low commissions.</p>
                         </div>
                     </div>
                 </div>
                 <div class="uk-grid uk-flex uk-flex-center">
+
                     <div class="uk-width-3-5@m">
+                        <a href="/plans" class="uk-button uk-button-primary uk-border-rounded uk-align-center"
+                            style="width: 50%">Explore All Products<i
+                                class="fas fa-chevron-circle-right fa-xs uk-margin-small-left"></i></a>
                         <div
                             class="uk-card uk-card-default uk-card-body uk-text-center uk-border-rounded uk-box-shadow-small in-wave-2-card">
                             <span
-                                class="uk-label uk-text-small uk-text-uppercase uk-border-pill uk-margin-small-right">Start
-                                trade</span>
-                            Up to 100% bonus on your first deposit and up to 50% referral bonus <a href="#">Join
+                                class="uk-label uk-text-small uk-text-uppercase uk-border-pill uk-margin-small-right">START
+                                INVESTING</span>
+                            Up to 100% bonus on your first deposit and up to 50% referral bonus <a href="/register">Join
                                 now!</a>
                         </div>
                         <div class="uk-grid-collapse uk-grid-divider uk-child-width-1-3@s uk-child-width-1-3@m uk-text-center uk-margin-top uk-margin-small-bottom"
@@ -205,11 +214,12 @@
                             </div>
                             <div>
                                 <i class="fas fa-university fa-lg uk-margin-small-right uk-text-primary"></i>
-                                <p class="uk-margin-remove uk-text-small uk-text-uppercase">Regulated by the FCA,UK</p>
+                                <p class="uk-margin-remove uk-text-small uk-text-uppercase">Regulated by the SEC and FCA,UK
+                                </p>
                             </div>
                             <div>
                                 <i class="fas fa-history fa-lg uk-margin-small-right uk-text-primary"></i>
-                                <p class="uk-margin-remove uk-text-small uk-text-uppercase">30 years experience</p>
+                                <p class="uk-margin-remove uk-text-small uk-text-uppercase">8 years experience</p>
                             </div>
                         </div>
                     </div>
@@ -256,8 +266,11 @@
                             data-src="https://assets.cmcmarkets.com/images/platform-ipad-v5.jpg" alt="wave-video"
                             width="533" height="355" data-uk-img>
 
-                        <p class="uk-text-small uk-text-muted">Explore the markets at your own pace with short online
-                            courses. <span class="uk-label uk-text-small uk-border-pill">Sign up</span></p>
+                        <p class="uk-text-small uk-text-muted">Let us trade for you so you don’t take the risk of losing
+                            your asset
+                            courses. <span class="uk-label uk-text-small uk-border-pill"><a style="color:white"
+                                    href="/register">Sign
+                                    up</a></span></p>
                     </di>
                 </div>
             </div>
@@ -289,9 +302,8 @@
                                         <li>Lowest minimum deposit </li>
                                         <li>Enjoy up to 50% referral bonus</li>
                                         <li>Tax-free spread betting profits</li>
-                                        <li>Low minimum deposit</li>
                                     </ul>
-                                    <a href="#"
+                                    <a href="/register"
                                         class="uk-button uk-button-default uk-border-rounded uk-align-center">Open an
                                         account<i class="fas fa-chevron-circle-right fa-xs uk-margin-small-left"></i></a>
                                 </div>
@@ -302,7 +314,7 @@
                                             class="uk-label uk-border-pill uk-text-small uk-margin-small-left">USD
                                             1,000,000</span></p>
                                     <h2 class="uk-margin-top uk-margin-remove-bottom">Platinum plan</h2>
-                                    <p class="uk-text-lead uk-text-muted uk-margin-remove-top">Receive even tighter spreads
+                                    <p class="uk-text-lead uk-text-muted uk-margin-remove-top">Receive even higher profits
                                         and commissions</p>
                                     <hr>
                                     <ul class="uk-list uk-list-bullet">
@@ -313,7 +325,7 @@
                                         <li>Tax-free spread betting profits</li>
                                         <li>Monthly equity payment</li>
                                     </ul>
-                                    <a href="#"
+                                    <a href="/register"
                                         class="uk-button uk-button-primary uk-border-rounded uk-align-center">Open an
                                         account<i class="fas fa-chevron-circle-right fa-xs uk-margin-small-left"></i></a>
                                 </div>
@@ -364,7 +376,7 @@
             <div class="uk-container">
                 <div class="uk-grid uk-flex uk-flex-middle">
                     <div class="uk-width-1-3@m">
-                        <h2>Join over <span class="uk-text-primary">1 million</span> traders over the world</h2>
+                        <h2>Join over <span class="uk-text-primary">1 million</span> investors over the world</h2>
                         <form class="uk-grid-small uk-grid uk-grid-stack" data-uk-grid="">
                             <div class="uk-width-1-1 uk-width-auto@m uk-grid-margin uk-first-column">
                                 <a href='/register'

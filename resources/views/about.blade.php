@@ -11,7 +11,10 @@
                             <h1 class="uk-margin-small-bottom">Putting our clients first <span class="in-highlight">since
                                     2015</span></h1>
                             <p class="uk-text-lead uk-text-muted uk-margin-remove-top">For more than 8 years, we’ve been
-                                empowering clients by helping them take control of their financial lives.</p>
+                                empowering clients by helping them take control of their financial lives.
+                                We believe that digital currencies will revolutionize our legacy economic, political, and
+                                social systems. With that transformation comes a meaningful generational shift in how
+                                institutions and individuals approach investing</p>
                         </div>
                     </div>
                     <div class="uk-grid uk-grid-large uk-child-width-1-3@m uk-margin-medium-top" data-uk-grid="">
@@ -20,12 +23,10 @@
                                 <i class="fas fa-leaf fa-lg in-icon-wrap primary-color"></i>
                             </div>
                             <div>
-                                <h3>Philosophy</h3>
-                                <p class="uk-margin-remove-bottom">Our philosophy is simple. We want to empower our clients.
-                                    What sets us apart from our competitors is our deep understanding of what traders need.
-                                    We’ve learnt that the combination of pricing, execution speed, cutting-edge platforms,
-                                    product range, customer support and market analysis are the key ingredients that give
-                                    our clients the confidence to trade.
+                                <h3>TRUSTED</h3>
+                                <p class="uk-margin-remove-bottom">With the industry’s longest track record, CML Trading is
+                                    the trusted partner for institutional and individual investors interested in digital
+                                    currencies and the growing digital economy.
                                 </p>
                             </div>
                         </div>
@@ -34,9 +35,9 @@
                                 <i class="fas fa-hourglass-end fa-lg in-icon-wrap primary-color"></i>
                             </div>
                             <div>
-                                <h3>History</h3>
-                                <p>At vero eos etme accusamus iusto odio ent dignissimos deleniti atque corrupti quos
-                                    ducimus moll quilla blanditiis expedita est distinctio.</p>
+                                <h3>REGULATED</h3>
+                                <p>CML Trading products operate within existing regulatory frameworks, and its hallmark
+                                    products are the ﬁrst SEC reporting funds in the industry.</p>
                             </div>
                         </div>
                         <div class="uk-flex uk-flex-left">
@@ -44,12 +45,10 @@
                                 <i class="fas fa-flag fa-lg in-icon-wrap primary-color"></i>
                             </div>
                             <div>
-                                <h3>Culture</h3>
+                                <h3>EASY</h3>
                                 <p>
-                                    Our company vision was to create a superior trading destination where traders
-                                    could access a full suite of products in global markets. The convenience of being able
-                                    to trade CFDs across Forex, Shares, Indices, Commodities & Cryptocurrencies from a
-                                    single account is one of the key reasons traders choose Markets.
+                                    Investors can seamlessly purchase CML Trading products in their IRA or other investment
+                                    accounts directly via brokerage platforms.
                                 </p>
                             </div>
                         </div>
