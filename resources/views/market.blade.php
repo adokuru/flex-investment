@@ -44,11 +44,11 @@
                                     class="fas fa-money-bill-wave fa-2x in-icon-wrap large primary-color uk-margin-right"></i>
                             </div>
                             <div class="uk-width-expand">
-                                <h3>Why trade with CML markets?</h3>
+                                <h3>Why Invest with CML markets?</h3>
                                 <p>What sets us apart from our competitors is our deep understanding of what traders need.
                                     We've learnt that the combination of pricing, execution speed, cutting-edge platforms,
                                     product range, customer support and market analysis are the key ingredients that give
-                                    our clients the confidence to trade.</p>
+                                    our clients the confidence to invest.</p>
                                 <div class="uk-grid uk-child-width-1-2@s uk-child-width-1-2@m in-margin-bottom-30@s"
                                     data-uk-grid>
                                     <div>
@@ -61,10 +61,9 @@
                                     </div>
                                     <div class="in-margin-small-top@s in-margin-bottom@s">
                                         <ul class="uk-list uk-list-bullet in-list-check">
-                                            <li>Free from UK Stamp Duty</li>
                                             <li>Short selling available</li>
                                             <li>Commissions from 0.08%</li>
-                                            <li>Access to 1500 global shares</li>
+                                            <li>Access to 1500 global markets</li>
                                         </ul>
                                     </div>
                                 </div>

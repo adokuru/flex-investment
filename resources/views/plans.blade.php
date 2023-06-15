@@ -173,7 +173,8 @@
                             <div class="uk-width-expand">
                                 <h3>Why Invest with CML markets?</h3>
                                 <p>Our award-winning CFD trading platform provides access to over 12,000 global instruments,
-                                    at competitive spreads and margin rates. Trade CFDs on major forex pairs from 0.7 points
+                                    at competitive spreads and margin rates.We Trade CFDs on major forex pairs from 0.7
+                                    points
                                     and popular indices from 1 point.</p>
                                 <div class="uk-grid uk-child-width-1-2@s uk-child-width-1-2@m in-margin-bottom-30@s"
                                     data-uk-grid>
