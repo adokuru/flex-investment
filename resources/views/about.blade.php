@@ -9,7 +9,7 @@
                     <div class="uk-width-1-1">
                         <div class="uk-width-3-5@m">
                             <h1 class="uk-margin-small-bottom">Putting our clients first <span class="in-highlight">since
-                                    2015</span></h1>
+                                    2016</span></h1>
                             <p class="uk-text-lead uk-text-muted uk-margin-remove-top">For more than 30 years, we’ve been
                                 empowering clients by helping them take control of their financial lives.
                                 We believe that digital currencies will revolutionize our legacy economic, political, and
