@@ -19,14 +19,14 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:creator" content="@cmltrading">
     <meta name="twitter:description"
-        content="Trade CFDs with CML Markets, Leading Crypto Asset Managers. Trade on up to 10,000 instruments, including forex, indices, commodities, shares and treasuries.">
+        content="Invest with CML Trading. Trade on up to 10,000 instruments. Invest on up to 10,000 instruments, including forex, indices, commodities, shares and treasuries.">
     <meta name="twitter:site" content="@cmltrading">
     <meta name="twitter:title" content="Home">
 
 
     <title>@yield('title') - CML Trading | Leading Crypto Asset Managers</title>
     <meta name="description"
-        content="Trade CFDs with CML Markets, Leading Crypto Asset Managers. Trade on up to 10,000 instruments, including forex, indices, commodities, shares and treasuries.">
+        content="Invest with CML Trading. Trade on up to 10,000 instruments. Invest on up to 10,000 instruments, including forex, indices, commodities, shares and treasuries.">
     <meta name="revised" content="09/06/2022 11:51:02">
     <!-- Critical preload -->
     <link rel="preload" href="/js/vendors/uikit.min.js" as="script">
