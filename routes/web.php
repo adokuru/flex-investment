@@ -39,13 +39,6 @@ Route::get('/contact', function () {
 Route::get('/about', function () {
     return view('about');
 });
-Route::get('/terms', function () {
-    return view('education');
-});
-
-Route::get('/privacy', function () {
-    return view('about');
-});
 
 
 

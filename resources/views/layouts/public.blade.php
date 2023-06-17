@@ -97,7 +97,7 @@
                             <!-- module logo begin -->
                             <a class="uk-logo" href="/">
                                 <img class="uk-margin-small-right in-offset-top-10" src="img/in-lazy.gif"
-                                    data-src="/images/logo.svg" alt="wave" width="134" height="23"
+                                    data-src="/images/logo.png" alt="wave" width="134" height="50"
                                     data-uk-img>
                             </a>
                             <!-- module logo begin -->
@@ -162,7 +162,7 @@
                 <div class="uk-grid-medium" data-uk-grid>
                     <div class="uk-width-expand@m">
                         <img class="uk-margin-small-right in-margin-top-30@s" src="img/in-lazy.gif"
-                            data-src="/images/logo.svg" alt="wave" width="150" height="50" data-uk-img>
+                            data-src="/images/logo-2.png" alt="wave" width="150" height="50" data-uk-img>
                         <p class="uk-text-large uk-margin-small-top">Trade with financial thinking.</p>
                         <p class="uk-visible@m">
                             *Awarded No.1 Platform Technology & No.1 Web-Based Platform, ForexBrokers.com Awards 2021;
