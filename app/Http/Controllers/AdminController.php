@@ -60,6 +60,7 @@ class AdminController extends Controller
     {
         return view('transactions.edit', compact('transaction'));
     }
+
     public function approveTransaction($id)
     {
         DB::transaction(function () use ($id) {
