@@ -241,7 +241,7 @@
                             </div>
                             <div>
                                 <i class="fas fa-history fa-lg uk-margin-small-right uk-text-primary"></i>
-                                <p class="uk-margin-remove uk-text-small uk-text-uppercase">8 years experience</p>
+                                <p class="uk-margin-remove uk-text-small uk-text-uppercase">30 years experience</p>
                             </div>
                         </div>
                     </div>
