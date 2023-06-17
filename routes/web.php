@@ -40,7 +40,7 @@ Route::get('/about', function () {
     return view('about');
 });
 Route::get('/terms', function () {
-    return view('legal-docs');
+    return view('education');
 });
 
 Route::get('/privacy', function () {

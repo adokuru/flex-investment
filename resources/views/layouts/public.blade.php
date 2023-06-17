@@ -192,10 +192,10 @@
                             <div>
                                 <h4><span>Company</span></h4>
                                 <ul class="uk-list uk-link-text">
-                                    <li><a href="#">Our story</a></li>
-                                    <li><a href="#">Our leadership</a></li>
-                                    <li><a href="#">Contact us</a></li>
-                                    <li><a href="#">Partners</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="/terms">Terms</a></li>
+                                    <li><a href="/contact">Contact</a></li>
+                                    <li><a href="/privacy">Privacy</a></li>
                                 </ul>
                             </div>
                         </div>
